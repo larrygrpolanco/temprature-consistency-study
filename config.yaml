@@ -1,0 +1,86 @@
+# =============================================================================
+# TEMPERATURE CONSISTENCY STUDY - CONFIGURATION
+# =============================================================================
+# Edit this file to control what gets processed.
+# Fine-grained control: specify exact temperatures, runs, and articles.
+
+# -----------------------------------------------------------------------------
+# DATASET SELECTION
+# -----------------------------------------------------------------------------
+# Options: 'validation' or 'test'
+# - validation: 10 articles for testing pipeline before full run
+# - test: 40 articles for actual data collection
+dataset: validation
+
+# -----------------------------------------------------------------------------
+# MODEL CONFIGURATION
+# -----------------------------------------------------------------------------
+# OpenAI model to use (must support temperature parameter)
+model: gpt-4-turbo-preview
+
+# Maximum tokens for completion (4096 is sufficient for longest articles)
+max_tokens: 4096
+
+# -----------------------------------------------------------------------------
+# EXPERIMENT PARAMETERS
+# -----------------------------------------------------------------------------
+# Temperature values to test (must be floats)
+# Study design: [0.0, 0.3, 0.7, 1.0, 1.5]
+# For testing: use subset like [0.0, 0.3]
+temperatures:
+  - 0.0
+  - 0.3
+  - 0.7
+  - 1.0
+  - 1.5
+
+# Run numbers (for consistency evaluation across multiple iterations)
+# Study design: 1-50 for each temperature
+# For testing: use subset like [1, 2, 3]
+# For re-runs: specify exact runs like [5, 12, 23]
+runs:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+
+# Article selection
+# Options:
+#   'all' - process all articles in the dataset
+#   List of specific articles - ['test001', 'test005', 'test012']
+# For re-runs: specify only articles that need re-processing
+articles: all
+
+# -----------------------------------------------------------------------------
+# PARSING & VALIDATION
+# -----------------------------------------------------------------------------
+# Text similarity threshold for validation (0.0 to 1.0)
+# Lower = stricter matching, higher = more lenient
+# Recommended: 0.85 (allows minor punctuation/spacing differences)
+text_similarity_threshold: 0.85
+
+# -----------------------------------------------------------------------------
+# API CONFIGURATION
+# -----------------------------------------------------------------------------
+# API key should be set as environment variable: OPENAI_API_KEY
+# Do not hardcode API keys in this file
+api_key_env: OPENAI_API_KEY
+
+# -----------------------------------------------------------------------------
+# NOTES FOR REPLICATION
+# -----------------------------------------------------------------------------
+# To replicate the full study:
+# 1. Set dataset: test
+# 2. Set temperatures: [0.0, 0.3, 0.7, 1.0, 1.5]
+# 3. Set runs: list from 1 to 50
+# 4. Set articles: all
+# 5. Run scripts in order: 01 → 02 → 03 → 04 → 05
+#
+# Estimated costs (as of April 2025):
+# - Full experiment: 10,000 API calls × ~$0.XX per call = ~$XXX
+# - Test run (validation set, 5 runs): ~$XX
+#
+# Estimated runtime (on standard laptop):
+# - Full experiment: ~8 hours
+# - Test run: ~20 minutes
