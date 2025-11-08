@@ -48,6 +48,15 @@ def load_parsed_predictions(temperature, run_num):
         return json.load(f)
 
 
+def load_parsing_stats():
+    """Load parsing statistics from validation step"""
+    stats_path = Path("results/parsing_stats/parsing_reliability.json")
+    if not stats_path.exists():
+        return None
+    with open(stats_path, 'r') as f:
+        return json.load(f)
+
+
 def calculate_accuracy_single_run(run_predictions, gold_standard):
     """
     Calculate accuracy for one run at move and step levels.
@@ -467,6 +476,20 @@ def main():
     with open(metrics_dir / "krippendorff_alpha.json", 'w') as f:
         json.dump(alpha_results, f, indent=2)
     print(f"✓ Saved: results/metrics/krippendorff_alpha.json")
+    print()
+
+    # Parsing reliability summary
+    print("Parsing reliability across temperatures...")
+    parsing_stats = load_parsing_stats()
+    if parsing_stats:
+        for temperature in temperatures:
+            temp_key = f"{temperature:.1f}"
+            if temp_key in parsing_stats:
+                stats = parsing_stats[temp_key]
+                print(f"  temp_{temperature:.1f}: {stats['successful']}/{stats['attempted']} "
+                      f"({stats['success_rate']*100:.1f}% success)")
+    else:
+        print("  ⚠ No parsing statistics found (run 03_parse_validate.py first)")
     print()
 
     # Analyze sentence-level consistency

@@ -286,6 +286,15 @@ def main():
     successful_runs = []
     failed_runs = []
 
+    # Track parsing statistics by temperature
+    parsing_stats = {}
+    for temp in temperatures:
+        parsing_stats[temp] = {
+            'attempted': 0,
+            'successful': 0,
+            'failed': 0
+        }
+
     # Process each temperature and run
     for temperature in temperatures:
         print(f"Processing temperature {temperature}...")
@@ -300,6 +309,9 @@ def main():
             article_predictions = {}
             validation_reports = []
             all_valid = True
+
+            # Track this run's attempts
+            parsing_stats[temperature]['attempted'] += len(gold_data)
 
             # Process each article
             for article_id, gold_article in gold_data.items():
@@ -325,8 +337,12 @@ def main():
 
                 if validation_result['valid']:
                     article_predictions[article_id] = parsed_sentences
+                    # Count successful parse
+                    parsing_stats[temperature]['successful'] += 1
                 else:
                     all_valid = False
+                    # Count failed parse
+                    parsing_stats[temperature]['failed'] += 1
                     report = generate_validation_report(
                         article_id, temperature, run_num, validation_result
                     )
@@ -387,6 +403,26 @@ def main():
 
     print()
     print("COMPLETE")
+
+    # Save parsing statistics
+    stats_dir = Path("results/parsing_stats")
+    stats_dir.mkdir(parents=True, exist_ok=True)
+
+    # Calculate success rates
+    parsing_summary = {}
+    for temp in temperatures:
+        stats = parsing_stats[temp]
+        parsing_summary[f"{temp:.1f}"] = {
+            'attempted': stats['attempted'],
+            'successful': stats['successful'],
+            'failed': stats['failed'],
+            'success_rate': stats['successful'] / stats['attempted'] if stats['attempted'] > 0 else 0
+        }
+
+    with open(stats_dir / "parsing_reliability.json", 'w') as f:
+        json.dump(parsing_summary, f, indent=2)
+
+    print(f"\n✓ Parsing statistics saved to: results/parsing_stats/parsing_reliability.json")
 
 
 if __name__ == "__main__":

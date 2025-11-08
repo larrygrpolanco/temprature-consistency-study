@@ -226,7 +226,9 @@ def main():
 
         for run_num in runs:
             # Skip if already complete (unless force_rerun is enabled)
-            if run_num in existing[temperature] and not config.get("force_rerun", False):
+            if run_num in existing[temperature] and not config.get(
+                "force_rerun", False
+            ):
                 print(
                     f"  Run {run_num:02d}/{max(runs):02d} (skipped - already complete)"
                 )
