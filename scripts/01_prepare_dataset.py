@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 01_prepare_dataset.py
 
@@ -18,6 +17,7 @@ Outputs:
 
 import os
 import json
+import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from collections import Counter
@@ -58,12 +58,22 @@ def parse_xml(xml_path):
 
     # Parse all sentences
     for sent_elem in root.findall('.//sentence'):
-        sentence_id = sent_elem.get('id', '')
-        text = sent_elem.text.strip() if sent_elem.text else ""
+        # Extract nested elements
+        sentence_id_elem = sent_elem.find('sentenceID')
+        text_elem = sent_elem.find('text')
+        step_elem = sent_elem.find('step')
 
-        # Extract step and move annotations
-        step = sent_elem.get('step', '')
-        move = sent_elem.get('move', '')
+        sentence_id = sentence_id_elem.text.strip() if sentence_id_elem is not None and sentence_id_elem.text else ""
+        text = text_elem.text.strip() if text_elem is not None and text_elem.text else ""
+        step = step_elem.text.strip() if step_elem is not None and step_elem.text else ""
+
+        # Extract move from step (e.g., "1a" -> "1", "2b" -> "2")
+        move = ""
+        if step:
+            # Extract numeric part from step
+            match = re.match(r'^(\d+)', step)
+            if match:
+                move = match.group(1)
 
         # Extract sentence number from ID (e.g., 't001s0001' -> 1)
         try:

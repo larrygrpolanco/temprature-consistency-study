@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 04_calculate_metrics.py
 
@@ -460,7 +459,9 @@ def main():
 
         move_alpha = result['move_level']['alpha']
         step_alpha = result['step_level']['alpha']
-        print(f"  temp_{temperature:.1f}: move α={move_alpha:.3f if move_alpha else 'N/A'}, step α={step_alpha:.3f if step_alpha else 'N/A'}")
+        move_str = f"{move_alpha:.3f}" if move_alpha is not None else 'N/A'
+        step_str = f"{step_alpha:.3f}" if step_alpha is not None else 'N/A'
+        print(f"  temp_{temperature:.1f}: move α={move_str}, step α={step_str}")
 
     # Save alpha results
     with open(metrics_dir / "krippendorff_alpha.json", 'w') as f:

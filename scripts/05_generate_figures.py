@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 05_generate_figures.py
 

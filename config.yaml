@@ -16,7 +16,7 @@ dataset: validation
 # MODEL CONFIGURATION
 # -----------------------------------------------------------------------------
 # OpenAI model to use (must support temperature parameter)
-model: gpt-4-turbo-preview
+model: gpt-5
 
 # Maximum tokens for completion (4096 is sufficient for longest articles)
 max_tokens: 4096
@@ -27,30 +27,27 @@ max_tokens: 4096
 # Temperature values to test (must be floats)
 # Study design: [0.0, 0.3, 0.7, 1.0, 1.5]
 # For testing: use subset like [0.0, 0.3]
-temperatures:
-  - 0.0
-  - 0.3
-  - 0.7
-  - 1.0
-  - 1.5
+temperatures: [0.0, 0.3, 0.7, 1.0, 1.5]
+
 
 # Run numbers (for consistency evaluation across multiple iterations)
 # Study design: 1-50 for each temperature
 # For testing: use subset like [1, 2, 3]
 # For re-runs: specify exact runs like [5, 12, 23]
-runs:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
+runs: [1,2,3,4,5]
+
 
 # Article selection
 # Options:
 #   'all' - process all articles in the dataset
 #   List of specific articles - ['test001', 'test005', 'test012']
 # For re-runs: specify only articles that need re-processing
-articles: all
+articles: 'all'
+
+# Force rerun of completed work
+# Set to true when you need to rerun articles even if outputs already exist
+# (e.g., after validation failures or to regenerate outputs)
+force_rerun: true
 
 # -----------------------------------------------------------------------------
 # PARSING & VALIDATION

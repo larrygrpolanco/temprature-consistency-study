@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 02_run_api.py
 
@@ -25,19 +24,19 @@ from dotenv import load_dotenv
 
 def load_config():
     """Load and validate config.yaml"""
-    with open('config.yaml', 'r') as f:
+    with open("config.yaml", "r") as f:
         config = yaml.safe_load(f)
     return config
 
 
 def load_system_prompt():
     """Load prompt from prompts/system_prompt.txt"""
-    prompt_path = Path('prompts/system_prompt.txt')
+    prompt_path = Path("prompts/system_prompt.txt")
     if not prompt_path.exists():
         print(f"⚠ Warning: {prompt_path} not found. Using default prompt.")
         return "Please annotate each sentence with move and step labels following the CaRS framework."
 
-    with open(prompt_path, 'r', encoding='utf-8') as f:
+    with open(prompt_path, "r", encoding="utf-8") as f:
         return f.read().strip()
 
 
@@ -50,18 +49,20 @@ def get_articles_to_process(config):
     Else:
         Return specified list
     """
-    dataset = config['dataset']
+    dataset = config["dataset"]
     input_dir = Path(f"data/processed/{dataset}/input")
 
-    if config['articles'] == 'all':
+    if config["articles"] == "all":
         # Get all .txt files
         article_files = sorted(input_dir.glob("*.txt"))
         return [f.stem for f in article_files]
     else:
-        return config['articles']
+        return config["articles"]
 
 
-def call_openai_api(article_text, system_prompt, model, temperature, max_tokens, api_key):
+def call_openai_api(
+    article_text, system_prompt, model, temperature, max_tokens, api_key
+):
     """
     Call OpenAI API with specified parameters.
 
@@ -75,10 +76,10 @@ def call_openai_api(article_text, system_prompt, model, temperature, max_tokens,
             model=model,
             messages=[
                 {"role": "system", "content": system_prompt},
-                {"role": "user", "content": article_text}
+                {"role": "user", "content": article_text},
             ],
             temperature=temperature,
-            max_tokens=max_tokens
+            max_tokens=max_tokens,
         )
 
         return response.choices[0].message.content
@@ -88,19 +89,21 @@ def call_openai_api(article_text, system_prompt, model, temperature, max_tokens,
         raise
 
 
-def process_single_article(article_id, temperature, run_num, config, system_prompt, api_key):
+def process_single_article(
+    article_id, temperature, run_num, config, system_prompt, api_key
+):
     """
     Load article text → call API → save raw output.
 
     Saves to: outputs/temp_{temperature}/run_{run_num:02d}/raw/{article_id}.txt
     """
-    dataset = config['dataset']
-    model = config['model']
-    max_tokens = config['max_tokens']
+    dataset = config["dataset"]
+    model = config["model"]
+    max_tokens = config["max_tokens"]
 
     # Load article text
     input_path = Path(f"data/processed/{dataset}/input/{article_id}.txt")
-    with open(input_path, 'r', encoding='utf-8') as f:
+    with open(input_path, "r", encoding="utf-8") as f:
         article_text = f.read()
 
     # Call API
@@ -110,7 +113,7 @@ def process_single_article(article_id, temperature, run_num, config, system_prom
         model=model,
         temperature=temperature,
         max_tokens=max_tokens,
-        api_key=api_key
+        api_key=api_key,
     )
 
     # Save raw output
@@ -118,7 +121,7 @@ def process_single_article(article_id, temperature, run_num, config, system_prom
     output_dir.mkdir(parents=True, exist_ok=True)
 
     output_path = output_dir / f"{article_id}.txt"
-    with open(output_path, 'w', encoding='utf-8') as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         f.write(response_text)
 
     return output_path
@@ -132,8 +135,8 @@ def check_existing_outputs(config):
     Returns:
         dict of completed runs per temperature
     """
-    temperatures = config['temperatures']
-    runs = config['runs']
+    temperatures = config["temperatures"]
+    runs = config["runs"]
     articles = get_articles_to_process(config)
 
     existing = {}
@@ -155,7 +158,9 @@ def check_existing_outputs(config):
             print(f"✓ temp_{temp:.1f}: runs {min(runs)}-{max(runs)} complete")
         elif len(existing[temp]) > 0:
             missing_runs = [r for r in runs if r not in existing[temp]]
-            print(f"⚠ temp_{temp:.1f}: runs {existing[temp]} complete, {missing_runs} missing")
+            print(
+                f"⚠ temp_{temp:.1f}: runs {existing[temp]} complete, {missing_runs} missing"
+            )
         else:
             print(f"✗ temp_{temp:.1f}: not started")
 
@@ -177,7 +182,7 @@ def main():
     system_prompt = load_system_prompt()
 
     # Get API key
-    api_key_env = config.get('api_key_env', 'OPENAI_API_KEY')
+    api_key_env = config.get("api_key_env", "OPENAI_API_KEY")
     api_key = os.getenv(api_key_env)
 
     if not api_key:
@@ -186,10 +191,10 @@ def main():
         return
 
     # Display configuration
-    dataset = config['dataset']
-    model = config['model']
-    temperatures = config['temperatures']
-    runs = config['runs']
+    dataset = config["dataset"]
+    model = config["model"]
+    temperatures = config["temperatures"]
+    runs = config["runs"]
     articles = get_articles_to_process(config)
 
     print("Configuration:")
@@ -197,11 +202,15 @@ def main():
     print(f"  Model: {model}")
     print(f"  Temperatures: {temperatures}")
     print(f"  Runs: {runs}")
-    print(f"  Articles: {'all' if config['articles'] == 'all' else 'custom list'} ({len(articles)} articles)")
+    print(
+        f"  Articles: {'all' if config['articles'] == 'all' else 'custom list'} ({len(articles)} articles)"
+    )
     print()
 
     total_calls = len(temperatures) * len(runs) * len(articles)
-    print(f"Total API calls: {total_calls} ({len(temperatures)} temps × {len(runs)} runs × {len(articles)} articles)")
+    print(
+        f"Total API calls: {total_calls} ({len(temperatures)} temps × {len(runs)} runs × {len(articles)} articles)"
+    )
     print()
 
     # Check existing outputs
@@ -216,9 +225,11 @@ def main():
         print(f"Processing temperature {temperature}...")
 
         for run_num in runs:
-            # Skip if already complete
-            if run_num in existing[temperature]:
-                print(f"  Run {run_num:02d}/{max(runs):02d} (skipped - already complete)")
+            # Skip if already complete (unless force_rerun is enabled)
+            if run_num in existing[temperature] and not config.get("force_rerun", False):
+                print(
+                    f"  Run {run_num:02d}/{max(runs):02d} (skipped - already complete)"
+                )
                 total_skipped += len(articles)
                 continue
 
@@ -232,7 +243,7 @@ def main():
                         run_num=run_num,
                         config=config,
                         system_prompt=system_prompt,
-                        api_key=api_key
+                        api_key=api_key,
                     )
                     print(f"    {article_id}... ✓")
                     total_processed += 1
