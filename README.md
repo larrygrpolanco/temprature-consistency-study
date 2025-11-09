@@ -5,6 +5,7 @@
 This replication package contains code and data for reproducing the results of a study examining the effect of temperature settings on the accuracy and consistency of Large Language Model (LLM) annotations for rhetorical move-step analysis.
 
 The study investigates how different temperature parameters affect:
+
 - **Accuracy**: Agreement between LLM predictions and expert gold-standard annotations
 - **Consistency**: Agreement between multiple runs at the same temperature (measured using Krippendorff's alpha)
 
@@ -37,6 +38,7 @@ pip install -r requirements.txt
 ```
 
 Key packages:
+
 - `openai` (≥1.12.0) - OpenAI API client
 - `pandas` (≥2.0.0) - Data manipulation
 - `numpy` (≥1.24.0) - Numerical computing
@@ -138,16 +140,12 @@ temperature_consistency_study/
 ## Runtime and Cost Estimates
 
 ### Full Experiment
-- **API calls:** 10,000 (5 temperatures × 50 runs × 40 articles)
-- **Estimated time:** ~8 hours on standard laptop
-- **Estimated cost:** ~$300-500 (based on GPT-4 pricing as of 2025)
 
-### Validation Test
-- **API calls:** 250 (5 temperatures × 5 runs × 10 articles)
-- **Estimated time:** ~20 minutes
-- **Estimated cost:** ~$10-20
+- **API calls:** 18,000 (9 temperatures × 50 runs × 40 articles)
+- **Estimated time:** 8-10 hours per temperature condition (sequential); total time depends on parallelization strategy
+- **Estimated cost:** ~$40 USD (based on GPT-4.1-mini pricing, November 2025: ~$0.0022 per call)
 
-**Note:** Actual costs depend on the specific model used and current OpenAI pricing. Always test with the validation set first!
+**Note:** Actual costs depend on current OpenAI pricing and may vary. Runtime can be reduced significantly by running multiple temperature conditions in parallel (see configuration options in `config.yaml`). Always test with the validation set first!
 
 ## Reproduction Steps
 
@@ -164,6 +162,7 @@ python scripts/01_prepare_dataset.py
 ```
 
 **Output:**
+
 - Gold standard JSON files with annotations
 - Plain text input files for API calls
 - Split report documenting stratification
@@ -171,6 +170,7 @@ python scripts/01_prepare_dataset.py
 ### 3. Configure Experiment
 
 Edit `config.yaml` to control:
+
 - Dataset selection (`validation` for testing, `test` for full experiment)
 - Model selection (e.g., `gpt-4-turbo-preview`, `gpt-5-2025-08-07`)
 - Temperature values to test
@@ -178,6 +178,7 @@ Edit `config.yaml` to control:
 - Articles to process
 
 **For initial testing:**
+
 ```yaml
 dataset: validation
 temperatures: [0.0, 0.3]
@@ -186,10 +187,11 @@ articles: all
 ```
 
 **For full replication:**
+
 ```yaml
 dataset: test
 temperatures: [0.0, 0.3, 0.7, 1.0, 1.5]
-runs: [1, 2, 3, ..., 50]  # List all runs 1-50
+runs: [1, 2, 3, ..., 50] # List all runs 1-50
 articles: all
 ```
 
@@ -202,6 +204,7 @@ python scripts/02_run_api.py
 ```
 
 **Features:**
+
 - Automatically checks for existing outputs to avoid duplicate API calls
 - Provides progress updates for each temperature and run
 - Saves raw LLM responses for later parsing
@@ -217,10 +220,12 @@ python scripts/03_parse_validate.py
 ```
 
 **Validation checks:**
+
 - Sentence count matches gold standard
 - Text similarity above threshold (configurable in `config.yaml`)
 
 **If validation fails:**
+
 - Review reports in `results/validation_reports/`
 - Update `config.yaml` to re-run specific articles
 - Re-run scripts 02 and 03
@@ -234,6 +239,7 @@ python scripts/04_calculate_metrics.py
 ```
 
 **Metrics calculated:**
+
 - Move-level and step-level accuracy
 - Krippendorff's alpha for inter-run agreement
 - Sentence-level consistency analysis
@@ -247,6 +253,7 @@ python scripts/05_generate_figures.py
 ```
 
 **Output files:**
+
 - `figure_1_accuracy_consistency.png` - Dual-axis plot of accuracy and alpha
 - `figure_2_step_level.png` - Step-level accuracy across temperatures
 - `figure_3_sentence_consistency.png` - Distribution of sentence consistency
@@ -258,6 +265,7 @@ python scripts/05_generate_figures.py
 ### Temperature Settings
 
 The study design uses five temperature values:
+
 - **0.0** - Deterministic (as close as possible)
 - **0.3** - Low temperature
 - **0.7** - Medium temperature
@@ -287,9 +295,9 @@ Always test the pipeline with the validation set (10 articles) before running th
 If some API calls fail or validation errors occur, you can re-run specific articles/runs by editing `config.yaml`:
 
 ```yaml
-temperatures: [0.3]  # Only re-run temperature 0.3
-runs: [5, 12, 23]    # Only re-run these specific runs
-articles: ['test012', 'test015']  # Only these articles
+temperatures: [0.3] # Only re-run temperature 0.3
+runs: [5, 12, 23] # Only re-run these specific runs
+articles: ['test012', 'test015'] # Only these articles
 ```
 
 ### Script Execution Order
@@ -311,6 +319,7 @@ All figures and tables use descriptive names:
 ### API Key Issues
 
 If you see "OPENAI_API_KEY environment variable not set":
+
 ```bash
 export OPENAI_API_KEY='your-key-here'
 ```
@@ -318,6 +327,7 @@ export OPENAI_API_KEY='your-key-here'
 ### Missing XML Files
 
 If script 01 reports "No XML files found":
+
 - Download CaRS-50 from [Mendeley Data](https://doi.org/10.17632/kwr9s5c4nk.1)
 - Extract files to `data/raw_xml/`
 - Ensure files are named `text001.xml` through `text050.xml`
@@ -325,6 +335,7 @@ If script 01 reports "No XML files found":
 ### Validation Failures
 
 If script 03 reports validation failures:
+
 1. Check `results/validation_reports/` for details
 2. Common issues:
    - LLM missed or added sentences (sentence count mismatch)
@@ -334,6 +345,7 @@ If script 03 reports validation failures:
 ### Metrics Not Found
 
 If script 05 reports "No metrics found":
+
 - Ensure script 04 completed successfully
 - Check that `results/metrics/*.json` files exist
 

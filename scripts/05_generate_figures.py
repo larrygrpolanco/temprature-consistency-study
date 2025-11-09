@@ -8,7 +8,7 @@ Inputs:
 
 Outputs:
     - results/figures/figure_1_accuracy_consistency.png
-    - results/figures/figure_2_step_level.png (OPTIONAL - consider removing)
+    - results/figures/figure_2_step_level_consistency.png
     - results/figures/figure_3_sentence_consistency.png
 """
 
@@ -183,10 +183,11 @@ def create_accuracy_consistency_plot(metrics, output_path):
 
 def create_step_level_plot(metrics, output_path):
     """
-    Step-level accuracy across temperatures.
+    Step-level consistency (Krippendorff's alpha) across temperatures.
     Only shows steps with n≥50 (7 steps) to avoid cluttering with rare steps.
+    This figure shows how consistency varies by rhetorical step across temperature settings.
     """
-    temperatures = sorted([float(t) for t in metrics["accuracy"].keys()])
+    temperatures = sorted([float(t) for t in metrics["alpha"].keys()])
 
     # Only include steps with n≥50 in the corpus
     # Excluded: 2a (27), 2c (24), 2d (11), 3d (1)
@@ -206,11 +207,11 @@ def create_step_level_plot(metrics, output_path):
 
     for temp in temperatures:
         temp_key = f"{temp:.1f}"
-        per_step = metrics["accuracy"][temp_key].get("per_step", {})
+        per_step = metrics["alpha"][temp_key].get("per_step", {})
 
         for step in steps_to_plot:
-            if step in per_step and per_step[step]:
-                step_data[step].append(per_step[step]["mean"])
+            if step in per_step and per_step[step]["alpha"] is not None:
+                step_data[step].append(per_step[step]["alpha"])
             else:
                 step_data[step].append(None)
 
@@ -237,9 +238,9 @@ def create_step_level_plot(metrics, output_path):
         )
 
     ax.set_xlabel("Temperature", fontsize=12)
-    ax.set_ylabel("Step-level Accuracy", fontsize=12)
+    ax.set_ylabel("Krippendorff's α (Step-Level Consistency)", fontsize=12)
     ax.set_title(
-        "Step-Level Accuracy Across Temperature Settings (n≥50)",
+        "Step-Level Consistency Across Temperature Settings (n≥50)",
         fontsize=14,
         fontweight="bold",
     )
@@ -337,12 +338,10 @@ def main():
     create_accuracy_consistency_plot(metrics, fig1_path)
     print(f"✓ figure_1_accuracy_consistency.png")
 
-    # Figure 2: Step-level analysis (OPTIONAL - may be too cluttered)
-    fig2_path = figures_dir / "figure_2_step_level.png"
+    # Figure 2: Step-level consistency analysis
+    fig2_path = figures_dir / "figure_2_step_level_consistency.png"
     create_step_level_plot(metrics, fig2_path)
-    print(
-        f"✓ figure_2_step_level.png (consider removing - may be redundant with Table 3)"
-    )
+    print(f"✓ figure_2_step_level_consistency.png")
 
     # Figure 3: Sentence consistency distribution (USEFUL)
     fig3_path = figures_dir / "figure_3_sentence_consistency.png"

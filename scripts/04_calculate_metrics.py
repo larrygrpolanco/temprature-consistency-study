@@ -1,8 +1,7 @@
 """
 04_calculate_metrics.py
 
-Purpose: Calculate accuracy, consistency, and Krippendorff's alpha
-         from parsed predictions.
+Purpose: Calculate accuracy, consistency, and Krippendorff's alpha from parsed predictions.
 
 Inputs:
     - outputs/temp_{X}/run_{YY}/parsed.json (all runs for all temperatures)
@@ -238,202 +237,360 @@ def calculate_accuracy_by_temperature(temperature, runs, gold_standard):
     return result
 
 
-def get_common_articles(temperatures, runs):
+def bootstrap_alpha_ci(sentence_data, runs, level='move', n_bootstrap=1000, seed=42):
     """
-    Identify articles that were successfully parsed in ALL runs for each temperature.
+    Calculate bootstrap 95% CI for Krippendorff's alpha.
+
+    Resamples sentences with replacement, recalculates alpha each time.
+    This provides a measure of stability and precision for the alpha estimate,
+    enabling significance testing via CI overlap comparison.
+
+    Args:
+        sentence_data: dict with 'move_preds' or 'step_preds' for all sentences
+                      Format: {(article_id, sent_num): {'move_preds': [...], 'step_preds': [...]}}
+        runs: list of run numbers (dynamically sized)
+        level: 'move', 'step', or specific step label (e.g., '1a')
+        n_bootstrap: number of bootstrap samples (default: 1000)
+        seed: random seed for reproducibility (default: 42)
 
     Returns:
-        dict: {temperature: [list of article_ids present in all runs]}
+        (ci_lower, ci_upper) as floats, or (None, None) if calculation fails
     """
-    articles_by_temp = {}
+    # Set seed for reproducibility
+    np.random.seed(seed)
 
-    for temperature in temperatures:
-        articles_per_run = []
+    sentence_keys = list(sentence_data.keys())
 
-        for run_num in runs:
-            run_data = load_parsed_predictions(temperature, run_num)
-            if run_data is None:
-                articles_per_run.append(set())
-            else:
-                articles_per_run.append(set(run_data["articles"].keys()))
+    # Check if we have enough sentences for reliable bootstrap
+    if len(sentence_keys) < 10:
+        return None, None
 
-        # Find intersection: articles present in ALL runs
-        if articles_per_run:
-            common_articles = (
-                set.intersection(*articles_per_run) if articles_per_run else set()
-            )
-            articles_by_temp[temperature] = sorted(list(common_articles))
+    bootstrap_alphas = []
+
+    for bootstrap_iter in range(n_bootstrap):
+        # Resample sentences WITH replacement
+        # Use indices to sample, then map back to keys
+        indices = np.random.choice(len(sentence_keys), size=len(sentence_keys), replace=True)
+        resampled_keys = [sentence_keys[i] for i in indices]
+
+        # Build matrix from resampled sentences
+        if level == 'move':
+            label_to_num = {"1": 1, "2": 2, "3": 3}
+            matrix = []
+            for run_idx in range(len(runs)):
+                row = []
+                for key in resampled_keys:
+                    pred = sentence_data[key]['move_preds'][run_idx]
+                    if pred is None:
+                        row.append(np.nan)
+                    else:
+                        row.append(label_to_num.get(pred, np.nan))
+                matrix.append(row)
+
+        elif level == 'step':
+            # Overall step level - get all unique steps
+            all_steps = set()
+            for key in resampled_keys:
+                for pred in sentence_data[key]['step_preds']:
+                    if pred is not None:
+                        all_steps.add(pred)
+
+            if len(all_steps) == 0:
+                continue
+
+            label_to_num = {step: i + 1 for i, step in enumerate(sorted(all_steps))}
+            matrix = []
+            for run_idx in range(len(runs)):
+                row = []
+                for key in resampled_keys:
+                    pred = sentence_data[key]['step_preds'][run_idx]
+                    if pred is None:
+                        row.append(np.nan)
+                    else:
+                        row.append(label_to_num.get(pred, np.nan))
+                matrix.append(row)
+
         else:
-            articles_by_temp[temperature] = []
+            # Per-step level - only use sentences that match the gold step
+            filtered_keys = [k for k in resampled_keys if sentence_data[k]['gold_step'] == level]
 
-    return articles_by_temp
+            if len(filtered_keys) == 0:
+                continue
+
+            # Get all unique predicted steps for this gold step
+            all_predicted_steps = set()
+            for key in filtered_keys:
+                for pred in sentence_data[key]['step_preds']:
+                    if pred is not None:
+                        all_predicted_steps.add(pred)
+
+            if len(all_predicted_steps) == 0:
+                continue
+
+            label_to_num = {step: i + 1 for i, step in enumerate(sorted(all_predicted_steps))}
+            matrix = []
+            for run_idx in range(len(runs)):
+                row = []
+                for key in filtered_keys:
+                    pred = sentence_data[key]['step_preds'][run_idx]
+                    if pred is None:
+                        row.append(np.nan)
+                    else:
+                        row.append(label_to_num.get(pred, np.nan))
+                matrix.append(row)
+
+        matrix = np.array(matrix)
+
+        # Skip if matrix is too sparse or uniform
+        non_nan_count = np.sum(~np.isnan(matrix))
+        if non_nan_count < 10:
+            continue
+
+        # Calculate alpha for this bootstrap sample
+        try:
+            alpha = krippendorff.alpha(
+                reliability_data=matrix,
+                level_of_measurement='nominal'
+            )
+            if alpha is not None and not np.isnan(alpha):
+                bootstrap_alphas.append(alpha)
+        except:
+            continue
+
+    # Need sufficient successful bootstrap samples (at least 95% success rate)
+    if len(bootstrap_alphas) < int(0.95 * n_bootstrap):
+        return None, None
+
+    # Calculate 95% CI (2.5th and 97.5th percentiles)
+    ci_lower = float(np.percentile(bootstrap_alphas, 2.5))
+    ci_upper = float(np.percentile(bootstrap_alphas, 97.5))
+
+    return ci_lower, ci_upper
 
 
-def calculate_krippendorff_alpha(temperature, runs, gold_standard, common_articles):
+def calculate_krippendorff_alpha(temperature, runs, gold_standard):
     """
-    Calculate Krippendorff's alpha for one temperature using only articles
-    present in all runs.
+    Calculate Krippendorff's alpha using ALL available observations.
 
-    Now calculates:
-    - Overall move-level alpha
-    - Overall step-level alpha
-    - Per-step alpha (separate alpha for each of 11 steps)
+    Key change: Instead of requiring all runs to have the same articles,
+    we use NaN for missing observations (failed parses). This maximizes
+    data usage and is scientifically appropriate.
 
     Returns:
         {
             'temperature': 0.0,
             'move_level': {
                 'alpha': 0.XX,
+                'ci_lower': 0.XX,  # NEW: bootstrap 95% CI lower bound
+                'ci_upper': 0.XX,  # NEW: bootstrap 95% CI upper bound
                 'n_sentences': 1038,
-                'n_runs': 50,
-                'n_articles': 40
+                'n_observations': 20760,  # total non-NaN values
+                'n_runs': 50  # dynamically sized
             },
-            'step_level': {
-                'alpha': 0.XX,
-                'n_sentences': 1038,
-                'n_runs': 50,
-                'n_articles': 40
-            },
-            'per_step': {
-                '1a': {'alpha': 0.XX, 'n_sentences': 82},
-                '1b': {'alpha': 0.XX, 'n_sentences': 197},
-                ...
-            }
+            'step_level': {...},
+            'per_step': {...}
         }
     """
-    if len(common_articles) == 0:
-        return {
-            "temperature": temperature,
-            "move_level": {
-                "alpha": None,
-                "n_sentences": 0,
-                "n_runs": 0,
-                "n_articles": 0,
-            },
-            "step_level": {
-                "alpha": None,
-                "n_sentences": 0,
-                "n_runs": 0,
-                "n_articles": 0,
-            },
-            "per_step": {},
-        }
 
-    # Collect predictions at both move and step level
-    move_predictions = []
-    step_predictions = []
+    # STEP 1: Collect all predictions organized by sentence
+    # Structure: {(article_id, sent_num): {'gold_move': '1', 'gold_step': '1a',
+    #                                       'move_preds': [None, '1', '2', ...],
+    #                                       'step_preds': [None, '1a', '1b', ...]}}
+    sentence_data = {}
 
-    # For per-step alpha: collect predictions organized by step
-    # Structure: {step: [[run1_preds], [run2_preds], ...]}
-    step_predictions_by_step = defaultdict(lambda: [[] for _ in runs])
+    # First pass: initialize all sentences from gold standard
+    for article_id in sorted(gold_standard.keys()):
+        gold_sentences = gold_standard[article_id]["sentences"]
+        for gold_sent in gold_sentences:
+            sent_num = gold_sent["sentence_num"]
+            key = (article_id, sent_num)
+            sentence_data[key] = {
+                'gold_move': gold_sent["move"],
+                'gold_step': gold_sent["step"],
+                'move_preds': [None] * len(runs),
+                'step_preds': [None] * len(runs)
+            }
 
+    # Second pass: fill in predictions from each run
     for run_idx, run_num in enumerate(runs):
         run_data = load_parsed_predictions(temperature, run_num)
         if run_data is None:
             continue
 
-        run_moves = []
-        run_steps = []
-
-        # Process only common articles in sorted order
-        for article_id in sorted(common_articles):
-            if (
-                article_id not in run_data["articles"]
-                or article_id not in gold_standard
-            ):
+        for article_id in run_data["articles"]:
+            if article_id not in gold_standard:
                 continue
 
-            gold_sentences = gold_standard[article_id]["sentences"]
-            predictions = run_data["articles"][article_id]["predictions"]
+            pred_sentences = run_data["articles"][article_id]["predictions"]
 
-            for gold_sent, pred_sent in zip(gold_sentences, predictions):
-                pred_move = pred_sent["predicted_move"]
-                pred_step = pred_sent["predicted_step"]
-                gold_step = gold_sent["step"]
+            for pred_sent in pred_sentences:
+                sent_num = pred_sent["sentence_num"]
+                key = (article_id, sent_num)
 
-                run_moves.append(pred_move)
-                run_steps.append(pred_step)
+                if key in sentence_data:
+                    sentence_data[key]['move_preds'][run_idx] = pred_sent["predicted_move"]
+                    sentence_data[key]['step_preds'][run_idx] = pred_sent["predicted_step"]
 
-                # Collect for per-step alpha calculation
-                # Key insight: group by GOLD step to measure consistency within each category
-                step_predictions_by_step[gold_step][run_idx].append(pred_step)
-
-        move_predictions.append(run_moves)
-        step_predictions.append(run_steps)
-
-    # Calculate alpha for moves
+    # STEP 2: Calculate move-level alpha
     move_alpha = None
-    if len(move_predictions) >= 2 and len(move_predictions[0]) > 0:
+    move_ci_lower = None
+    move_ci_upper = None
+    n_move_observations = 0
+
+    if len(sentence_data) > 0:
+        # Create matrix: rows = runs (raters), cols = sentences (items)
         label_to_num = {"1": 1, "2": 2, "3": 3}
-        move_matrix = np.array(
-            [[label_to_num.get(m, 0) for m in run] for run in move_predictions]
-        )
+        move_matrix = []
+
+        for run_idx in range(len(runs)):
+            row = []
+            for key in sorted(sentence_data.keys()):
+                pred = sentence_data[key]['move_preds'][run_idx]
+                if pred is None:
+                    row.append(np.nan)
+                else:
+                    row.append(label_to_num.get(pred, np.nan))
+            move_matrix.append(row)
+
+        move_matrix = np.array(move_matrix)
+        n_move_observations = int(np.sum(~np.isnan(move_matrix)))
+
         try:
             move_alpha = krippendorff.alpha(
-                reliability_data=move_matrix, level_of_measurement="nominal"
+                reliability_data=move_matrix,
+                level_of_measurement='nominal'
             )
-        except:
+        except Exception as e:
+            print(f"  ⚠ Move alpha calculation failed: {e}")
             move_alpha = None
 
-    # Calculate alpha for steps (overall)
+        # Calculate bootstrap 95% confidence intervals
+        if move_alpha is not None and not np.isnan(move_alpha):
+            move_ci_lower, move_ci_upper = bootstrap_alpha_ci(
+                sentence_data, runs, level='move', n_bootstrap=1000
+            )
+
+    # STEP 3: Calculate step-level alpha (overall)
     step_alpha = None
-    if len(step_predictions) >= 2 and len(step_predictions[0]) > 0:
+    step_ci_lower = None
+    step_ci_upper = None
+    n_step_observations = 0
+
+    if len(sentence_data) > 0:
+        # Get all unique steps
         all_steps = set()
-        for run in step_predictions:
-            all_steps.update(run)
+        for data in sentence_data.values():
+            for pred in data['step_preds']:
+                if pred is not None:
+                    all_steps.add(pred)
+
         step_to_num = {step: i + 1 for i, step in enumerate(sorted(all_steps))}
-        step_matrix = np.array(
-            [[step_to_num.get(s, 0) for s in run] for run in step_predictions]
-        )
+
+        # Create matrix
+        step_matrix = []
+        for run_idx in range(len(runs)):
+            row = []
+            for key in sorted(sentence_data.keys()):
+                pred = sentence_data[key]['step_preds'][run_idx]
+                if pred is None:
+                    row.append(np.nan)
+                else:
+                    row.append(step_to_num.get(pred, np.nan))
+            step_matrix.append(row)
+
+        step_matrix = np.array(step_matrix)
+        n_step_observations = int(np.sum(~np.isnan(step_matrix)))
+
         try:
             step_alpha = krippendorff.alpha(
-                reliability_data=step_matrix, level_of_measurement="nominal"
+                reliability_data=step_matrix,
+                level_of_measurement='nominal'
             )
-        except:
+        except Exception as e:
+            print(f"  ⚠ Step alpha calculation failed: {e}")
             step_alpha = None
 
-    # Calculate per-step alphas
-    per_step_alphas = {}
-    for step, runs_predictions in step_predictions_by_step.items():
-        # Filter out empty runs
-        runs_predictions = [run for run in runs_predictions if len(run) > 0]
-
-        if len(runs_predictions) >= 2 and len(runs_predictions[0]) > 0:
-            # Get all unique step labels that appear in predictions for this gold step
-            all_labels = set()
-            for run in runs_predictions:
-                all_labels.update(run)
-            label_to_num = {label: i + 1 for i, label in enumerate(sorted(all_labels))}
-
-            # Create reliability matrix: rows = runs, cols = sentences with this gold step
-            step_matrix = np.array(
-                [[label_to_num.get(s, 0) for s in run] for run in runs_predictions]
+        # Calculate bootstrap 95% confidence intervals
+        if step_alpha is not None and not np.isnan(step_alpha):
+            step_ci_lower, step_ci_upper = bootstrap_alpha_ci(
+                sentence_data, runs, level='step', n_bootstrap=1000
             )
 
-            try:
-                alpha = krippendorff.alpha(
-                    reliability_data=step_matrix, level_of_measurement="nominal"
-                )
-                per_step_alphas[step] = {
-                    "alpha": (
-                        float(alpha)
-                        if alpha is not None and not np.isnan(alpha)
-                        else None
-                    ),
-                    "n_sentences": len(runs_predictions[0]),
-                }
-            except:
-                per_step_alphas[step] = {
-                    "alpha": None,
-                    "n_sentences": len(runs_predictions[0]) if runs_predictions else 0,
-                }
-        else:
-            per_step_alphas[step] = {
-                "alpha": None,
-                "n_sentences": len(runs_predictions[0]) if runs_predictions else 0,
-            }
+    # STEP 4: Calculate per-step alpha
+    # Group sentences by their gold step
+    sentences_by_gold_step = defaultdict(list)
+    for key, data in sentence_data.items():
+        sentences_by_gold_step[data['gold_step']].append(key)
 
-    n_sentences = len(move_predictions[0]) if move_predictions else 0
+    per_step_alphas = {}
+
+    for gold_step, sentence_keys in sentences_by_gold_step.items():
+        if len(sentence_keys) == 0:
+            continue
+
+        # Get all unique predicted steps for sentences with this gold step
+        all_predicted_steps = set()
+        for key in sentence_keys:
+            for pred in sentence_data[key]['step_preds']:
+                if pred is not None:
+                    all_predicted_steps.add(pred)
+
+        if len(all_predicted_steps) == 0:
+            per_step_alphas[gold_step] = {
+                "alpha": None,
+                "ci_lower": None,
+                "ci_upper": None,
+                "n_sentences": len(sentence_keys),
+                "n_observations": 0
+            }
+            continue
+
+        label_to_num = {step: i + 1 for i, step in enumerate(sorted(all_predicted_steps))}
+
+        # Create matrix for this gold step
+        step_matrix = []
+        for run_idx in range(len(runs)):
+            row = []
+            for key in sorted(sentence_keys):
+                pred = sentence_data[key]['step_preds'][run_idx]
+                if pred is None:
+                    row.append(np.nan)
+                else:
+                    row.append(label_to_num.get(pred, np.nan))
+            step_matrix.append(row)
+
+        step_matrix = np.array(step_matrix)
+        n_obs = int(np.sum(~np.isnan(step_matrix)))
+
+        try:
+            alpha = krippendorff.alpha(
+                reliability_data=step_matrix,
+                level_of_measurement='nominal'
+            )
+
+            # Calculate bootstrap CIs for per-step alpha
+            ci_lower = None
+            ci_upper = None
+            if alpha is not None and not np.isnan(alpha):
+                ci_lower, ci_upper = bootstrap_alpha_ci(
+                    sentence_data, runs, level=gold_step, n_bootstrap=1000
+                )
+
+            per_step_alphas[gold_step] = {
+                "alpha": float(alpha) if alpha is not None and not np.isnan(alpha) else None,
+                "ci_lower": ci_lower,
+                "ci_upper": ci_upper,
+                "n_sentences": len(sentence_keys),
+                "n_observations": n_obs
+            }
+        except Exception as e:
+            per_step_alphas[gold_step] = {
+                "alpha": None,
+                "ci_lower": None,
+                "ci_upper": None,
+                "n_sentences": len(sentence_keys),
+                "n_observations": n_obs
+            }
 
     return {
         "temperature": temperature,
@@ -443,9 +600,11 @@ def calculate_krippendorff_alpha(temperature, runs, gold_standard, common_articl
                 if move_alpha is not None and not np.isnan(move_alpha)
                 else None
             ),
-            "n_sentences": n_sentences,
-            "n_runs": len(move_predictions),
-            "n_articles": len(common_articles),
+            "ci_lower": move_ci_lower,
+            "ci_upper": move_ci_upper,
+            "n_sentences": len(sentence_data),
+            "n_observations": n_move_observations,
+            "n_runs": len(runs),
         },
         "step_level": {
             "alpha": (
@@ -453,9 +612,11 @@ def calculate_krippendorff_alpha(temperature, runs, gold_standard, common_articl
                 if step_alpha is not None and not np.isnan(step_alpha)
                 else None
             ),
-            "n_sentences": n_sentences,
-            "n_runs": len(step_predictions),
-            "n_articles": len(common_articles),
+            "ci_lower": step_ci_lower,
+            "ci_upper": step_ci_upper,
+            "n_sentences": len(sentence_data),
+            "n_observations": n_step_observations,
+            "n_runs": len(runs),
         },
         "per_step": per_step_alphas,
     }
@@ -671,6 +832,9 @@ def generate_table4(alpha_results, temperatures):
     Includes:
     - Move-Level row (overall move consistency)
     - Step-Level rows (all 11 steps with their individual alphas)
+
+    Format: α [CI_lower, CI_upper]
+    Example: 0.949 [0.945, 0.953]
     """
     step_descriptions = {
         "1a": "Claim centrality",
@@ -701,8 +865,14 @@ def generate_table4(alpha_results, temperatures):
         if temp_key in alpha_results:
             result = alpha_results[temp_key]
             alpha = result["move_level"]["alpha"]
+            ci_lower = result["move_level"].get("ci_lower")
+            ci_upper = result["move_level"].get("ci_upper")
+
             if alpha is not None:
-                move_row[f"T={temp:.1f}"] = f"{alpha:.3f}"
+                if ci_lower is not None and ci_upper is not None:
+                    move_row[f"T={temp:.1f}"] = f"{alpha:.3f} [{ci_lower:.3f}, {ci_upper:.3f}]"
+                else:
+                    move_row[f"T={temp:.1f}"] = f"{alpha:.3f}"
             else:
                 move_row[f"T={temp:.1f}"] = "N/A"
         else:
@@ -732,15 +902,21 @@ def generate_table4(alpha_results, temperatures):
         if n_sentences is not None:
             step_row["n"] = str(n_sentences)
 
-        # Fill alpha values across temperatures
+        # Fill alpha values and CIs across temperatures
         for temp in temperatures:
             temp_key = f"{temp:.1f}"
             if temp_key in alpha_results:
                 result = alpha_results[temp_key]
                 if "per_step" in result and step in result["per_step"]:
                     alpha = result["per_step"][step]["alpha"]
+                    ci_lower = result["per_step"][step].get("ci_lower")
+                    ci_upper = result["per_step"][step].get("ci_upper")
+
                     if alpha is not None:
-                        step_row[f"T={temp:.1f}"] = f"{alpha:.3f}"
+                        if ci_lower is not None and ci_upper is not None:
+                            step_row[f"T={temp:.1f}"] = f"{alpha:.3f} [{ci_lower:.3f}, {ci_upper:.3f}]"
+                        else:
+                            step_row[f"T={temp:.1f}"] = f"{alpha:.3f}"
                     else:
                         step_row[f"T={temp:.1f}"] = "N/A"
                 else:
@@ -782,8 +958,11 @@ def generate_tableX(temperatures, runs):
 
 def main():
     print("=" * 60)
-    print("METRICS CALCULATION")
+    print("METRICS CALCULATION (FIXED VERSION)")
     print("=" * 60)
+    print()
+    print("Key improvement: Handles missing data at sentence-iteration level")
+    print("instead of excluding entire articles.")
     print()
 
     # Load configuration
@@ -830,22 +1009,19 @@ def main():
 
     # Calculate Krippendorff's alpha
     print("Calculating Krippendorff's alpha...")
-    common_articles_by_temp = get_common_articles(temperatures, runs)
+    print("(Using all available observations, NaN for missing data)")
 
     alpha_results = {}
     for temperature in temperatures:
-        common_articles = common_articles_by_temp[temperature]
-        print(
-            f"  temp_{temperature:.1f}: {len(common_articles)}/{total_articles} articles in all runs",
-            end="",
-        )
-
-        result = calculate_krippendorff_alpha(
-            temperature, runs, gold_standard, common_articles
-        )
+        result = calculate_krippendorff_alpha(temperature, runs, gold_standard)
         alpha_results[f"{temperature:.1f}"] = result
 
         alpha = result["move_level"]["alpha"]
+        n_obs = result["move_level"]["n_observations"]
+        n_sent = result["move_level"]["n_sentences"]
+        n_possible = n_sent * len(runs)
+
+        print(f"  temp_{temperature:.1f}: {n_obs}/{n_possible} observations", end="")
         if alpha is not None:
             print(f" → move α={alpha:.3f}")
         else:
