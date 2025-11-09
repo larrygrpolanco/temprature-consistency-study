@@ -1,17 +1,15 @@
 """
 05_generate_figures.py
 
-Purpose: Generate publication-ready figures and tables from metrics.
+Purpose: Generate publication-ready figures from metrics.
 
 Inputs:
     - results/metrics/*.json
 
 Outputs:
     - results/figures/figure_1_accuracy_consistency.png
-    - results/figures/figure_2_step_level.png
+    - results/figures/figure_2_step_level.png (OPTIONAL - consider removing)
     - results/figures/figure_3_sentence_consistency.png
-    - results/figures/table_2_accuracy.csv
-    - results/figures/table_4_consistency.csv
 """
 
 import json
@@ -51,7 +49,7 @@ def load_metrics():
 
 def create_accuracy_consistency_plot(metrics, output_path):
     """
-    Two-panel figure (Figure 1) - Option A:
+    Two-panel figure (Figure 1):
     Panel A: Move-level accuracy and move-level alpha
     Panel B: Step-level accuracy and step-level alpha
     Both panels have dual y-axes (left: accuracy, right: alpha)
@@ -67,13 +65,13 @@ def create_accuracy_consistency_plot(metrics, output_path):
     for temp in temperatures:
         temp_key = f"{temp:.1f}"
 
-        # Accuracy
-        if metrics["accuracy"][temp_key]["move_level"]:
+        # Accuracy - FIXED: Updated to match script 04 structure
+        if metrics["accuracy"][temp_key]["move_level"]["accuracy"]:
             move_accuracies.append(
-                metrics["accuracy"][temp_key]["move_level"]["mean_accuracy"]
+                metrics["accuracy"][temp_key]["move_level"]["accuracy"]["mean"]
             )
             step_accuracies.append(
-                metrics["accuracy"][temp_key]["step_level"]["mean_accuracy"]
+                metrics["accuracy"][temp_key]["step_level"]["accuracy"]["mean"]
             )
         else:
             move_accuracies.append(None)
@@ -185,56 +183,67 @@ def create_accuracy_consistency_plot(metrics, output_path):
 
 def create_step_level_plot(metrics, output_path):
     """
-    Step-level accuracy and consistency across temperatures.
-    Panel showing all 11 steps (rare steps in lighter color).
+    Step-level accuracy across temperatures.
+    Only shows steps with n≥50 (7 steps) to avoid cluttering with rare steps.
     """
     temperatures = sorted([float(t) for t in metrics["accuracy"].keys()])
 
-    # Collect step-level data
-    steps = ["1a", "1b", "1c", "2a", "2b", "2c", "2d", "3a", "3b", "3c", "3d"]
-    rare_steps = ["2d", "3c", "3d"]  # Rare steps according to spec
+    # Only include steps with n≥50 in the corpus
+    # Excluded: 2a (27), 2c (24), 2d (11), 3d (1)
+    steps_to_plot = ["1a", "1b", "1c", "2b", "3a", "3b", "3c"]
 
-    step_data = {step: [] for step in steps}
+    step_labels = {
+        "1a": "1a - Claim centrality",
+        "1b": "1b - Topic generalizations",
+        "1c": "1c - Review research",
+        "2b": "2b - Indicate gap",
+        "3a": "3a - Outline purposes",
+        "3b": "3b - Announce research",
+        "3c": "3c - Announce findings",
+    }
+
+    step_data = {step: [] for step in steps_to_plot}
 
     for temp in temperatures:
         temp_key = f"{temp:.1f}"
         per_step = metrics["accuracy"][temp_key].get("per_step", {})
 
-        for step in steps:
+        for step in steps_to_plot:
             if step in per_step and per_step[step]:
-                step_data[step].append(per_step[step]["mean_accuracy"])
+                step_data[step].append(per_step[step]["mean"])
             else:
                 step_data[step].append(None)
 
     # Create figure
-    fig, ax = plt.subplots(figsize=(12, 8))
+    fig, ax = plt.subplots(figsize=(12, 7))
 
-    for step in steps:
+    # Use distinct colors and markers for each step
+    colors = plt.cm.tab10(np.linspace(0, 0.7, len(steps_to_plot)))
+    markers = ["o", "s", "^", "D", "v", "p", "*"]
+
+    for i, step in enumerate(steps_to_plot):
         if all(v is None for v in step_data[step]):
             continue
-
-        color = "lightgray" if step in rare_steps else None
-        linestyle = "--" if step in rare_steps else "-"
-        alpha = 0.5 if step in rare_steps else 1.0
 
         ax.plot(
             temperatures,
             step_data[step],
-            marker="o",
-            linestyle=linestyle,
-            label=step,
-            alpha=alpha,
+            marker=markers[i],
+            linestyle="-",
+            label=step_labels[step],
+            color=colors[i],
             linewidth=2,
+            markersize=7,
         )
 
     ax.set_xlabel("Temperature", fontsize=12)
     ax.set_ylabel("Step-level Accuracy", fontsize=12)
     ax.set_title(
-        "Step-Level Accuracy Across Temperature Settings",
+        "Step-Level Accuracy Across Temperature Settings (n≥50)",
         fontsize=14,
         fontweight="bold",
     )
-    ax.legend(ncol=2, fontsize=9, loc="best")
+    ax.legend(ncol=1, fontsize=9, loc="best", framealpha=0.9)
     ax.grid(True, alpha=0.3)
     ax.set_ylim([0, 1])
 
@@ -243,69 +252,13 @@ def create_step_level_plot(metrics, output_path):
     plt.close()
 
 
-def create_accuracy_table(metrics, output_path):
-    """
-    Generate Table 2: Move-Level Accuracy Across Temperature Settings
-
-    Columns: Temperature | Mean Acc (%) | 95% CI | Std Dev
-    """
-    temperatures = sorted([float(t) for t in metrics["accuracy"].keys()])
-
-    rows = []
-    for temp in temperatures:
-        temp_key = f"{temp:.1f}"
-        move_data = metrics["accuracy"][temp_key]["move_level"]
-
-        if move_data:
-            rows.append(
-                {
-                    "Temperature": temp,
-                    "Mean Accuracy (%)": f"{move_data['mean_accuracy'] * 100:.2f}",
-                    "95% CI Lower": f"{move_data['ci_95'][0] * 100:.2f}",
-                    "95% CI Upper": f"{move_data['ci_95'][1] * 100:.2f}",
-                    "Std Dev": f"{move_data['std']:.4f}",
-                    "N Runs": move_data["n_runs"],
-                }
-            )
-
-    df = pd.DataFrame(rows)
-    df.to_csv(output_path, index=False)
-
-
-def create_consistency_table(metrics, output_path):
-    """
-    Generate Table 4: Consistency Across Temperature Settings
-
-    Columns: Temperature | Move α | Step α | N Sentences | N Runs
-    """
-    temperatures = sorted([float(t) for t in metrics["alpha"].keys()])
-
-    rows = []
-    for temp in temperatures:
-        temp_key = f"{temp:.1f}"
-        alpha_data = metrics["alpha"][temp_key]
-
-        move_alpha = alpha_data["move_level"]["alpha"]
-        step_alpha = alpha_data["step_level"]["alpha"]
-
-        rows.append(
-            {
-                "Temperature": temp,
-                "Move α": f"{move_alpha:.4f}" if move_alpha is not None else "N/A",
-                "Step α": f"{step_alpha:.4f}" if step_alpha is not None else "N/A",
-                "N Sentences": alpha_data["move_level"]["n_sentences"],
-                "N Runs": alpha_data["move_level"]["n_runs"],
-            }
-        )
-
-    df = pd.DataFrame(rows)
-    df.to_csv(output_path, index=False)
-
-
 def create_sentence_consistency_distribution(metrics, output_path):
     """
     Create a stacked bar chart showing distribution of sentence consistency
     across temperature settings.
+
+    This visualizes Table 5 data showing what % of sentences fall into each
+    consistency category (high/moderate/low/inconsistent).
     """
     temperatures = sorted([float(t) for t in metrics["sentence_level"].keys()])
 
@@ -379,39 +332,30 @@ def main():
     # Generate figures
     print("Generating figures...")
 
-    # Figure 1: Accuracy and Consistency
+    # Figure 1: Accuracy and Consistency (ESSENTIAL - your main RQ3 figure)
     fig1_path = figures_dir / "figure_1_accuracy_consistency.png"
     create_accuracy_consistency_plot(metrics, fig1_path)
     print(f"✓ figure_1_accuracy_consistency.png")
 
-    # Figure 2: Step-level analysis
+    # Figure 2: Step-level analysis (OPTIONAL - may be too cluttered)
     fig2_path = figures_dir / "figure_2_step_level.png"
     create_step_level_plot(metrics, fig2_path)
-    print(f"✓ figure_2_step_level.png")
+    print(
+        f"✓ figure_2_step_level.png (consider removing - may be redundant with Table 3)"
+    )
 
-    # Figure 3: Sentence consistency distribution
+    # Figure 3: Sentence consistency distribution (USEFUL)
     fig3_path = figures_dir / "figure_3_sentence_consistency.png"
     create_sentence_consistency_distribution(metrics, fig3_path)
     print(f"✓ figure_3_sentence_consistency.png")
     print()
 
-    # Generate tables
-    print("Generating tables...")
-
-    # Table 2: Accuracy
-    table2_path = figures_dir / "table_2_accuracy.csv"
-    create_accuracy_table(metrics, table2_path)
-    print(f"✓ table_2_accuracy.csv")
-
-    # Table 4: Consistency
-    table4_path = figures_dir / "table_4_consistency.csv"
-    create_consistency_table(metrics, table4_path)
-    print(f"✓ table_4_consistency.csv")
-    print()
-
     print("=" * 60)
     print("COMPLETE ✓")
     print("All outputs saved to results/figures/")
+    print()
+    print("NOTE: Tables are generated by 04_calculate_metrics.py")
+    print("      Location: results/tables/")
     print("=" * 60)
 
 
