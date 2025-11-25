@@ -1,0 +1,26 @@
+[1a] Isoprene pyrophosphates are metabolites in the mevalonate pathway which is an essential metabolic pathway found in eukaryotes, archaea, and some prokaryotes [1] and is responsible for the multistep conversion of acetyl-CoA into isopentenyl pyrophosphate (IPPP) and its isomer dimethylallyl pyrophosphate (DMAPP).  
+[1b] IPPP and DMAPP are used as building blocks in the biosynthesis of all mammalian isoprenoids.  
+[1b] In addition, IPPP and DMAPP are used to produce a diverse array of essential nonsterol and sterol biomolecules.  
+[1b] An example is cholesterol which is crucial for maintaining cell membrane integrity and used for production of steroid hormones and bile acids.  
+[1b] Other products derived from isoprene PPs are lipoproteins, vitamin K, heme A, the mitochondrial electron carrier ubiquinone, dolichol, and isopentenyladenine used in tRNA modification [1, 2].  
+[1a] Consequently, the isoprene PPs produced by the mevalonate pathway are crucial for a plethora of important biological processes.  
+[1b] Figure 1 shows the structures of the physiologically relevant isoprene pyrophosphates (isoprene PPs) in animals.  
+[1b] Moreover, approximately 2% of all mammalian proteins undergo post-translational isoprenylation [3].  
+[1b] This process involves the covalent attachment of hydrophobic C-15 isoprene farnesyl or the C-20 isoprene geranylgeranyl group to cysteine residues in the C-terminal end of various proteins.  
+[1c] Proteins that are farnesylated include the small GTP-binding proteins (GTPases) exemplified by the Ras superfamily, whereas other small GTPases such as Rab and Rho GTPases are geranylgeranylated [4].  
+[1b] Prenylation of these proteins enables their attachment to cellular membranes, a prerequisite for these proteins to exert their specific functions in biological processes such as cell survival, cell signaling, and proliferation [5].  
+[1a] The dysregulation of isoprenoid biosynthesis has been implicated in several biochemical disorders, underscoring the crucial role of appropriate isoprenoid levels in maintaining proper cellular function [6–8].  
+[1c] Additionally, statins, commonly employed to reduce cholesterol levels, exhibit effects beyond cholesterol regulation likely mediated by changes in isoprene metabolite levels [9].  
+[1b] These statin-induced alterations impact fundamental processes such as cell cycle regulation, cell migration, cell proliferation and cell survival [7, 10].  
+[1a] Given the significance of isoprenoid metabolites, their levels are presumably tightly controlled.  
+[1c] Mevalonate kinase (MK), the second enzyme in the isoprene biosynthesis pathway, is subject to feedback inhibition by intermediates of the isoprenoid pathway - geranyl pyrophosphate (GPP), farnesyl pyrophosphate (FPP) and geranylgeranyl pyrophosphate (GGPP) [11].  
+[1b] Furthermore, HMG-CoA reductase, which catalyzes the rate-limiting step in sterol and isoprenoid biosynthesis, is regulated through a feedback loop to maintain cholesterol levels within appropriate ranges while nonsterol isoprenoids are still being produced.  
+[1b] Sterol molecules and geranylgeraniol (GGOH) participate in this feedback loop by promoting the proteasomal breakdown of the HMG-CoA reductase enzyme [12].  
+[1c] In addition, geraniol (GOH) and farnesol (FOH) have been demonstrated to have inhibitory effects on HMG-CoA reductase activity [13–16].  
+[2b] How these isoprenoid alcohols are produced in human cells remains unclear, however, a membrane bound polyisoprenoid diphosphate phosphatase (PDP1) has been suggested to be involved in this process [17, 18].  
+[2b] However, no cytosolic phosphatases capable of catalyzing the hydrolysis of isoprene pyrophosphates have been identified to date.  
+[1c] Building upon the finding that the NUDIX enzyme NUDTX1 in the plants Arabidopsis thaliana and rose (Rosa hybrid cultivar) can convert GPP to Geranyl monophosphate (GP) [19, 20], we hypothesized that enzymes within the human NUDIX enzyme family might possess the capability to hydrolyze isoprene pyrophosphates in the cell.  
+[3a] To investigate this, we screened a panel of human NUDIX enzymes for activity with the isoprene pyrophosphates IPPP and DMAPP and found NUDT15 and NUDT18 to efficiently catalyze their hydrolysis.  
+[3b] Moreover, we identified additional isoprene PPs as substrates of NUDT15 and NUDT18 of which GPP was found to be hydrolyzed with the highest catalytic efficiency.  
+[3b] Notably, we showed that overexpression of NUDT15 and NUDT18 resulted in decreased cellular cholesterol content indicating that their activity with isoprene PPs plays a role in a cellular context.  
+[3c] In summary, our findings unveil previously unknown hydrolysis activities of NUDT18 and NUDT15 with endogenous isoprene pyrophosphate substrates, suggesting a novel role for these enzymes in isoprene PP metabolism.

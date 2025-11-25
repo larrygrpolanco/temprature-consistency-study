@@ -1,0 +1,23 @@
+[1a] Depressive disorders, as one of the main stress-related neuropsychiatric disorders, are the leading cause of disability worldwide, affecting more than 320 million people (WHO, 2017) and imposing a substantial economic burden (Greenberg, 2015).
+[1b] These disorders are complex and symptomatically heterogeneous conditions whose treatment is still ineffective in several clinical subtypes, many of which are unknown (Blackburn, 2019).
+[1a] Understanding the neurobiology underlying these conditions is crucial for developing more effective therapeutic interventions.
+[1b] In this context, modeling depressive symptoms in animal models has been recognized as an essential approach (Nestler and Hyman, 2010).
+[1c] The majority of studies investigating depressive aspects in animal models focus on stress-induced models (Charney and Manji, 2004; Alfonso et al., 2005; Leigh, 2008).
+[1b] These models typically employ well-established experimental paradigms involving physical stressors (e.g., foot shocks) or psychosocial stressors (e.g., social defeat), followed by behavioral tests to assess alterations in depressive-related behaviors.
+[1b] Classical behavioral tests, such as the forced swim test and sucrose preference test, are commonly employed in animal models of depression due to their established predictive validity.
+[2a] However, this validity may not be related to the neurobiology of depression (Commons et al., 2017).
+[2c] In this regard, it is questioned whether some of these tests exclusively measure behaviors associated with depressive alterations (Molendijk and De Kloet, 2015).
+[2a] In the literature, even behavioral changes traditionally associated with a depressive-like profile due to stress are not consistent.
+[1c] Stepanichev et al. (2016) observed a decrease in sucrose consumption and preference, which was not correlated with immobility in the forced swim test.
+[1c] Additionally, Naudon and Jay (2015) identified distinct associations between immobility in the forced swim test and cognitive performance, as well as anxiety-related behaviors.
+[2a] In this sense, the punctual use of behavioral tests to distinguish the depressive phenotype seems to generate inconsistent results.
+[2b] In contrast, studying different behavioral categories associated with depressive-like behaviors is essential to understanding the underlying neural patterns (Marques et al., 2022) and gaining a better comprehension of the modeled phenomenon.
+[3a] For this purpose, a multivariate approach to behavioral assessment, using a set of behavioral tests, can be a valuable alternative.
+[1c] This methodology has shown promise in understanding the relations between behavioral domains in naive animals (Ramos et al., 1997; Feyissa et al., 2017) and in animal models of stress-related neuropsychiatric disorders (Kanari et al., 2005; Saénz et al., 2006), enriching the ethological assessment of the models, as well as their translational aspects.
+[2b] Despite this, there are still few studies that use this approach.
+[3a] This study aimed to understand the association between a wide range of behavioral measures and investigate how their covariations characterize the depressive-like phenotype within the population.
+[3a] Furthermore, we aimed to examine the predictive value of these behavioral measures in determining susceptibility or resilience to stress in rats exposed to acute inescapable footshocks (IS) compared to those exposed to no shocks (NS).
+[3c] We found that behavioral variables exhibit a correlation pattern that distinguishes variables related to susceptibility or resilience to stress.
+[3c] Furthermore, we identified a covariation pattern consisting of decreased time spent in the open arms of the elevated plus maze, reduced sucrose preference, and elevated escape failures, consistently distinguishing helpless from not helpless rats.
+[2b] Notably, the behavior observed in the forced swim test did not exhibit a significant correlation with these behavioral profiles.
+[3c] Additionally, we discerned distinct phenotypic clusters, including subpopulations entirely characterized by susceptibility or resilience to stress, thus indicating varying stress-coping strategies.

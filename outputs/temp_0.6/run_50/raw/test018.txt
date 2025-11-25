@@ -1,0 +1,39 @@
+[1a] Premature infants are born with underdeveloped lungs, which necessitates the use of supplemental oxygen to prevent mortality in these infants[1–6].  
+[1a] Supplemental oxygen prevents mortality but also leads to the development of retinal vascular abnormality-retinopathy of prematurity (ROP).  
+[1c] Supplemental oxygen (hyperoxia) downregulates angiogenesis in phase I and causes vaso-obliteration, a precursor to phase II[6].  
+[1a] Every year, ROP claims the eyesight of nearly 30,000-40,000 prematurely born infants[7].  
+[1c] Multiple biochemical pathways have been implicated in the ROP and mouse oxygen-induced retinopathy (OIR) model, including serine-one carbon, glutamine metabolism, amino acid metabolism, polyamine pathway, and fatty acid metabolism[6].  
+[1b] These metabolic changes in the oxygen-induced retinopathy model and the ROP indicate a biosynthetic deficit.  
+[1b] Proliferating endothelial cells have high biosynthetic demand to proliferate and migrate to develop new blood vessels.  
+[1c] Inhibition of endothelial cell (EC)-specific glutaminase (GLS) has been demonstrated to decrease proliferation and induce senescence in ECs[8, 9].  
+[1c] In addition, ablation of glutamine synthetase in Muller cells has been shown to cause EC proliferation defects[10].  
+[1b] This shows that glutamine production and utilization by the retina need to be balanced during angiogenesis.  
+[1c] Similarly, loss of serine transporter from the retina demonstrates aberrant angiogenesis in the retina[11].  
+[1c] In addition, polyamine pathway metabolites have also been shown to cause neovascular defects in the retinal and retinal cell types[12, 13].  
+[1b] These findings demonstrate that biosynthetic pathways are essential during angiogenesis.  
+[1b] Glycolysis and OXPHOS provide ATP necessary for cellular function; however, biosynthetic pathways like serine-one carbon, glutamine and polyamine pathways are necessary for the cells to divide.  
+[1b] At the cellular level, serine-one carbon metabolites are essential for glutathione production, NADPH synthesis, and Heme production pathways[2].  
+[1b] Serine-one carbon is the only source of methylation in the early developmental stages[14].  
+[1b] At the same time, glutamine is an essential nutrient for cellular proliferation[10].  
+[1b] Glutamine and downstream urea cycle metabolites arginine and ornithine also serve as precursors for polyamine pathway metabolites[15].  
+[1b] Glutamine is present in millimolar ranges, both in humans and mice, and because of its high abundance, it also serves as an alternative source of energy.  
+[1b] However, glutamine filling into TCA is bad for proliferating tissue as this lowers the amount available for biosynthetic reactions and produces ammonium, a toxic end product.  
+[1b] Carbon sources that can produce energy via the TCA cycle, other than glycolysis and glutaminolysis, are fatty acids and branched amino acids.  
+[1b] Newborns rely on fatty acids as their main energy source, as fats account for 40-50% of calories in the mother’s milk[16].  
+[1c] Free fatty acid also contributes to the majority of energy generation during fetal development[16].  
+[1b] During development, the fetus is supplied with free fatty acids from the maternal circulation.  
+[1c] Bitman et. al. have demonstrated that the fatty acid composition of the mother’s milk in premature and full-term infants differs in medium chain fatty acids (MCFAs)[17].  
+[1c] The highest amounts of MCFAs were observed in the mother’s milk of very preterm-born infants[16].  
+[1b] MCFAs are a very good energy source as they don’t need a carnitine-based transport to be oxidized, unlike required for long and very long chain fatty acids in many tissues, except for a few tissue types[18].  
+[1b] In addition, MCFAs are broken down by the action of lingual, milk, and gastric lipases and don’t need to rely on pancreatic lipase, which is low during the early stages of life[16].  
+[1b] This makes MCFAs a preferred energy source during the early stages of life.  
+[1b] The liver plays an important role in managing fatty acids in the body, both the production and the transport to different organs.  
+[1c] We have demonstrated that the liver-based HIF1α is important to produce serine-one carbon and remotely provide biosynthetic products to the retina[2].  
+[1c] In addition, signaling molecules like FGF21, a hepatokine, have been demonstrated to regulate physiological and pathological angiogenesis[19].  
+[1b] These findings demonstrate a system’s level of metabolic and biochemical signaling in retinal angiogenesis during the early stages of life.  
+[2b] Unlike genetic disorders, where the gene product of one or more pathways contributes to pathology, the ROP develops solely due to a change in oxygenation level in the environment to which the whole infant is exposed.  
+[2b] Although the whole body is exposed to hyperoxia, most of the studies are focused locally on the retina.  
+[3b] We used oxygen-induced retinopathy model to investigate systems-level liver-retina metabolic exchanges in response to hyperoxia.  
+[3b] This model recapitulates vaso-obliteration and neovascularization as seen in human disease ROP.  
+[1c] Ritter et al. have demonstrated that the BALB/cByJ strain is resistant to the OIR [20].  
+[3b] In this publication, we performed a multi-omics interorgan comparison of the OIR-resistant and OIR-susceptible strains of mice to find the genetic basis of protection.

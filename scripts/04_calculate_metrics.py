@@ -11,10 +11,11 @@ Outputs:
     - results/metrics/accuracy_by_temperature.json
     - results/metrics/krippendorff_alpha.json
     - results/metrics/sentence_level_analysis.json
-    - results/tables/table2_move_accuracy.csv
-    - results/tables/table3_step_accuracy.csv
-    - results/tables/table4_consistency.csv
-    - results/tables/tableX_parsing_success.csv
+    - results/tables/move_accuracy.csv
+    - results/tables/step_accuracy.csv
+    - results/tables/consistency.csv
+    - results/tables/move_consistency.csv
+    - results/tables/parsing_success.csv
 """
 
 import json
@@ -125,6 +126,14 @@ def calculate_accuracy_single_run(run_predictions, gold_standard):
         all_gold_steps, all_pred_steps, average="weighted", zero_division=0
     )
 
+    # Calculate macro F1 scores (equal weight per class)
+    move_f1_macro = f1_score(
+        all_gold_moves, all_pred_moves, average="macro", zero_division=0
+    )
+    step_f1_macro = f1_score(
+        all_gold_steps, all_pred_steps, average="macro", zero_division=0
+    )
+
     # Calculate per-class accuracy
     per_move_accuracy = {
         move: counts["correct"] / counts["total"] for move, counts in per_move.items()
@@ -137,8 +146,10 @@ def calculate_accuracy_single_run(run_predictions, gold_standard):
     return {
         "move_accuracy": move_accuracy,
         "move_f1": move_f1,
+        "move_f1_macro": move_f1_macro,
         "step_accuracy": step_accuracy,
         "step_f1": step_f1,
+        "step_f1_macro": step_f1_macro,
         "per_move_accuracy": per_move_accuracy,
         "per_step_accuracy": per_step_accuracy,
     }
@@ -162,8 +173,10 @@ def calculate_accuracy_by_temperature(temperature, runs, gold_standard):
     """
     move_accuracies = []
     move_f1s = []
+    move_f1s_macro = []
     step_accuracies = []
     step_f1s = []
+    step_f1s_macro = []
     per_move_accs = defaultdict(list)
     per_step_accs = defaultdict(list)
 
@@ -176,8 +189,10 @@ def calculate_accuracy_by_temperature(temperature, runs, gold_standard):
 
         move_accuracies.append(accuracy_result["move_accuracy"])
         move_f1s.append(accuracy_result["move_f1"])
+        move_f1s_macro.append(accuracy_result["move_f1_macro"])
         step_accuracies.append(accuracy_result["step_accuracy"])
         step_f1s.append(accuracy_result["step_f1"])
+        step_f1s_macro.append(accuracy_result["step_f1_macro"])
 
         for move, acc in accuracy_result["per_move_accuracy"].items():
             per_move_accs[move].append(acc)
@@ -218,10 +233,12 @@ def calculate_accuracy_by_temperature(temperature, runs, gold_standard):
         "move_level": {
             "accuracy": calc_stats(move_accuracies),
             "f1": calc_stats(move_f1s),
+            "f1_macro": calc_stats(move_f1s_macro),
         },
         "step_level": {
             "accuracy": calc_stats(step_accuracies),
             "f1": calc_stats(step_f1s),
+            "f1_macro": calc_stats(step_f1s_macro),
         },
     }
 
@@ -239,11 +256,11 @@ def calculate_accuracy_by_temperature(temperature, runs, gold_standard):
 
 def bootstrap_alpha_ci(sentence_data, runs, level='move', n_bootstrap=1000, seed=42):
     """
-    Calculate bootstrap 95% CI for Krippendorff's alpha.
+    Calculate bootstrap 95% CI for Krippendorff's alpha using CLUSTER bootstrapping.
 
-    Resamples sentences with replacement, recalculates alpha each time.
-    This provides a measure of stability and precision for the alpha estimate,
-    enabling significance testing via CI overlap comparison.
+    Resamples ARTICLES with replacement, then calculates alpha on all sentences
+    from the resampled articles. This correctly accounts for the non-independence
+    of sentences within the same article.
 
     Args:
         sentence_data: dict with 'move_preds' or 'step_preds' for all sentences
@@ -259,19 +276,34 @@ def bootstrap_alpha_ci(sentence_data, runs, level='move', n_bootstrap=1000, seed
     # Set seed for reproducibility
     np.random.seed(seed)
 
-    sentence_keys = list(sentence_data.keys())
+    # Create a mapping from article_id to its sentence keys
+    article_to_sentences = defaultdict(list)
+    for key in sentence_data.keys():
+        article_id, _ = key
+        article_to_sentences[article_id].append(key)
 
-    # Check if we have enough sentences for reliable bootstrap
-    if len(sentence_keys) < 10:
+    unique_article_ids = sorted(list(article_to_sentences.keys()))
+
+    # Check if we have enough articles for reliable bootstrap
+    if len(unique_article_ids) < 10:
         return None, None
 
     bootstrap_alphas = []
 
     for bootstrap_iter in range(n_bootstrap):
-        # Resample sentences WITH replacement
-        # Use indices to sample, then map back to keys
-        indices = np.random.choice(len(sentence_keys), size=len(sentence_keys), replace=True)
-        resampled_keys = [sentence_keys[i] for i in indices]
+        # Resample ARTICLES with replacement
+        resampled_article_ids = np.random.choice(
+            unique_article_ids, size=len(unique_article_ids), replace=True
+        )
+
+        # Build the list of sentence keys from the resampled articles
+        resampled_keys = []
+        for article_id in resampled_article_ids:
+            resampled_keys.extend(article_to_sentences[article_id])
+
+        # If the resampled set of keys is empty, skip this iteration
+        if not resampled_keys:
+            continue
 
         # Build matrix from resampled sentences
         if level == 'move':
@@ -311,33 +343,63 @@ def bootstrap_alpha_ci(sentence_data, runs, level='move', n_bootstrap=1000, seed
                 matrix.append(row)
 
         else:
-            # Per-step level - only use sentences that match the gold step
-            filtered_keys = [k for k in resampled_keys if sentence_data[k]['gold_step'] == level]
+            # Check if it's a per-move level (single digit like '1', '2', '3')
+            if level in ['1', '2', '3']:
+                # Per-move level - only use sentences that match the gold move
+                filtered_keys = [k for k in resampled_keys if sentence_data[k]['gold_move'] == level]
 
-            if len(filtered_keys) == 0:
-                continue
+                if len(filtered_keys) == 0:
+                    continue
 
-            # Get all unique predicted steps for this gold step
-            all_predicted_steps = set()
-            for key in filtered_keys:
-                for pred in sentence_data[key]['step_preds']:
-                    if pred is not None:
-                        all_predicted_steps.add(pred)
-
-            if len(all_predicted_steps) == 0:
-                continue
-
-            label_to_num = {step: i + 1 for i, step in enumerate(sorted(all_predicted_steps))}
-            matrix = []
-            for run_idx in range(len(runs)):
-                row = []
+                # Get all unique predicted moves for this gold move
+                all_predicted_moves = set()
                 for key in filtered_keys:
-                    pred = sentence_data[key]['step_preds'][run_idx]
-                    if pred is None:
-                        row.append(np.nan)
-                    else:
-                        row.append(label_to_num.get(pred, np.nan))
-                matrix.append(row)
+                    for pred in sentence_data[key]['move_preds']:
+                        if pred is not None:
+                            all_predicted_moves.add(pred)
+
+                if len(all_predicted_moves) == 0:
+                    continue
+
+                label_to_num = {move: i + 1 for i, move in enumerate(sorted(all_predicted_moves))}
+                matrix = []
+                for run_idx in range(len(runs)):
+                    row = []
+                    for key in filtered_keys:
+                        pred = sentence_data[key]['move_preds'][run_idx]
+                        if pred is None:
+                            row.append(np.nan)
+                        else:
+                            row.append(label_to_num.get(pred, np.nan))
+                    matrix.append(row)
+            else:
+                # Per-step level - only use sentences that match the gold step
+                filtered_keys = [k for k in resampled_keys if sentence_data[k]['gold_step'] == level]
+
+                if len(filtered_keys) == 0:
+                    continue
+
+                # Get all unique predicted steps for this gold step
+                all_predicted_steps = set()
+                for key in filtered_keys:
+                    for pred in sentence_data[key]['step_preds']:
+                        if pred is not None:
+                            all_predicted_steps.add(pred)
+
+                if len(all_predicted_steps) == 0:
+                    continue
+
+                label_to_num = {step: i + 1 for i, step in enumerate(sorted(all_predicted_steps))}
+                matrix = []
+                for run_idx in range(len(runs)):
+                    row = []
+                    for key in filtered_keys:
+                        pred = sentence_data[key]['step_preds'][run_idx]
+                        if pred is None:
+                            row.append(np.nan)
+                        else:
+                            row.append(label_to_num.get(pred, np.nan))
+                    matrix.append(row)
 
         matrix = np.array(matrix)
 
@@ -516,7 +578,83 @@ def calculate_krippendorff_alpha(temperature, runs, gold_standard):
                 sentence_data, runs, level='step', n_bootstrap=1000
             )
 
-    # STEP 4: Calculate per-step alpha
+    # STEP 4: Calculate per-move alpha
+    # Group sentences by their gold move
+    sentences_by_gold_move = defaultdict(list)
+    for key, data in sentence_data.items():
+        sentences_by_gold_move[data['gold_move']].append(key)
+
+    per_move_alphas = {}
+
+    for gold_move, sentence_keys in sentences_by_gold_move.items():
+        if len(sentence_keys) == 0:
+            continue
+
+        # Get all unique predicted moves for sentences with this gold move
+        all_predicted_moves = set()
+        for key in sentence_keys:
+            for pred in sentence_data[key]['move_preds']:
+                if pred is not None:
+                    all_predicted_moves.add(pred)
+
+        if len(all_predicted_moves) == 0:
+            per_move_alphas[gold_move] = {
+                "alpha": None,
+                "ci_lower": None,
+                "ci_upper": None,
+                "n_sentences": len(sentence_keys),
+                "n_observations": 0
+            }
+            continue
+
+        label_to_num = {move: i + 1 for i, move in enumerate(sorted(all_predicted_moves))}
+
+        # Create matrix for this gold move
+        move_matrix = []
+        for run_idx in range(len(runs)):
+            row = []
+            for key in sorted(sentence_keys):
+                pred = sentence_data[key]['move_preds'][run_idx]
+                if pred is None:
+                    row.append(np.nan)
+                else:
+                    row.append(label_to_num.get(pred, np.nan))
+            move_matrix.append(row)
+
+        move_matrix = np.array(move_matrix)
+        n_obs = int(np.sum(~np.isnan(move_matrix)))
+
+        try:
+            alpha = krippendorff.alpha(
+                reliability_data=move_matrix,
+                level_of_measurement='nominal'
+            )
+
+            # Calculate bootstrap CIs for per-move alpha
+            ci_lower = None
+            ci_upper = None
+            if alpha is not None and not np.isnan(alpha):
+                ci_lower, ci_upper = bootstrap_alpha_ci(
+                    sentence_data, runs, level=gold_move, n_bootstrap=1000
+                )
+
+            per_move_alphas[gold_move] = {
+                "alpha": float(alpha) if alpha is not None and not np.isnan(alpha) else None,
+                "ci_lower": ci_lower,
+                "ci_upper": ci_upper,
+                "n_sentences": len(sentence_keys),
+                "n_observations": n_obs
+            }
+        except Exception as e:
+            per_move_alphas[gold_move] = {
+                "alpha": None,
+                "ci_lower": None,
+                "ci_upper": None,
+                "n_sentences": len(sentence_keys),
+                "n_observations": n_obs
+            }
+
+    # STEP 5: Calculate per-step alpha
     # Group sentences by their gold step
     sentences_by_gold_step = defaultdict(list)
     for key, data in sentence_data.items():
@@ -618,6 +756,7 @@ def calculate_krippendorff_alpha(temperature, runs, gold_standard):
             "n_observations": n_step_observations,
             "n_runs": len(runs),
         },
+        "per_move": per_move_alphas,
         "per_step": per_step_alphas,
     }
 
@@ -745,8 +884,8 @@ def extract_step_info_from_gold(gold_standard):
     }
 
 
-def generate_table2(accuracy_results, temperatures):
-    """Generate Table 2: Move-Level Accuracy Across Temperature Settings"""
+def generate_tableX_move_accuracy(accuracy_results, temperatures):
+    """Generate Table X: Move-Level Accuracy Across Temperature Settings"""
     rows = []
 
     for temp in temperatures:
@@ -769,31 +908,79 @@ def generate_table2(accuracy_results, temperatures):
     return pd.DataFrame(rows)
 
 
-def generate_table3(accuracy_results, temperatures, step_info):
-    """Generate Table 3: Step-Level Accuracy (steps with n≥50 in full corpus only)"""
+def generate_tableX_macro_f1(accuracy_results, temperatures):
+    """
+    Generate Table X: Macro F1 Comparison (Weighted vs Macro F1)
+
+    This table shows both weighted and macro F1 scores to reveal the impact
+    of class imbalance on performance metrics. Macro F1 treats all classes
+    equally, while weighted F1 gives more weight to majority classes.
+    """
+    move_rows = []
+    step_rows = []
+
+    # Move-Level Table
+    for temp in temperatures:
+        temp_key = f"{temp:.1f}"
+        if temp_key in accuracy_results:
+            result = accuracy_results[temp_key]
+            move_f1 = result["move_level"]["f1"]
+            move_f1_macro = result["move_level"]["f1_macro"]
+
+            if move_f1 and move_f1_macro:
+                move_rows.append({
+                    "Temperature": temp,
+                    "Weighted F1": f"{move_f1['mean']:.3f}",
+                    "Weighted F1 CI": f"[{move_f1['ci_95'][0]:.3f}, {move_f1['ci_95'][1]:.3f}]",
+                    "Macro F1": f"{move_f1_macro['mean']:.3f}",
+                    "Macro F1 CI": f"[{move_f1_macro['ci_95'][0]:.3f}, {move_f1_macro['ci_95'][1]:.3f}]",
+                    "Difference": f"{(move_f1['mean'] - move_f1_macro['mean']):.3f}",
+                })
+
+    # Step-Level Table
+    for temp in temperatures:
+        temp_key = f"{temp:.1f}"
+        if temp_key in accuracy_results:
+            result = accuracy_results[temp_key]
+            step_f1 = result["step_level"]["f1"]
+            step_f1_macro = result["step_level"]["f1_macro"]
+
+            if step_f1 and step_f1_macro:
+                step_rows.append({
+                    "Temperature": temp,
+                    "Weighted F1": f"{step_f1['mean']:.3f}",
+                    "Weighted F1 CI": f"[{step_f1['ci_95'][0]:.3f}, {step_f1['ci_95'][1]:.3f}]",
+                    "Macro F1": f"{step_f1_macro['mean']:.3f}",
+                    "Macro F1 CI": f"[{step_f1_macro['ci_95'][0]:.3f}, {step_f1_macro['ci_95'][1]:.3f}]",
+                    "Difference": f"{(step_f1['mean'] - step_f1_macro['mean']):.3f}",
+                })
+
+    return pd.DataFrame(move_rows), pd.DataFrame(step_rows)
+
+
+def generate_tableX_step_accuracy(accuracy_results, temperatures, step_info):
+    """Generate Table X: Step-Level Accuracy (all steps included)"""
 
     # CaRS-50 corpus-level counts (50 articles, 1,297 sentences)
-    # Steps with n<50 are excluded from reporting due to limited sample size
-    #These counts need to fixed based on the test set corpus for actual reporting refer to data/processed/split_report.txt
+    #These counts need to be based on the test set corpus for actual reporting refer to data/processed/split_report.txt
     CORPUS_COUNTS = {
-        "1a": 82,
-        "1b": 197,
-        "1c": 498,
-        "2a": 27,  # Excluded: n<50
-        "2b": 63,
-        "2c": 24,  # Excluded: n<50
-        "2d": 11,  # Excluded: n<50
-        "3a": 72,
-        "3b": 109,
-        "3c": 72,
-        "3d": 1,  # Excluded: n<50
+        "1a": 74,
+        "1b": 166,
+        "1c": 453,
+        "2a": 26,
+        "2b": 58,
+        "2c": 18,
+        "2d": 11,
+        "3a": 60,
+        "3b": 91,
+        "3c": 65,
+        "3d": 1,
     }
 
-    # Filter to steps with n >= 50 in full corpus
+    # Include all steps
     included_steps = {
         step: step_info.get(step, {"description": "", "n": 0})
-        for step, count in CORPUS_COUNTS.items()
-        if count >= 50
+        for step in CORPUS_COUNTS.keys()
     }
 
     rows = []
@@ -825,9 +1012,9 @@ def generate_table3(accuracy_results, temperatures, step_info):
     return pd.DataFrame(rows)
 
 
-def generate_table4(alpha_results, temperatures):
+def generate_tableX_consistency(alpha_results, temperatures):
     """
-    Generate Table 4: Consistency Across Temperature Settings
+    Generate Table X: Consistency Across Temperature Settings
 
     Includes:
     - Move-Level row (overall move consistency)
@@ -929,8 +1116,62 @@ def generate_table4(alpha_results, temperatures):
     return pd.DataFrame(rows)
 
 
-def generate_tableX(temperatures, runs):
-    """Generate Table X: Parsing Success Rates by Temperature"""
+def generate_table4(alpha_results, temperatures):
+    """Generate Table 4: Move-Level Consistency by Move (1, 2, 3, and Total)"""
+    rows = []
+
+    # For each move level (1, 2, 3)
+    for move in ["1", "2", "3"]:
+        row = {"Move": f"Move {move}"}
+
+        for temp in temperatures:
+            temp_key = f"{temp:.1f}"
+            if temp_key in alpha_results:
+                result = alpha_results[temp_key]
+                if "per_move" in result and move in result["per_move"]:
+                    alpha = result["per_move"][move]["alpha"]
+                    ci_lower = result["per_move"][move].get("ci_lower")
+                    ci_upper = result["per_move"][move].get("ci_upper")
+
+                    if alpha is not None:
+                        if ci_lower is not None and ci_upper is not None:
+                            row[f"T={temp:.1f}"] = f"{alpha:.3f} [{ci_lower:.3f}, {ci_upper:.3f}]"
+                        else:
+                            row[f"T={temp:.1f}"] = f"{alpha:.3f}"
+                    else:
+                        row[f"T={temp:.1f}"] = "N/A"
+                else:
+                    row[f"T={temp:.1f}"] = "N/A"
+            else:
+                row[f"T={temp:.1f}"] = "N/A"
+
+        rows.append(row)
+
+    # Total (overall move-level)
+    total_row = {"Move": "Total"}
+    for temp in temperatures:
+        temp_key = f"{temp:.1f}"
+        if temp_key in alpha_results:
+            result = alpha_results[temp_key]
+            alpha = result["move_level"]["alpha"]
+            ci_lower = result["move_level"].get("ci_lower")
+            ci_upper = result["move_level"].get("ci_upper")
+
+            if alpha is not None and ci_lower is not None and ci_upper is not None:
+                total_row[f"T={temp:.1f}"] = f"{alpha:.3f} [{ci_lower:.3f}, {ci_upper:.3f}]"
+            elif alpha is not None:
+                total_row[f"T={temp:.1f}"] = f"{alpha:.3f}"
+            else:
+                total_row[f"T={temp:.1f}"] = "N/A"
+        else:
+            total_row[f"T={temp:.1f}"] = "N/A"
+
+    rows.append(total_row)
+    return pd.DataFrame(rows)
+
+
+def generate_table3(temperatures, runs):
+    """Generate Table 3: Parsing Success Rates by Temperature"""
     rows = []
 
     for temp in temperatures:
@@ -958,11 +1199,8 @@ def generate_tableX(temperatures, runs):
 
 def main():
     print("=" * 60)
-    print("METRICS CALCULATION (FIXED VERSION)")
+    print("METRICS CALCULATION")
     print("=" * 60)
-    print()
-    print("Key improvement: Handles missing data at sentence-iteration level")
-    print("instead of excluding entire articles.")
     print()
 
     # Load configuration
@@ -1047,24 +1285,35 @@ def main():
     # Generate tables for manuscript
     print("Generating tables...")
 
-    table2 = generate_table2(accuracy_results, temperatures)
-    table2.to_csv(tables_dir / "table2_move_accuracy.csv", index=False)
-    print(f"✓ Table 2: results/tables/table2_move_accuracy.csv")
+    tableX_move = generate_tableX_move_accuracy(accuracy_results, temperatures)
+    tableX_move.to_csv(tables_dir / "move_accuracy.csv", index=False)
+    print(f"✓ results/tables/move_accuracy.csv")
 
-    table3 = generate_table3(accuracy_results, temperatures, step_info)
-    if not table3.empty:
-        table3.to_csv(tables_dir / "table3_step_accuracy.csv", index=False)
-        print(f"✓ Table 3: results/tables/table3_step_accuracy.csv")
+    tableX_step = generate_tableX_step_accuracy(accuracy_results, temperatures, step_info)
+    if not tableX_step.empty:
+        tableX_step.to_csv(tables_dir / "step_accuracy.csv", index=False)
+        print(f"✓ results/tables/step_accuracy.csv")
     else:
-        print(f"  ⚠ Table 3: No steps with n≥50 (skipped)")
+        print(f"  ⚠ No steps with n≥50 (skipped)")
+
+    # Generate Macro F1 comparison tables
+    tableX_move_f1, tableX_step_f1 = generate_tableX_macro_f1(accuracy_results, temperatures)
+    tableX_move_f1.to_csv(tables_dir / "move_macro_f1.csv", index=False)
+    print(f"✓ results/tables/move_macro_f1.csv")
+    tableX_step_f1.to_csv(tables_dir / "step_macro_f1.csv", index=False)
+    print(f"✓ results/tables/step_macro_f1.csv")
+
+    tableX_cons = generate_tableX_consistency(alpha_results, temperatures)
+    tableX_cons.to_csv(tables_dir / "consistency.csv", index=False)
+    print(f"✓ results/tables/consistency.csv")
 
     table4 = generate_table4(alpha_results, temperatures)
-    table4.to_csv(tables_dir / "table4_consistency.csv", index=False)
-    print(f"✓ Table 4: results/tables/table4_consistency.csv")
+    table4.to_csv(tables_dir / "move_consistency.csv", index=False)
+    print(f"✓ results/tables/move_consistency.csv")
 
-    tableX = generate_tableX(temperatures, runs)
-    tableX.to_csv(tables_dir / "tableX_parsing_success.csv", index=False)
-    print(f"✓ Table X: results/tables/tableX_parsing_success.csv")
+    table3 = generate_table3(temperatures, runs)
+    table3.to_csv(tables_dir / "parsing_success.csv", index=False)
+    print(f"✓ results/tables/parsing_success.csv")
     print()
 
     print("=" * 60)

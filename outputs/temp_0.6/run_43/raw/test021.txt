@@ -1,0 +1,28 @@
+[1a] Biomolecular condensates serve as important mechanisms for the hierarchical and vectorial organization of chemistry within cells.[1–7]  
+[1b] They are non-stoichiometric assemblies of biomolecules that can form via spontaneous or driven processes and exhibit characteristics of phase separation and percolation [8–10].  
+[1b] The chemical environment and physicochemical conditions within condensates are distinct from their surroundings,[11–18] enabling cells to selectively partition biomolecules, prevent unwanted cross-talk and interference between various biochemical pathways, and buffer against chemical noise.  
+[1a] In recent years, these condensates have gained significant prominence and attracted substantial research interest.  
+[1c] They have been found to primarily form through the involvement of intrinsically disordered proteins (IDPs) [19–22].  
+[1b] Multivalent interactions involve the binding of multiple partners simultaneously and are often nonspecific in nature, leading to the spontaneous aggregation and condensationof various cellular components.  
+[1b] These unique proteins lack a fixed threedimensional structure, enabling them to be highly flexible and engage in multivalent interactions.  
+[1c] Many research groups have attempted to establish what is known as the “molecular grammar”,[23–34] which connects amino acid sequences with protein phase behaviors and the collective physical properties of condensates.  
+[1a] Establishing a theoretical framework is crucial for advancing our understanding of biological condensates.  
+[1c] The “stickers and spacers” model, originally developed within the context of polymer gelation theory,35–37 has gained popularity for modeling protein condensates [1,2,25,38–40].  
+[1b] In this model, biomolecules within condensates are envisioned as possessing two distinct functional components: “stickers” and “spacers”.  
+[1b] Stickers represent specific molecular domains or motifs with a high affinity for one another, facilitating interaction and bringing molecules into close proximity, thereby contributing to the condensate’s cohesive and ordered structure.  
+[1b] Conversely, spacers act as flexible linkers connecting the stickers, enabling the dynamic and transient nature of interactions within the condensate.  
+[1b] This model offers a conceptual framework that assists in interpreting experimental observations regarding condensate stability and material properties [41].  
+[2a] The simplicity of the stickers and spacers model, crucial for its theoretical elegance, encounters limitations when applied to realistic biomolecules.  
+[2a] Specifically, when dealing with an IDP, the identification of stickers and spacers is often challenging [1,3,42,43].  
+[2a] Most amino acids undergo some level of interactions, and determining when to disregard these interactions to categorize them as spacers remains ambiguous.  
+[2b] We propose that instead of entirely disregarding their interactions, it’s essential to consider the interactions between spacer sequences and explore their impact on the physical properties of condensates.  
+[2d] This exploration could offer insights into the evolutionary pressure of IDP sequences, arising from the interplay between sticker and spacer sequences.  
+[2d] Moreover, such an investigation could enhance our understanding of real-world biological condensates, where spacers might deviate from ideal behavior but still participate in weak interactions.  
+[3b] We expanded the stickers and spacers model to include explicit non-specific pairwise interactions between spacers, alongside the specific interactions among sticker motifs.  
+[3b] This extension allowed us to systematically explore the intricate interplay between specific and non-specific interactions in determining the structural and compositional properties of condensates.  
+[3c] Our investigation revealed that spacer interactions contribute to phase separation and the co-condensation of multiple molecules.  
+[3c] However, the non-specific nature of these interactions results in disorganized condensates with undefined molecular compositions.  
+[3c] In contrast, specific sticker-sticker interactions drive the formation of condensates with robust contacts and precise compositions.  
+[3d] Subsequently, we discussed the implications of our theory for the evolution of protein sequences, asserting the existence of evolutionary constraints even on segments of protein sequences that interact non-specifically.  
+[3d] These constraints ensure the functionality of condensates.  
+[3d] This evolutionary pressure naturally favors the emergence of low complexity domains to suppress spurious interactions, facilitating the formation of biologically meaningful condensates.

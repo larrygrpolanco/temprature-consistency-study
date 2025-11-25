@@ -1,0 +1,29 @@
+[1a] The therapeutic use of messenger RNA (mRNA) has sparked great optimism in the development of novel vaccines and therapeutics against a myriad of infectious or yet incurable diseases (1).  
+[1b] The mRNA technology enables the production of antigenic, functional, and/or therapeutic proteins by introducing mRNA into the human body and cells (2).  
+[1b] Since mRNAs act in the cytoplasm transiently, they do not bear any risk of integration into the host cell genome.  
+[1b] Most importantly, the mRNA technology enables rapid, cost-efficient and scalable production, which is free of cellular (cell cultures) or animal materials (3).  
+[1a] Thus, mRNA technologies facilitate manufacturing and allow for a rapid response to emerging infectious diseases, as emphatically underscored by the rapid rollout of COVID-19 mRNA vaccines in many parts of the world.  
+[1b] Modified nucleosides, such as pseudouridine (Ψ), N1-methylpseudouridine (m1Ψ) and 5-methylcytidine (m5C), are often incorporated into the mRNA molecules.  
+[1b] Such modifications reduce stimulation of cytoplasmic RNA sensors, such as toll-like receptor 3 and 7, for improved safety profiles and enhanced mRNA translation (4, 5).  
+[2b] However, how modified nucleosides affect mRNA concentration measurements and potentially confound pre-clinical dosing, efficacy, and toxicology studies, which could make or break further clinical development of any therapeutic, remains undefined.  
+[1b] The determination of RNA concentration often relies on measurements of its UV absorbance at 260 nm wavelength (A260) and the implementation of the Beer–Lambert law (6).  
+[1b] The accuracy of these measurements is scattered by the variable hypochromicity of RNA due to its sequence-dependent folding.  
+[1b] The molar absorption coefficient (MAC or extinction coefficient, ε) of a folded RNA at 260 nm (ε260) is reduced as compared to its unfolded state (7).  
+[1b] This difference is buffer- and concentration-dependent and arises from changes in the chemical environment of the nucleobases – the main chromophore, due to base-pairing, stacking, intermolecular interactions, and other conformational changes.  
+[1b] Considering these variabilities, a rough estimation for the ε260 of any single stranded RNA (40 μg/ml per absorbance unit) is extensively used and its associated ±10–20% error in the estimation of RNA concentration is widely accepted (6).  
+[1b] This error range may suffice to assess dose-response for mRNA therapeutics across several orders of magnitude in celula or in vivo experiments.  
+[2b] Yet it would be valuable to know concentrations at higher accuracy for the development of mRNA technologies.  
+[2b] Our particular concern is in measurements of self-amplifying RNAs (saRNA) and nucleoside-modified mRNAs.  
+[1b] The logarithmic amplification of saRNA can convert a 20% accepted error in RNA concentration into a several fold differences in dose-response between one experiment and the subsequent replicates.  
+[1b] The chemical modifications on the nucleobases of mRNA can also induce profound changes in the mRNA MAC, hindering the accurate quantification of nucleoside-modified mRNA concentrations.  
+[3a] To attain greater accuracy in RNA quantification, RNA molecules are hydrolysed prior to UV absorbance determination using a combination of thermal and alkaline hydrolysis (6, 8).  
+[1b] The RNA hydrolysis shifts the hypochromic folded state of the RNA to the hyperchromic state of the single monophosphate nucleotides (9).  
+[1b] Since the precise MAC of the four standard nucleotides in aqueous buffered solution are known, the molar absorption of any hydrolysed mRNA can be calculated as the sum of the molar absorption of its nucleotide compositions.  
+[3a] Thus, upon the determination of the 260 nm UV absorbance (A260), the RNA concentration can be quantified with an error of ∼4% using these methods (6).  
+[2b] The incorporation of modified nucleosides can alter the RNA molar absorption and increase the error of the measurements in an RNA sequence-dependent manner.  
+[1b] Other non-UV-spectroscopic methods relying on the unspecific RNA binding of fluorophores (such as RiboGreen, Thermo Fisher Scientific) for the determination of RNA concentration may help to overcome any change in the MAC of modified nucleoside mRNA.  
+[2b] However, the impact of RNA modifications on the binding affinity of these fluorophores also remains unknown.  
+[3a] Herein, we report our effort to revisit and determine the molar absorption coefficients of modified nucleosides (Ψ, m1Ψ and m5C).  
+[3a] We also examined three different methods for RNA hydrolysis and provided them along with the mRNACalc web server.  
+[3b] This web tool incorporates the most recently revised ε260 for standard, modified and mRNA capping nucleosides, allowing the accurate determination of standard and nucleoside-modified mRNAs using UV spectroscopy.  
+[3b] Once the RNA sequence, the A260 and the RNA stock volume values are provided as input, the mRNACalc web server calculates the RNA stock concentration in nM and ng/μl and the total RNA mass in μmole and μg.

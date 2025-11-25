@@ -1,0 +1,32 @@
+[1a] Hibernation is an adaptive strategy employed by many animals aiming to decrease their metabolic rate and improve survival, particularly during harsh, winter conditions where food supply is limited, and thermogenic demands are high [1].  
+[1a] During hibernation, mammals typically undergo a decrease in body temperature, heart, and breathing rates [2–4].  
+[1a] In so-called fat-storing hibernators, this is inherently accompanied by prolonged fasting and fatty acids become the main substrate for energy provision [5, 6].  
+[1a] Besides these common features associated with overall metabolic depression, there are also significant inter-species differences in the underlying strategies.  
+[1c] For instance, small (< 8 kg) fat-storing hibernating mammals such as thirteen-lined ground squirrels (Ictidomys tridecemlineatus) or garden dormice (Eliomys quercinus) experience extended bouts of a hypo-metabolic state (torpor), punctuated by spontaneous periods of interbout euthermic arousals (IBA), during which metabolic activity transiently increases back to basal levels.  
+[1c] During torpor, metabolic rate decreases below 5% of euthermic values and core body temperatures decrease from 35°C − 38°C to 4°C − 8°C [7, 8].  
+[1c] In contrast, either medium (10-20 kg, e.g. European badger, Meles meles) or large (> 20 kg, e.g. Eurasian brown bear, Ursus arctos, and American black bear, Ursus americanus) hibernating mammals exhibit a pronounced hypo-metabolic state (as low as 25% of their basal metabolic rate in the case of bears), but only experience a mild decline in body temperature (to 32-35°C depending on body size) that lasts for several winter months [1, 9, 10].  
+[2b] While species-specific physiological patterns are well-documented, the molecular and cellular mechanisms operative in individual organs to achieve these remain largely undefined.  
+[1b] Skeletal muscle constitutes approximately 45-55% of body mass and serves as a major determinant of basal metabolic rate and heat production [11, 12].  
+[1c] Previous studies have uncovered some specific metabolic changes in skeletal muscle during hibernation [6].  
+[1c] For example, a decrease in mitochondrial respiration, as well as a suppression of ATP production capacity, has previously been documented in skeletal muscles from I. tridecemlineatus during torpor [13].  
+[1c] Previous work has demonstrated that ground squirrels require an optimal dietary ratio of monounsaturated to polyunsaturated fats, approximately 2:1, during their fat-storing period to facilitate effective hibernation [14].  
+[1c] The proteome of I. tridecemlineatus has then been shown to be enriched for fatty acid β-oxidation during periods of torpor.  
+[1c] However, some reliance upon carbohydrate metabolism is maintained.  
+[1c] The activity of phosphoglucomutase (PGM1) is even increased during torpor [15].  
+[1c] In U. arctos, skeletal muscle exhibits a transition from carbohydrate utilization to lipid metabolism, coupled with a reduction in whole-tissue ATP turnover [16].  
+[1b] Muscle is organized into an array of fibers containing repeating sarcomeres, which are crucial for regulating not only contraction but also metabolism and thermogenesis [17].  
+[1b] Until recently, energy consumption in skeletal muscle was thought to be primarily linked to the activity of myosin during muscular contraction [17].  
+[1b] Additionally, thermogenesis in skeletal muscle was previously attributed primarily to the electron transport system, in some cases link to uncoupling of sarcoplasmic reticulum calcium ATPase (SERCA) [18, 19].  
+[1c] However, growing evidence that the sarcomeric metabolic rate and thermogenesis are also controlled by ‘relaxed’ myosin molecules is emerging [20].  
+[1b] Myosin heads in passive muscle (pCa > 8), can be in different resting metabolic states that maintain a basal level of ATP consumption.  
+[1b] In the ‘disordered-relaxed’ (DRX) state, myosin heads are generally not bound to actin and structurally exist in a conformation (so-called ON state) where they primarily exist freely within the interfilamentous space in the sarcomere [21, 22].  
+[1b] In the ‘super-relaxed’ (SRX) state, myosin heads adopt a structural conformation against the thick filament backbone (so-called OFF state) [23].  
+[1b] This conformation sterically inhibits the ATPase site on the myosin head, significantly reducing both ATP turnover in these molecules and, therefore heat production.  
+[1b] The SRX state has an ATP turnover rate five to ten times lower than that of myosin heads in the DRX state [24].  
+[1b] A 20% shift of myosin heads from SRX to DRX is predicted to increase whole-body energy expenditure by 16% and double skeletal muscle thermogenesis [24].  
+[2c] What remains to be determined is whether, across mammals, increasing the proportions of myosin in the DRX or SRX states serves as a physiological molecular mechanism to fine-tune metabolic demands and thermogenesis.  
+[2c] This includes potential contributions to whole-body metabolic depression observed during hibernation.  
+[3a] Hence, in the present study, we hypothesized that a remodelling of the proportions of myosin DRX and SRX conformations within skeletal muscles occurs and is a major suppressor of ATP/metabolic demand during hibernation.  
+[1c] A recent study on I. tridecemlineatus cardiac muscle supports this hypothesis, finding higher proportions of SRX during torpor [25].  
+[3a] We examined isolated skeletal myofibers extracted from both small and large hibernating mammals - I. tridecemlineatus, E. quercinus, U. arctos, and U. americanus.  
+[3b] We employed a multifaceted approach: loaded Mant-ATP chase experiments to assess myosin conformation and ATP turnover time, X-ray diffraction for sarcomere structure evaluation, and proteomic analyses to quantify differential PTMs.

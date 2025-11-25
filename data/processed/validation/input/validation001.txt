@@ -1,0 +1,25 @@
+β-lactams, including penicillins, cephalosporins, carbapenems, and monobactams, are the most commonly used antibiotics that irreversibly inhibit enzymes involved in bacterial cell wall synthesis. [1]
+As a result of persistent exposure to β-lactams and the imposed survival pressure, bacteria continually evolve to evade therapeutic action, predominantly via the production of β-lactamases in Gram-negative bacteria. [2–5]
+β-Lactamases, categorized into classes A, B, C, and D,[6] can degrade all classes of β-lactam drugs and thus present a global clinical threat in the form of antimicrobial resistance (AMR). [7,8]
+To combat the ever-increasing AMR, the use of β-lactamase inhibitors-clavulanic acid, tazobactam, and sulbactam that share the β-lactam backbone, were clinically approved in combination with specific β-lactam drugs. [9]
+The emergence of Klebsiella pneumoniae carbapenemase (KPC) producing strains, prompted the development of novel β-lactamase inhibitors. [10]
+Efforts to restore activity against these diverse enzymes led to the clinical approval of a non-β-lactam (diazabicyclooctane) β-lactamase inhibitor, avibactam. [11]
+Unlike the first three clinical inhibitors that are limited in their activity only to class A β-lactamases, avibactam is a broad-spectrum inhibitor for serine (class A, C, and some class D) enzymes. [8,12]
+The combination of avibactam with an oxyimino-cephalosporin, ceftazidime, appeared as a salvage therapy for the treatment of carbapenem-resistant Enterobacterales (CRE) infections primarily caused by KPC-producing bacteria. [13]
+However, a site-directed mutagenesis study revealed ceftazidime-avibactam (CAZ-AVI) resistance in KPC-2 variants with substitutions at R164 and D179 positions of the omega loop. [14,15]
+Similar resistance was reported for an in vitro study for KPC-3 expressing Enterobacteriaceae, primarily due to a D179Y substitution. [16]
+Shortly after, CAZ-AVI resistance was demonstrated in clinical isolates being treated for KPC-expressing CRE infections with this β-lactam-inhibitor combination. [17]
+A series of studies using site-saturation and site-directed mutagenesis uncovered the complex array of substitutions conferring ceftazidime/avibactam resistance. [18–20]
+The omega loop (residues R164-D179 in KPC-2) (Fig. 1) plays a vital role in the β-lactamase enzymatic mechanism.
+Following the nucleophilic attack by S70, the acyl-enzyme complex is deacylated by a conserved water molecule that is strategically held in position by omega loop residues E166 and N170.
+E166 acts as the general base that activates the water molecule for the subsequent attack on the covalent complex. [21,22]
+However, in light of the development of ceftazidime-avibactam resistance in clinical isolates and the impacted kinetics of ceftazidime deacylation reported by recent experiments, we aimed to uncover the underlying mechanisms of altered enzymatic activity for KPC-2 mutants.
+This study investigates the perturbed structural dynamics involving the omega loop region as a result of six significant KPC-2 omega loop substitutions-R164S,[23] R164H,[24–26] D179N,[14,27–30] D179Y,[18,19,23,28,29,31–35] D179A,[36–38] and D179Q[27] that have shown to confer resistance against CAZ-AVI combination.
+Residues R164 and D179 confer stability to the omega loop by interacting via a salt bridge.
+Thus, a substitution at either position might cause pronounced structural changes to the middle of the loop, harboring critical catalytic residues.
+Using well-tempered metadynamics (wt-MetaD), we accelerated rare-event sampling and uncovered important conformational changes upon R164 or D179 substitution. [39]
+Due to the buried conformation of D179, variants at this position produce a more pronounced structural disorder in the omega loop compared to R164 mutants, where the crystallographic structure remains mostly intact. [30,40]
+The findings suggest that the conformation of the omega loop with N170 oriented “away” is favored for KPC-2 omega loop mutants, impacting drug binding and restricting deacylation.
+This work further strengthens the notion that KPC-2 D179 variants employ substrate-assisted catalysis for ceftazidime, involving the ring amine of the aminothiazole group to promote deacylation and catalytic turnover.
+Our study attempts to answer the perplexing questions pertaining to the enhanced resistance of KPC-2 mutants to ceftazidime/avibactam intervention as a result of omega loop substitutions.
+With the emerging resistant strains imposing a major clinical challenge, our results hold significant importance for future drug design.

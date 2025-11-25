@@ -1,0 +1,29 @@
+[1a] The integrated management of poultry health includes maintaining overall health, welfare and performance throughout the life of animals.
+[1b] This is an even greater challenge in a global context of reducing the risk of antimicrobial resistance.
+[2d] One axis in the Ecoantibio2017 plan concerns the development of alternatives to avoid the use of antibiotics.
+[2d] In this context, new poultry rearing systems are being developed, particularly for the perinatal period.
+[1b] In poultry, the perinatal period is a stressful period for broiler chicks, which includes the hatching phase and major physiological changes to adapt to new food resources and environments.
+[1b] In hatcheries, chicks hatch at between 19 and 21 days of incubation.
+[1b] They often stay more than 12 hours in the hatcher, under optimal temperature, without light and usually without access to feed and water until placement in farm buildings.
+[1b] The fasting period of the chicks is further increased by the time needed for hatchery processing, transportation duration and unloading at the farm, which might last up to the first 72 h after hatching.
+[1c] Even though chicks can use energy reserves from their yolk sac (van der Wagt et al., 2020), these conditions induce immediate and long-lasting metabolic changes (Beauclercq et al., 2019; Foury et al., 2020), behavioural impacts by increasing fear responses (Jessen et al., 2021) and consequences on chicken development, performance and welfare (de Jong et al., 2017).
+[2b] To improve the early perinatal conditions of chicks, alternative hatching systems have been developed.
+[2d] On-farm hatching provides the chicks with immediate access to feed and water according to their needs and avoids the exposure to stressors encountered in conventional hatcheries (van de Ven et al., 2009).
+[1b] Eggs incubated for 18 days are transported to the farm and placed either in trays or in the litter where they hatch.
+[1c] The effects of these on-farm hatching systems on broiler health, welfare and performance were recently studied under commercial or more controlled conditions and had shown effects that are not always beneficial.
+[1c] Total mortality and footpad dermatitis in on-farm hatched (OFH) chicks were lower compared to conventionally hatched (CH) fast-growing broiler chickens (de Jong et al., 2019; 2020; Giersberg et al., 2021; Jessen et al., 2021).
+[1c] However, day-old chick quality was worse and breast myopathy prevalence was higher for OFH than CH chickens (de Jong et al., 2019; Souza da Silva et al., 2021).
+[1c] Chicken activity and general behaviour were little affected by the hatching system, with fast-growing OFH chickens being more fearful and less active than CH chickens (Giersberg et al., 2020).
+[1c] Slower-growing broiler chickens hatched in organic farms tended to express less general fearfulness than CH chickens (Jessen et al., 2021).
+[1c] A positive effect on growth performance was observed during the first week of life until 21 days in OFH and CH fed at the hatchery compared to CH chickens (de Jong et al., 2020), and longer when parent flocks were young (Souza da Silva et al., 2021).
+[1a] Maintaining optimal health, welfare and performance of chickens is highly dependent on the gut physiology in interaction with the microbiota and mucosal immune system (Fortun-Lamothe et al., 2023).
+[1b] Antibiotics have been largely used in poultry production to improve performance by acting on the gut barrier function (Broom, 2018).
+[2a] However, growing concerns about the increase of antimicrobial resistance in farm animals led to changes in EU and national legislation governing the use of antibiotics as growth promoters in poultry feed, which resulted in their suppression in 2006 (Council Directive 96/22/EC; Axis 2 and measure 19 of the EcoAntibio 2017 plan).
+[1b] Greater attention to the environment during the chick postnatal period, especially the microbial environment, is key to optimising the gut barrier function and more broadly the health and welfare of the chickens and their performance.
+[1b] Naturally, chicks hatch in contact with an adult hen who is a donor of microbiota and a model of learning and maternal care (Edgar et al., 2016).
+[1c] Early implantation of adult microbiota into the chick digestive system accelerates the maturation of the microbiota and immune system (Volf et al., 2016; Broom and Kogut, 2018; Meijerink et al., 2020).
+[1c] In addition, chicks reared in the presence of their mothers are less fearful than those raised without their mothers and develop more behavioural synchrony (Perré et al., 2002), even though hen genetics has a strong effect on chick behaviour, with commercial lines being less maternal (Hewlett et al., 2019).
+[2d] The combination of a new hatching system like OFH with an enriched microbiota and stimulating environment from the presence of an adult hen is a possible solution for chick conditions to be improved and could contribute to poultry health and welfare and product quality.
+[3a] In this study, we analysed the benefits/risks of hatching systems (conventional hatcher, on-farm hatching), with the presence of an adult hen (OFH + H, CH + H) or not (OFH and CH) on hatchability and chick quality scores.
+[3a] We also explored the effects of these hatching conditions and the presence of an adult hen with chicks on performance, health and robustness in suboptimal rearing conditions.
+[3b] The combination of CH and post-hatching treatment with antibiotics (CH + AB) was added as an experimental control group of antibiotic growth promoter use.

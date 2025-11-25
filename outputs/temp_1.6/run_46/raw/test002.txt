@@ -1,0 +1,16 @@
+[1a] The challenge of understanding how the detrimental effects of age can be mitigated is of central concern in medicine and biology and is facilitated by the comparative study of aging across species (Arking, 2006; Austad, 2009).
+[1b] Zebrafish, like humans, display gradual senescence (Kishi et al., 2009).
+[1b] With advancing age, zebrafish have reduced regenerative capacity, accumulation of DNA damage, and cardiovascular impairment (Gilbert et al.,2014; Sun et al., 2014).
+[1b] The shared consequences of aging in humans and zebrafish, combined with the low cost of housing zebrafish for extended periods, suggests that zebrafish could serve as a valuable model organism in the study of aging.
+[1b] In humans, many behaviors vary across the lifespan, such as emotional regulation and anxiety (John and Gross, 2004; Lenze and Wetherell, 2011; Nivard et al., 2015).
+[1b] The trajectory of these behaviors is shaped by the complex interplay of environmental factors with genetics and sex (Nivard et al., 2015; Singh et al., 2019).
+[1a] Untangling the web of interactions between age, genetics, and sex is facilitated by use of model organisms for which many molecular genetic tools are available, like zebrafish.
+[1c] Although there has been a large increase in the study of zebrafish behavior in the past twenty years (Gerlai, 2023; Kenney, 2020), only a handful of reports have explored age-associated behavioral alterations.
+[1c] These studies have found that older fish have changes in circadian rhythms, decreased associative learning, and reduced locomotion (Gilbert et al., 2014; Philpott et al., 2012; Ruhl et al., 2015; Yu et al., 2006; Zhdanova et al., 2008).
+[2b] However, it is unknown if aging also affects commonly studied behaviors related to emotional regulation and exploration in zebrafish.
+[1b] One of the most widely used behavioral tasks to study exploratory and emotional behavior in zebrafish is the novel tank test (NTT).
+[1b] In this test, animals are placed into a tank with which they have no prior experience.
+[1b] Spending time near the bottom or periphery of the tank are typically interpreted as fearful predator avoidance behaviors related to anxiety (Champagne et al., 2010; Gerlai et al., 2000; Kalueff et al., 2013; Levin et al., 2007; Maximino et al., 2010).
+[1b] Nonassociative memory can also be assessed by measuring how behavior habituates within session (short-term memory) or between daily sessions (long-term memory).
+[3a] To determine whether age affects behavior in the NTT, and if the effects of age are modulated by sex and genetics, we examined behavior in young (6 months old) and middle aged (12 months old) fish from two strains (TL and TU) and both sexes.
+[3c] We find that this modest difference in age is sufficient to alter several behaviors such as locomotion and predator avoidance.

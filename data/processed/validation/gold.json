@@ -1,0 +1,830 @@
+{
+  "validation001": {
+    "original_id": "text022",
+    "sentences": [
+      {
+        "sentence_num": 1,
+        "step": "1a",
+        "move": "1",
+        "text": "β-lactams, including penicillins, cephalosporins, carbapenems, and monobactams, are the most commonly used antibiotics that irreversibly inhibit enzymes involved in bacterial cell wall synthesis. [1]"
+      },
+      {
+        "sentence_num": 2,
+        "step": "1b",
+        "move": "1",
+        "text": "As a result of persistent exposure to β-lactams and the imposed survival pressure, bacteria continually evolve to evade therapeutic action, predominantly via the production of β-lactamases in Gram-negative bacteria. [2–5]"
+      },
+      {
+        "sentence_num": 3,
+        "step": "1c",
+        "move": "1",
+        "text": "β-Lactamases, categorized into classes A, B, C, and D,[6] can degrade all classes of β-lactam drugs and thus present a global clinical threat in the form of antimicrobial resistance (AMR). [7,8]"
+      },
+      {
+        "sentence_num": 4,
+        "step": "1c",
+        "move": "1",
+        "text": "To combat the ever-increasing AMR, the use of β-lactamase inhibitors-clavulanic acid, tazobactam, and sulbactam that share the β-lactam backbone, were clinically approved in combination with specific β-lactam drugs. [9]"
+      },
+      {
+        "sentence_num": 5,
+        "step": "1c",
+        "move": "1",
+        "text": "The emergence of Klebsiella pneumoniae carbapenemase (KPC) producing strains, prompted the development of novel β-lactamase inhibitors. [10]"
+      },
+      {
+        "sentence_num": 6,
+        "step": "1c",
+        "move": "1",
+        "text": "Efforts to restore activity against these diverse enzymes led to the clinical approval of a non-β-lactam (diazabicyclooctane) β-lactamase inhibitor, avibactam. [11]"
+      },
+      {
+        "sentence_num": 7,
+        "step": "1c",
+        "move": "1",
+        "text": "Unlike the first three clinical inhibitors that are limited in their activity only to class A β-lactamases, avibactam is a broad-spectrum inhibitor for serine (class A, C, and some class D) enzymes. [8,12]"
+      },
+      {
+        "sentence_num": 8,
+        "step": "1c",
+        "move": "1",
+        "text": "The combination of avibactam with an oxyimino-cephalosporin, ceftazidime, appeared as a salvage therapy for the treatment of carbapenem-resistant Enterobacterales (CRE) infections primarily caused by KPC-producing bacteria. [13]"
+      },
+      {
+        "sentence_num": 9,
+        "step": "1c",
+        "move": "1",
+        "text": "However, a site-directed mutagenesis study revealed ceftazidime-avibactam (CAZ-AVI) resistance in KPC-2 variants with substitutions at R164 and D179 positions of the omega loop. [14,15]"
+      },
+      {
+        "sentence_num": 10,
+        "step": "1c",
+        "move": "1",
+        "text": "Similar resistance was reported for an in vitro study for KPC-3 expressing Enterobacteriaceae, primarily due to a D179Y substitution. [16]"
+      },
+      {
+        "sentence_num": 11,
+        "step": "1c",
+        "move": "1",
+        "text": "Shortly after, CAZ-AVI resistance was demonstrated in clinical isolates being treated for KPC-expressing CRE infections with this β-lactam-inhibitor combination. [17]"
+      },
+      {
+        "sentence_num": 12,
+        "step": "1c",
+        "move": "1",
+        "text": "A series of studies using site-saturation and site-directed mutagenesis uncovered the complex array of substitutions conferring ceftazidime/avibactam resistance. [18–20]"
+      },
+      {
+        "sentence_num": 13,
+        "step": "1b",
+        "move": "1",
+        "text": "The omega loop (residues R164-D179 in KPC-2) (Fig. 1) plays a vital role in the β-lactamase enzymatic mechanism."
+      },
+      {
+        "sentence_num": 14,
+        "step": "1b",
+        "move": "1",
+        "text": "Following the nucleophilic attack by S70, the acyl-enzyme complex is deacylated by a conserved water molecule that is strategically held in position by omega loop residues E166 and N170."
+      },
+      {
+        "sentence_num": 15,
+        "step": "1b",
+        "move": "1",
+        "text": "E166 acts as the general base that activates the water molecule for the subsequent attack on the covalent complex. [21,22]"
+      },
+      {
+        "sentence_num": 16,
+        "step": "3a",
+        "move": "3",
+        "text": "However, in light of the development of ceftazidime-avibactam resistance in clinical isolates and the impacted kinetics of ceftazidime deacylation reported by recent experiments, we aimed to uncover the underlying mechanisms of altered enzymatic activity for KPC-2 mutants."
+      },
+      {
+        "sentence_num": 17,
+        "step": "3a",
+        "move": "3",
+        "text": "This study investigates the perturbed structural dynamics involving the omega loop region as a result of six significant KPC-2 omega loop substitutions-R164S,[23] R164H,[24–26] D179N,[14,27–30] D179Y,[18,19,23,28,29,31–35] D179A,[36–38] and D179Q[27] that have shown to confer resistance against CAZ-AVI combination."
+      },
+      {
+        "sentence_num": 18,
+        "step": "1b",
+        "move": "1",
+        "text": "Residues R164 and D179 confer stability to the omega loop by interacting via a salt bridge."
+      },
+      {
+        "sentence_num": 19,
+        "step": "3a",
+        "move": "3",
+        "text": "Thus, a substitution at either position might cause pronounced structural changes to the middle of the loop, harboring critical catalytic residues."
+      },
+      {
+        "sentence_num": 20,
+        "step": "3b",
+        "move": "3",
+        "text": "Using well-tempered metadynamics (wt-MetaD), we accelerated rare-event sampling and uncovered important conformational changes upon R164 or D179 substitution. [39]"
+      },
+      {
+        "sentence_num": 21,
+        "step": "1c",
+        "move": "1",
+        "text": "Due to the buried conformation of D179, variants at this position produce a more pronounced structural disorder in the omega loop compared to R164 mutants, where the crystallographic structure remains mostly intact. [30,40]"
+      },
+      {
+        "sentence_num": 22,
+        "step": "3b",
+        "move": "3",
+        "text": "The findings suggest that the conformation of the omega loop with N170 oriented “away” is favored for KPC-2 omega loop mutants, impacting drug binding and restricting deacylation."
+      },
+      {
+        "sentence_num": 23,
+        "step": "3b",
+        "move": "3",
+        "text": "This work further strengthens the notion that KPC-2 D179 variants employ substrate-assisted catalysis for ceftazidime, involving the ring amine of the aminothiazole group to promote deacylation and catalytic turnover."
+      },
+      {
+        "sentence_num": 24,
+        "step": "3b",
+        "move": "3",
+        "text": "Our study attempts to answer the perplexing questions pertaining to the enhanced resistance of KPC-2 mutants to ceftazidime/avibactam intervention as a result of omega loop substitutions."
+      },
+      {
+        "sentence_num": 25,
+        "step": "3b",
+        "move": "3",
+        "text": "With the emerging resistant strains imposing a major clinical challenge, our results hold significant importance for future drug design."
+      }
+    ]
+  },
+  "validation002": {
+    "original_id": "text034",
+    "sentences": [
+      {
+        "sentence_num": 1,
+        "step": "1a",
+        "move": "1",
+        "text": "System L is the major amino acid transport system that supplies large neutral amino acids into cells (1, 2) (Fig. 1a)."
+      },
+      {
+        "sentence_num": 2,
+        "step": "1a",
+        "move": "1",
+        "text": "Among four molecular species constituting system L (LAT1–4), LAT1 is unique in its wide substrate specificity (3–5), which ranges from neutral amino acids such as L-Leu and L-Phe to much bulkier derivatives such as thyroid hormones (e.g. T4 and T3) and an alkylating agent melphalan (Fig. 1b)."
+      },
+      {
+        "sentence_num": 3,
+        "step": "1b",
+        "move": "1",
+        "text": "Since LAT1 is upregulated in various types of cancer, its inhibitors are known as potent anti-tumor agents (6) (Fig. 1a), its radiotracers are used in the positron emission tomography (PET) and the single photon emission computed tomography (SPECT) for cancer imaging (7, 8), and the boronated substrates are employed for boron neutron capture therapy (BNCT) for cancer treatment (7, 8)."
+      },
+      {
+        "sentence_num": 4,
+        "step": "1b",
+        "move": "1",
+        "text": "LAT1 is also responsible for the delivery of amino acid drugs and pro-drugs across the blood-brain barrier (BBB), such as gabapentin and L-DOPA (Fig. 1b), prescribed for epilepsy (9) and Parkinson’s disease (10), respectively."
+      },
+      {
+        "sentence_num": 5,
+        "step": "1b",
+        "move": "1",
+        "text": "JPH203 (Fig. 1b) is a high-affinity inhibitor of LAT1 with a sub-micromolar IC50 and no detectable inhibition on LAT2 (11)."
+      },
+      {
+        "sentence_num": 6,
+        "step": "1c",
+        "move": "1",
+        "text": "With such outstanding selectivity and potency, JPH203 has been proved effective against different types of cancers (12, 13) and successfully completed Phase I and II clinical trials as a first-in-class drug against biliary tract cancer (14, 15)."
+      },
+      {
+        "sentence_num": 7,
+        "step": "1c",
+        "move": "1",
+        "text": "Although its structural design is inspired by T3, JPH203 has a bulkier hydrophobic side chain, which may be responsible for its high selectivity and affinity (Fig. 1b)."
+      },
+      {
+        "sentence_num": 8,
+        "step": "1c",
+        "move": "1",
+        "text": "2-aminobicyclo-(2,2,1)-heptane-2-carboxylic acid, also known as BCH, is a “classical” system L inhibitor with broad specificity towards both LAT1 and LAT2, as well as other system L (1)."
+      },
+      {
+        "sentence_num": 9,
+        "step": "1c",
+        "move": "1",
+        "text": "BCH has a bicyclic norbornane moiety and is significantly smaller than other Tyr-based inhibitors (Fig. 1b)."
+      },
+      {
+        "sentence_num": 10,
+        "step": "1c",
+        "move": "1",
+        "text": "A recent structural study of LAT1 showed that JPH203 did not bind to their purified LAT1 (16), presumably due to the presence of detergent, which hindered the structural understanding of JPH203."
+      },
+      {
+        "sentence_num": 11,
+        "step": "1c",
+        "move": "1",
+        "text": "Additionally, the same study reported a LAT1 structure with a BCH ligand modelled; however, the ligand density was very weak and indistinguishable from the apo map, and caution is required when interpreting this model (Fig. S1, difference maps)."
+      },
+      {
+        "sentence_num": 12,
+        "step": "2b",
+        "move": "2",
+        "text": "Therefore, the inhibition mechanism by BCH remains to be elucidated."
+      },
+      {
+        "sentence_num": 13,
+        "step": "1c",
+        "move": "1",
+        "text": "More recently, JX molecules, which are bicyclic meta-Tyr derivatives, were reported as high affinity inhibitors and the associated cryo-EM structures revealed how these compounds bind to the outward-occluded conformations of LAT1 (17)."
+      },
+      {
+        "sentence_num": 14,
+        "step": "1c",
+        "move": "1",
+        "text": "This was the first structural demonstration of system L inhibition, but the different core structures of JX inhibitors compared to JPH203 and other amino acid-like compounds have hampered the understanding of how the well-known system L inhibitors bind to and inhibit LAT1."
+      },
+      {
+        "sentence_num": 15,
+        "step": "3a",
+        "move": "3",
+        "text": "Here, we employ the lipid nanodisc system and electron cryo-microscopy (cryo-EM) to study the structure of LAT1."
+      },
+      {
+        "sentence_num": 16,
+        "step": "3b",
+        "move": "3",
+        "text": "The structural analyses accompanied by the functional assays of site-directed mutants illuminate how LAT1 dynamically interacts with transportable and non-transportable compounds, including JPH203."
+      }
+    ]
+  },
+  "validation003": {
+    "original_id": "text037",
+    "sentences": [
+      {
+        "sentence_num": 1,
+        "step": "1a",
+        "move": "1",
+        "text": "Tuberculosis (TB), caused by Mycobacterium tuberculosis (Mtb), is a major global health concern, claiming over 1.6 million lives annually."
+      },
+      {
+        "sentence_num": 2,
+        "step": "1b",
+        "move": "1",
+        "text": "Mtb is highly adept at evading the immune system, and it can persist within an infected person for decades."
+      },
+      {
+        "sentence_num": 3,
+        "step": "1b",
+        "move": "1",
+        "text": "This situation is worsened by the nearly 1.7 billion people globally who harbor a dormant Mtb infection (Houben and Dodd, 2016), coupled with the rising trend of drug-resistant TB cases (World Health Organization, 2022)."
+      },
+      {
+        "sentence_num": 4,
+        "step": "1a",
+        "move": "1",
+        "text": "To successfully establish an infection in the host, Mtb utilizes a plethora of virulence factors delivered via its several ESX-secretion systems."
+      },
+      {
+        "sentence_num": 5,
+        "step": "1c",
+        "move": "1",
+        "text": "Studies have indicated that Mtb has the ability to damage the phagosomal membrane, a process that is heavily reliant on the activity of the ESX- 1 secretion system (Conrad et al., 2017; López-Jiménez et al., 2018; Schnettger et al., 2017)."
+      },
+      {
+        "sentence_num": 6,
+        "step": "1c",
+        "move": "1",
+        "text": "Currently, the most probable candidate driving ESX-1 dependent lytic activity is the well-known T cell antigen, the 6 kDa early secreted antigenic target (ESAT-6, or EsxA)) (Andersen et al., 1995; Sørensen et al., 1995), after which the ESX family of T7SSs was originally named (Gey van Pittius et al., 2001)."
+      },
+      {
+        "sentence_num": 7,
+        "step": "1c",
+        "move": "1",
+        "text": "Secretion of the various ESX-1 substrates are known to be highly complex and interdependent, and while the full scope of ESX-1 components and substrates is still being worked out, many individual ESX-1 component knockouts are known to phenocopy the ESAT-6 deletion, indicating that ESAT-6 itself is responsible for the lion’s share of the activity (Chen et al., 2012; Clemmensen et al., 2017; Cronin et al., 2022; Lienard et al., 2020; Sanchez et al., 2020)."
+      },
+      {
+        "sentence_num": 8,
+        "step": "1c",
+        "move": "1",
+        "text": "Over the last few decades, there have been numerous studies focused on uncovering the possible mechanism of membrane lysis by ESAT-6 (Augenstreich et al., 2020; Conrad et al., 2017; de Jonge et al., 2007; Kinhikar et al., 2010; Koo et al., 2008; Lienard et al., 2020; Osman et al., 2022), and how this might lead to escape of Mtb from the phagosome (Houben et al., 2012)."
+      },
+      {
+        "sentence_num": 9,
+        "step": "1c",
+        "move": "1",
+        "text": "However, the field has been plagued by setbacks such as the discovery that many studies prior to 2017 showing membrane disruption by ESAT-6 were confounded by the contamination with the detergent ASB-14, which was originally added to remove endotoxin (Conrad et al., 2017)."
+      },
+      {
+        "sentence_num": 10,
+        "step": "1c",
+        "move": "1",
+        "text": "Consequently, most recent studies have focused on the use of intact bacteria in assays, frequently with the closely related Mycobacterium marinum (Mm), to avoid using recombinant proteins."
+      },
+      {
+        "sentence_num": 11,
+        "step": "2c",
+        "move": "2",
+        "text": "The conclusions of these experiments are complicated by the interdependent nature of ESX-1 structural components, chaperones, and substrates (Augenstreich et al., 2020; Osman et al., 2022; Santucci et al., 2022)."
+      },
+      {
+        "sentence_num": 12,
+        "step": "2c",
+        "move": "2",
+        "text": "Mm has been a valuable model for working out ESX-1 and ESAT-6 function, and many of the key studies in the field have used Mm exclusively."
+      },
+      {
+        "sentence_num": 13,
+        "step": "2c",
+        "move": "2",
+        "text": "However, the unique characteristics of Mm compared to Mtb can sometimes leads to differing results, and conclusions drawn from one species do not always apply to the other (Bosserman et al., 2019; Carlsson et al., 2009; Lienard et al., 2020; Osman et al., 2022; Smith et al., 2008)."
+      },
+      {
+        "sentence_num": 14,
+        "step": "2c",
+        "move": "2",
+        "text": "This is important because the membranolytic activity of the ESX-1 seems to be highly context dependent, and more biochemical work is needed to work out the specific contributions of ESAT-6 to the membrane disruption phenotype."
+      },
+      {
+        "sentence_num": 15,
+        "step": "2b",
+        "move": "2",
+        "text": "Despite extensive research, the precise mechanism of ESAT-6 action remains elusive."
+      },
+      {
+        "sentence_num": 16,
+        "step": "3a",
+        "move": "3",
+        "text": "This study aims to bridge this gap by performing comprehensive biochemical and cellular investigations of ESAT-6 under neutral and acidic conditions."
+      },
+      {
+        "sentence_num": 17,
+        "step": "3b",
+        "move": "3",
+        "text": "We use biolayer interferometry (BLI) to measure the tight association between ESAT-6 and CFP-10, and the pH dependent ESAT-6 self-association."
+      },
+      {
+        "sentence_num": 18,
+        "step": "3b",
+        "move": "3",
+        "text": "We use fluorescence microscopy to directly observe formation of large ESAT-6 complexes, and we measure the stoichiometry of ESAT-6 under different pH conditions using multi-angle light scattering."
+      },
+      {
+        "sentence_num": 19,
+        "step": "3b",
+        "move": "3",
+        "text": "We then use molecular dynamics-based modeling to evaluate the most likely modes of ESAT-6 interaction."
+      },
+      {
+        "sentence_num": 20,
+        "step": "3c",
+        "move": "3",
+        "text": "We also generated a novel ESAT-6-binding alpaca-derived nanobody, E11rv, to further define the significance of ESAT-6 during Mtb infection."
+      },
+      {
+        "sentence_num": 21,
+        "step": "3b",
+        "move": "3",
+        "text": "We perform biochemical characterization of E11rv, as well as functional testing, which showed inhibition of Mtb growth inside macrophages treated with E11rv or expressing cytoplasmic E11rv."
+      }
+    ]
+  },
+  "validation004": {
+    "original_id": "text008",
+    "sentences": [
+      {
+        "sentence_num": 1,
+        "step": "1b",
+        "move": "1",
+        "text": "Gut microbiomes are emerging as important drivers and modulators of host phenotype [1], with evidence supporting the role of microbiomes in host digestion and nutrition, immune health, development, and, more recently, behavior [2–7]."
+      },
+      {
+        "sentence_num": 2,
+        "step": "1b",
+        "move": "1",
+        "text": "Over the past decade, the “microbiota-gut-brain axis” [7], which describes bidirectional interactions between the gut microbiome and host brain and behavior, has developed as an increasingly important field of study with implications for understanding the ecology and evolution of host-microbe interactions and animal behaviors."
+      },
+      {
+        "sentence_num": 3,
+        "step": "2b",
+        "move": "2",
+        "text": "However, current studies of the microbiota-gut-brain axis across animal taxa are largely correlational, and causal studies exploring the relationship between gut microbes and host behavior are rare [7]."
+      },
+      {
+        "sentence_num": 4,
+        "step": "2b",
+        "move": "2",
+        "text": "The functional relationship between hosts and microbiomes varies across host traits."
+      },
+      {
+        "sentence_num": 5,
+        "step": "1c",
+        "move": "1",
+        "text": "In many cases, this relationship is obligatory, where the microbiome is necessary for normal functioning of the host [7–10]."
+      },
+      {
+        "sentence_num": 6,
+        "step": "1c",
+        "move": "1",
+        "text": "Recently, it has been proposed that gut microbiomes play a facultative role in host phenotype, such that gut microbiomes contribute to phenotypic variation between individuals [11, 12]."
+      },
+      {
+        "sentence_num": 7,
+        "step": "1c",
+        "move": "1",
+        "text": "Results in support of a facultative relationship come from studies across taxonomic groups."
+      },
+      {
+        "sentence_num": 8,
+        "step": "1c",
+        "move": "1",
+        "text": "These include variations in non-behavioral and behavioral phenotypes [11, 12], such as behaviors associated with aging and senescence [13–18] and severity of neurodevelopmental disorders [19–21], as well as adaptive variations in behavioral traits both within [22, 23] and between species [24]."
+      },
+      {
+        "sentence_num": 9,
+        "step": "1c",
+        "move": "1",
+        "text": "Eusocial insects represent a powerful model for understanding how gut microbes contribute to adaptive behavioral trait variation due to their relatively simple and stable gut microbiomes and their complex division of labor [25–27]."
+      },
+      {
+        "sentence_num": 10,
+        "step": "1c",
+        "move": "1",
+        "text": "This division of labor is characterized by polyphenism between reproductive and non-reproductive individuals, as well as colony-level behavioral trait variation between non-reproductive individuals performing different tasks [25, 28]."
+      },
+      {
+        "sentence_num": 11,
+        "step": "1c",
+        "move": "1",
+        "text": "In eusocial insects, gut microbes have been shown to contribute to natural variation in memory [22] and social interactions [29]."
+      },
+      {
+        "sentence_num": 12,
+        "step": "1c",
+        "move": "1",
+        "text": "Likewise, studies indicate an association between gut microbiome and division of labor in eusocial insects [25, 30– 33]."
+      },
+      {
+        "sentence_num": 13,
+        "step": "2c",
+        "move": "2",
+        "text": "However, whether gut microbes play a causal role in any aspect of eusocial insect division of labor remains unknown."
+      },
+      {
+        "sentence_num": 14,
+        "step": "3b",
+        "move": "3",
+        "text": "We use the European honey bee, Apis mellifera, to investigate the causal relationship between the gut microbiome and division of labor."
+      },
+      {
+        "sentence_num": 15,
+        "step": "1b",
+        "move": "1",
+        "text": "Honey bees are a highly eusocial insect with well-characterized and tractable social behaviors and gut microbiomes."
+      },
+      {
+        "sentence_num": 16,
+        "step": "1b",
+        "move": "1",
+        "text": "In typical honey bee colonies, sterile worker bees exhibit age-related division of labor, which is based on a pattern of individual behavioral maturation."
+      },
+      {
+        "sentence_num": 17,
+        "step": "1b",
+        "move": "1",
+        "text": "Typically, adult worker bees perform brood care (“nursing”) and other activities in the hive during the first 1-3 weeks of adult life and then transition to foraging behaviors outside of the hive for the final 1-2 weeks of their life [28, 34]."
+      },
+      {
+        "sentence_num": 18,
+        "step": "2c",
+        "move": "2",
+        "text": "However, honey bee division of labor is flexible and responsive to changing colony needs, and thus does not exclusively rely on the typical age patterns of behavioral maturation [35–39]."
+      },
+      {
+        "sentence_num": 19,
+        "step": "1b",
+        "move": "1",
+        "text": "In addition, honey bee foragers exhibit considerable individual variation in preference for nectar or pollen [40, 41], exploratory behavior [42], and general foraging intensity [43]."
+      },
+      {
+        "sentence_num": 20,
+        "step": "1c",
+        "move": "1",
+        "text": "Therefore, honey bee division of labor involves individual variation in both behavioral maturation and task performance [44]."
+      },
+      {
+        "sentence_num": 21,
+        "step": "1b",
+        "move": "1",
+        "text": "The honey bee gut microbial community, most of which resides in the hindgut, is well-characterized and relatively simple, composed of ∼10-20 different species of facultatively anaerobic and microaerophilic host-adapted bacteria within the taxonomic groups of Actinomycetes (Bifidobacterium), Lactobacillaceae (Bombilactobacillus Firm-4 and Lactobacillus Firm-5), Gammaproteobacteria (Gilliamella and Friscella), Alphaproteobacteria (Bartonella and Bombella), and Betaproteobacteria (Snodgrassella) [27]."
+      },
+      {
+        "sentence_num": 22,
+        "step": "1b",
+        "move": "1",
+        "text": "Furthermore, the individual members of the honey bee gut microbiome are consistently present, but differ in abundance across different individuals and populations of honey bees [27]."
+      },
+      {
+        "sentence_num": 23,
+        "step": "1b",
+        "move": "1",
+        "text": "Of particular interest, the composition of honey bee gut microbial communities can be experimentally manipulated."
+      },
+      {
+        "sentence_num": 24,
+        "step": "1c",
+        "move": "1",
+        "text": "All species can be cultured [45] and used to inoculate young bees [29, 46, 47], who must acquire their microbiome from older bees or hive materials [48]."
+      },
+      {
+        "sentence_num": 25,
+        "step": "1c",
+        "move": "1",
+        "text": "Furthermore, previous studies indicate an association between the gut microbiome and various aspects of division of labor in the honey bee [30–32, 49, 50]."
+      },
+      {
+        "sentence_num": 26,
+        "step": "3a",
+        "move": "3",
+        "text": "Due to these attributes of the honey bee gut microbiome, it is a great model for understanding the causal effects of gut microbes on complex host behaviors."
+      },
+      {
+        "sentence_num": 27,
+        "step": "3c",
+        "move": "3",
+        "text": "We took advantage of these behavioral and microbiome features to determine whether gut microbes play a causal role in honey bee division of labor, with a specific focus on behavioral maturation and variation in foraging intensity."
+      }
+    ]
+  },
+  "validation005": {
+    "original_id": "text002",
+    "sentences": [
+      {
+        "sentence_num": 1,
+        "step": "1b",
+        "move": "1",
+        "text": "The capacity for short-term vocal plasticity is advantageous in contexts where ambient noise is abundant, as it can enable acoustic jamming avoidance [1]."
+      },
+      {
+        "sentence_num": 2,
+        "step": "1b",
+        "move": "1",
+        "text": "Ambient noise presents a special challenge to echolocating bats, who rely on the returning echoes of their sonar pulses for navigationandin additionmaintain social dynamics in part through the exchange of communication calls."
+      },
+      {
+        "sentence_num": 3,
+        "step": "1c",
+        "move": "1",
+        "text": "It is well established that bats possess impressive vocal plasticity, freely modifying various parameters of their vocalizations [2] such asthe amplitude (known as the “Lombard effect”) [3–7,30] duration [4,8–10], repetition or emission pattern [8,9,11], complexity [8], and spectral content [6,12,13] (but see [14–16]) in response to playback of interfering noise."
+      },
+      {
+        "sentence_num": 4,
+        "step": "2a",
+        "move": "2",
+        "text": "Yet, how bats overcome interference from moment-to-moment fluctuations in the amplitude of continuous background noise, a situation analogous to their natural environment, has received less attention."
+      },
+      {
+        "sentence_num": 5,
+        "step": "1b",
+        "move": "1",
+        "text": "Carollia perspicillata bats live in colonies of up to hundreds of individuals where the acoustic landscape is densely populated by vocalizations which all share overlapping spectral and temporal properties."
+      },
+      {
+        "sentence_num": 6,
+        "step": "1c",
+        "move": "1",
+        "text": "These bats emit highly stereotyped echolocation pulses comprised of brief (∽1-2 ms) [17], multi-harmonic, frequency-modulated downward sweeps (peak frequency 60-90 kHz) [18,19]."
+      },
+      {
+        "sentence_num": 7,
+        "step": "1c",
+        "move": "1",
+        "text": "This species also possesses a repertoire of social calls, some of which have been associated with specific behaviors, such as distress, territorial aggression (males), courtship (males), and the eliciting of maternal attention (infants) [20–22]."
+      },
+      {
+        "sentence_num": 8,
+        "step": "1b",
+        "move": "1",
+        "text": "These communication calls typically feature multiple distinct harmonics, with the most energy concentrated in lower frequencies (below 50 kHz) [20]."
+      },
+      {
+        "sentence_num": 9,
+        "step": "3b",
+        "move": "3",
+        "text": "In this study, we investigated the ability of bats to adapt the timing of their vocalizations (both echolocation and communication calls) to overcome acoustic jamming, using temporally predictable and unpredictable noise, across two experiments."
+      },
+      {
+        "sentence_num": 10,
+        "step": "3b",
+        "move": "3",
+        "text": "We hypothesized that bats would preferentially vocalize in periods of low amplitude in amplitude modulated noise, in line with a metabolically efficient signal optimization strategy."
+      },
+      {
+        "sentence_num": 11,
+        "step": "1a",
+        "move": "1",
+        "text": "Humans regularly employ a similar strategy, such as when a pair of speakers pause their conversation so as not to be drowned out by the blaring siren of a passing ambulance."
+      },
+      {
+        "sentence_num": 12,
+        "step": "3c",
+        "move": "3",
+        "text": "We observed that freely vocalizing bats flexibly adapt the timing and rate of their calling to be inversely proportional to dynamically-changing background amplitude levels."
+      },
+      {
+        "sentence_num": 13,
+        "step": "1a",
+        "move": "1",
+        "text": "This temporal jamming avoidance behavior emerged in the presence of both predictably and unpredictably patterned noise, implying an underlying auditory-vocal circuit that does not require entrainment for optimizing call timing."
+      },
+      {
+        "sentence_num": 14,
+        "step": "3c",
+        "move": "3",
+        "text": "In addition, calling behavior is modulated not only by instantaneous amplitude levels but also by more global sound statistics (i.e., second-order temporal patterns), suggesting that bats learn and exploit properties of the acoustic environment which unfold over time."
+      }
+    ]
+  },
+  "validation006": {
+    "original_id": "text047",
+    "sentences": [
+      {
+        "sentence_num": 1,
+        "step": "1a",
+        "move": "1",
+        "text": "Energy expenditure (EE) in mammals is sensitively regulated to maintain body temperature homeostasis (1)."
+      },
+      {
+        "sentence_num": 2,
+        "step": "1b",
+        "move": "1",
+        "text": "EE increases to generate heat when ambient temperature falls below thermoneutrality."
+      },
+      {
+        "sentence_num": 3,
+        "step": "1b",
+        "move": "1",
+        "text": "This increase in metabolic rate is reversible when ambient room temperature is restored to thermoneutral."
+      },
+      {
+        "sentence_num": 4,
+        "step": "1b",
+        "move": "1",
+        "text": "To meet these changes in EE, substrate oxidation must be dynamic."
+      },
+      {
+        "sentence_num": 5,
+        "step": "1b",
+        "move": "1",
+        "text": "Insulin is the dominant stimulus of glucose uptake and metabolism in skeletal muscle and adipose tissue."
+      },
+      {
+        "sentence_num": 6,
+        "step": "1b",
+        "move": "1",
+        "text": "Yet, whether it is involved in the accelerated metabolic rate required to regulate body temperature has not been well defined."
+      },
+      {
+        "sentence_num": 7,
+        "step": "1c",
+        "move": "1",
+        "text": "It has long since been established that insulin is both critical to maintaining glucose homeostasis and causes a thermogenic response to feeding (2, 3)."
+      },
+      {
+        "sentence_num": 8,
+        "step": "1c",
+        "move": "1",
+        "text": "Low metabolic rate directly relates to insulin resistance – a risk factor for metabolic syndrome and type 2 diabetes (4–6)."
+      },
+      {
+        "sentence_num": 9,
+        "step": "1c",
+        "move": "1",
+        "text": "Conversely, increased EE due to physical activity improves insulin sensitivity and decreases risk factors for metabolic diseases (7)."
+      },
+      {
+        "sentence_num": 10,
+        "step": "1c",
+        "move": "1",
+        "text": "As with physical exercise, intense cold exposure that requires shivering thermogenesis dramatically increases EE for heat generation and associates with increased insulin sensitivity (8–13)."
+      },
+      {
+        "sentence_num": 11,
+        "step": "1c",
+        "move": "1",
+        "text": "The increase in insulin sensitivity with shivering thermogenesis may be comparable to the increase seen with physical exercise."
+      },
+      {
+        "sentence_num": 12,
+        "step": "1c",
+        "move": "1",
+        "text": "Body temperature defense during intense cold exposure, like physical exercise, is characterized by sympathetic and adrenomedullary secretion of catecholamines (14, 15)."
+      },
+      {
+        "sentence_num": 13,
+        "step": "2b",
+        "move": "2",
+        "text": "Whether insulin action increases with a mild decrease in environmental temperature that does not require shivering thermogenesis (i.e., a stress response) is unclear."
+      },
+      {
+        "sentence_num": 14,
+        "step": "3a",
+        "move": "3",
+        "text": "This is particularly relevant in humans, because with modernization, the “burden” of physiological thermoregulation is shared between indoor thermostat-controlled heating and cooling systems that conceptually replicate the body’s temperature control system."
+      },
+      {
+        "sentence_num": 15,
+        "step": "3a",
+        "move": "3",
+        "text": "Consequently, the physiological challenge created by environmental temperature swings are less extreme and less frequent."
+      },
+      {
+        "sentence_num": 16,
+        "step": "3a",
+        "move": "3",
+        "text": "Modern societies generally require people spend less time outside for work and recreation (16)."
+      },
+      {
+        "sentence_num": 17,
+        "step": "3a",
+        "move": "3",
+        "text": "The decreased need to accommodate extremes in environmental temperature is associated with a reduction in daily EE (17)."
+      },
+      {
+        "sentence_num": 18,
+        "step": "3a",
+        "move": "3",
+        "text": "This takes on added significance because in addition to temperature regulation, EE is also a major component of body weight regulation, as it is the counterbalance to energy intake."
+      },
+      {
+        "sentence_num": 19,
+        "step": "3a",
+        "move": "3",
+        "text": "Sustained conditions where EE is less than energy intake leads to weight gain and excess adiposity."
+      },
+      {
+        "sentence_num": 20,
+        "step": "1b",
+        "move": "1",
+        "text": "The actions of insulin are a potential intersection for homeostasis of two tightly regulated control systems – arterial glucose and body temperature."
+      },
+      {
+        "sentence_num": 21,
+        "step": "1b",
+        "move": "1",
+        "text": "The dual role of insulin is significant as challenges to one system may have implications for the second system."
+      },
+      {
+        "sentence_num": 22,
+        "step": "1b",
+        "move": "1",
+        "text": "For example, ambient temperature may alter how insulin and its counterregulatory hormones maintain glucose homeostasis, create a risk for metabolic disease, or affect insulin dosing for individuals treated with insulin."
+      },
+      {
+        "sentence_num": 23,
+        "step": "3b",
+        "move": "3",
+        "text": "The aim of the experiments described herein was to determine the relationship of ambient temperature on the insulin sensitivity of glucose fluxes independent of shivering thermogenesis and the stress of severe decreases in environmental temperature."
+      },
+      {
+        "sentence_num": 24,
+        "step": "3b",
+        "move": "3",
+        "text": "Short-term and adaptive responses to thermoneutral temperature (TN, ∼28°C) and room (laboratory) temperature (∼22°C) were studied."
+      },
+      {
+        "sentence_num": 25,
+        "step": "3b",
+        "move": "3",
+        "text": "These temperatures allow for uncomplicated analysis of insulin action because body weights and arterial stress hormone concentrations of chow-fed mice at TN and RT are similar over a ∼4 week adaptive period (18–21)."
+      },
+      {
+        "sentence_num": 26,
+        "step": "3b",
+        "move": "3",
+        "text": "These temperatures also have a practical application to the study of insulin action, glucose metabolism, and EE in mice housed and studied at standard vivaria and laboratory temperatures (∼22°C)."
+      },
+      {
+        "sentence_num": 27,
+        "step": "3b",
+        "move": "3",
+        "text": "Moreover, investigating metabolic phenotypes between RT and TN are more relevant to humans than contrasting RT with more common experimental cold exposures of <15°C (22, 23)."
+      },
+      {
+        "sentence_num": 28,
+        "step": "3c",
+        "move": "3",
+        "text": "Results show that at TN, mice have decreased insulin action and EE regardless of whether mice are TN-adapted or short-term transitioned from RT-adapted to TN."
+      },
+      {
+        "sentence_num": 29,
+        "step": "3c",
+        "move": "3",
+        "text": "The reciprocal transition from TN-adapted to RT increases EE but unexpectedly without a parallel increase in insulin-stimulated whole body glucose uptake."
+      },
+      {
+        "sentence_num": 30,
+        "step": "3c",
+        "move": "3",
+        "text": "This higher EE occurs without increasing glucose uptake from the blood, but rather by diverting glucose from glucose storage to glycolysis."
+      }
+    ]
+  }
+}

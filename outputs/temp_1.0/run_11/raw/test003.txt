@@ -1,0 +1,19 @@
+[1a] Nonalcoholic steatohepatitis (NASH) is a severe progression of nonalcoholic fatty liver disease (NAFLD), characterized by hepatic Triglyceride (TG) accumulation, inflammation, liver fibrosis, and hepatocellular injury, which can progress to cirrhosis and hepatocellular carcinoma (HCC) (Loomba et al., 2021).
+[1c] Numerous studies have proposed mediators that regulate NASH initiation and progression, including insulin resistance (Chitturi et al., 2002), oxidative stress (Masarone et al., 2018), mitochondrial dysfunction (Begriche et al., 2006), cell death (Kanda et al., 2018), immune cell activation (Huby and Gautier, 2022), and genetic/epigenetic factors (Jonas and Schürmann, 2021).
+[1b] Lifestyle modifications, such as reducing calorie intake, exercise, and weight loss are recommended for the treatment of NAFLD/NASH (Baumeier et al., 2015; de Castro-de-Paiva et al., 2022; Golbidi et al., 2012; van der Windt et al., 2018).
+[2b] However, there are few effective therapies to address the increasing global prevalence of NAFLD/NASH (Oseini and Sanyal, 2017).
+[1b] Time-restricted feeding (TRF) is a dietary intervention that involves consuming food within a consistent daily time window, typically spanning 8 to 10 hours, without the need to reduce overall calorie intake (Rynders et al., 2019).
+[1c] Several studies have reported favorable outcomes associated with TRF, including reductions in body weight and adiposity, improvements in blood pressure, and enhanced insulin sensitivity in both human and rodent studies (Chaix et al., 2014; Hatori et al., 2012; Sutton et al., 2018).
+[2b] While the precise mechanisms remain unexplored, it has been shown that TRF prevents the development of liver steatosis and NASH when fed a high-fat diet (Hatori et al., 2012) or a high-fat high-sucrose diet (Shu et al., 2022).
+[1b] Inositol polyphosphate multikinase (IPMK) is responsible for producing inositol tetrakisphosphate (IP4) and inositol pentakisphosphate (IP5) (Frederick et al., 2005).
+[1b] Additionally, IPMK exhibits PI3K activity (Maag et al., 2011) and plays a pivotal role in various cellular signaling pathways.
+[1b] IPMK functions as an adaptor protein, interacting with key proteins, including a mechanistic target of rapamycin (mTOR), AMP-activated protein kinase (AMPK), serum response factor (SRF), and Unc-51-like autophagy-activating kinase (ULK) (Bang et al., 2012; Guha et al., 2019; E. Kim et al., 2013; S. Kim et al., 2011).
+[1c] Recent research has uncovered IPMK’s significant role as a key regulator of Toll-like receptor (TLR) signaling, particularly in myeloid cells, especially macrophages (E. Kim et al., 2017; H. Lee et al., 2023).
+[1b] In this context, IPMK modulates the production of inflammatory cytokines by regulating TRAF6 protein stability through direct interaction with TRAF6 and preventing K48-linked ubiquitination.
+[1b] IPMK has been shown to play a critical role in liver inflammation (Guha et al., 2019).
+[1c] We have reported that IPMK enhances hepatic insulin sensitivity and suppresses gluconeogenesis (Jung et al., 2022).
+[2d] In preliminary studies, we found that TRF increased IPMK expression in liver.
+[3a] In this study, we show that time-restricted feeding (TRF) improves steatosis and inflammation in a mouse model of NASH, i.e., mice fed a methionine-choline deficient diet (MCDD).
+[1b] We found that IPMK protein was decreased in the liver of MCDD mice.
+[3a] To determine whether the loss of IPMK exacerbates the NASH phenotype, we fed wild-type (WT) and liver-specific IPMK knockout (LKO) mice a MCDD, and assessed liver histology, hepatocellular injury, and inflammation.
+[3b] Hepatic IPMK deficiency worsened hepatic steatosis, elevated serum ALT and AST levels and expression of inflammatory genes in mice fed MCDD, suggesting a role as a molecular mediator of the effect of TRF in NASH.

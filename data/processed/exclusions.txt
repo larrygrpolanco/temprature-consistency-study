@@ -1,0 +1,25 @@
+================================================================================
+EXCLUDED ARTICLES
+================================================================================
+
+Total excluded: 4
+
+Articles excluded due to sentence boundary inconsistencies:
+--------------------------------------------------------------------------------
+
+text018:
+  Reason: Sentence split at "U.S." / "Fish and Wildlife Service"
+
+text027:
+  Reason: Two sentences combined as one
+
+text028:
+  Reason: Two sentences combined as one
+
+text040:
+  Reason: Two sentences combined as one, missing period
+
+================================================================================
+These exclusions ensure reliable alignment between LLM outputs and
+gold-standard annotations during automated evaluation.
+================================================================================

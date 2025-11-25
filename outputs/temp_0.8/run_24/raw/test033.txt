@@ -1,0 +1,15 @@
+[1a] The spontaneous movement of polar lipids from one side of a membrane bilayer to the other is slow and is accelerated in cells to a physiologically relevant rate by lipid transporters [1,2].  
+[1b] Flippases and floppases are transporters which move lipids unidirectionally, against their concentration gradient in an ATP-dependent manner, whereas scramblases enable bidirectional lipid movement without need of metabolic energy.  
+[1b] Scramblases typically possess transmembrane helices that are not fully hydrophobic.  
+[1b] These helices form a membrane-spanning hydrophilic groove along which phospholipids can move in analogy to a credit card (phospholipid) being swiped through a card reader (scramblase) [1].  
+[1c] Known scramblases are alpha-helical proteins[3–6], but recently, a beta-barrel scramblase, the voltage-dependent anion channel (VDAC), was identified[7].  
+[1b] The VDAC barrel has membrane-facing polar residues that, when paired with the same residues in a second beta barrel at a dimer interface, create a local membrane defect along which lipids cross the membrane in credit card mode.  
+[1b] Therefore, the presence or ability to form a hydrophilic groove across the membrane seems to be a common feature for lipid scrambling.  
+[1a] Insertases assist in the integration of membrane proteins into lipid bilayers[8].  
+[1a] Their activity is necessary because membrane proteins typically have hydrophilic segments that do not spontaneously insert into the membrane.  
+[1b] The translocating moieties of these proteins are thus amphiphilic, similar to lipids, and it is interesting to consider whether insertases and scramblases may share a common mechanism even though lipids and their polar headgroups are generally smaller than the translocating parts of membrane proteins.  
+[1c] In fact, it has been suggested that scramblases, insertases, and some translocases may facilitate the insertion and translocation of phospholipids and proteins through membrane thinning[9].  
+[1c] Recent work demonstrated that the mitochondrial outer membrane protein MTCH2 is an insertase[10].  
+[1b] MTCH2 has a wide transbilayer groove lined with polar and charged residues, reminiscent of the hydrophilic grooves of scramblases, leading us to hypothesize that it may function as a scramblase.  
+[3a] To test this hypothesis, we performed coarse-grained and atomistic molecular dynamics (MD) simulations of MTCH2 in a model lipid bilayer.  
+[3c] We show that MTCH2 is indeed a scramblase, with the hydrophilic groove providing a transbilayer path for the movement of lipid headgroups while the acyl chains move through the hydrophobic interior of the membrane in credit card mode.

@@ -1,0 +1,32 @@
+[1a] Platelets play a pivotal role in primary hemostasis, thrombosis, inflammation, and vascular biology.  
+[1b] These anuclear discoid cells circulate in the bloodstream to patrol the integrity of the vascular system[1].  
+[1b] Upon injury, platelets quickly activate, change shape, release granule contents, and aggregate to form the hemostatic plug in the presence of fibrinogen.  
+[1b] Platelet activation can be triggered by many physiological agonists, including thrombin, the most potent platelet agonist and a key protease in coagulation[2,3].  
+[1b] Thrombin signals through two protease activated receptors (PARs), PAR1 and PAR4, on the surface of human platelets[4].  
+[1b] PARs belong to the GPCR superfamily and have a unique activation mechanism whereby the N-terminus is enzymatically cleaved to unmask the tethered ligand[5].  
+[1b] The new N-terminus interacts with the endogenous ligand binding site to induce a global structural rearrangement that activates downstream signaling[6,7].  
+[1b] PAR1 and PAR4 both signal through Gαq and Gα12/13, however with different kinetics[8].  
+[1b] PAR1 leads to rapid signaling that is quickly dissipated, whereas PAR4 leads to prolonged signaling[4,9,10].  
+[1a] This sustained signaling associated with PAR4 activation is essential for thrombosis, highlighting PAR4 as a promising target for antiplatelet therapies[11–13].  
+[1a] Over the past 10 years, platelet thrombin receptors have been appealing targets for antiplatelet therapies, which led to the first-in-class FDA approved PAR1 inhibitor, vorapaxar.  
+[2a] However, targeting PAR1 comes with a significant risk of bleeding, which outweighs its clinical benefits in preventing cardiovascular events[14,15].  
+[1a] In recent years, PAR4 has become a rising star as a safer antiplatelet and antithrombotic target for a number of reasons.  
+[3a] First, targeting PAR4 signaling without inhibiting PAR1 allows platelets to continue to respond to low levels of thrombin and preserves normal hemostasis[12].  
+[3a] Second, pharmacological inhibition of PAR4 prevents thrombin-mediated PAR4 activation at high concentrations that are associated with pathological thrombosis.  
+[3a] Third, since the prolonged signaling mediated by PAR4 activation is associated with factor V release from α-granules and microparticle generation[16], selectively inhibiting PAR4 would not only prevent thrombus formation but also reduce platelet procoagulant activity[11].  
+[1a] Collectively, this has culminated in the development of a number of PAR4 antagonists in the form of pepducins, small molecule compounds, and function-blocking antibodies[17].  
+[1c] Two small molecule PAR4 inhibitors from Bristol Myers Squibb, BMS-986120 and BMS-986141, were the subject of clinical trials and proved to be efficient in preventing cardiovascular events with a good safety profile[12,13,18].  
+[1a] PAR4’s unique properties have made it an attractive therapeutic target to prevent thrombosis without hindering normal hemostasis.  
+[2b] Therefore, it is essential that we fully understand the mechanisms underlying PAR4 signaling.  
+[1c] The tethered ligand mechanism was proposed in 1991 by Coughlin and colleagues, however the molecular mechanism of receptor activation is only recently understood.  
+[1c] Recently, we used amide hydrogen/deuterium exchange (H/D exchange) mass spectrometry (MS) with purified full-length PAR4 to examine the conformational dynamics of the tethered ligand mechanism following activation by thrombin[19].  
+[1c] This study revealed that PAR4 activation requires a coordinated rearrangement of extracellular loop 3 (ECL3) and threonine at position 153 in the ligand binding site formed by transmembrane domain 3 (TM3) and TM7.  
+[1b] Within ECL3, there is a single nucleotide polymorphism (SNP) in which the proline at 310 is replaced with a leucine (PAR4-310P/L, rs2227376).  
+[1b] This natural sequence variant of PAR4 had significantly lower receptor reactivity, as measured by calcium mobilization in HEK293 cells.  
+[1b] Natural sequence variants of PAR4 (e.g. rs773902 (PAR4-120A/T), and rs2227346 (PAR4-296F/V)) affect the receptor reactivity and subsequent platelet function [20–23].  
+[3a] Therefore, we hypothesize the hypo-reactive PAR4-P310L variant would reduce platelet responsiveness to thrombin stimulation.  
+[3b] To test the impact of the PAR4-310P/L polymorphism in vivo, we used CRISPR/Cas9 to introduce a point mutation into PAR4 to generate the mouse homolog of this variant, PAR4-P322L.  
+[3c] PAR4-P322L significantly reduced platelet responsiveness to PAR4-activation peptide (AYPGKF) and thrombin, while ADP and GPVI signaling were not affected.  
+[3c] Further, platelet aggregation was dramatically decreased in the platelets from mice that carried one (PAR4P/L, heterozygous) or two (PAR4L/L, homozygous) alleles of PAR4-P322L.  
+[3c] Additionally, PAR4L/L mice displayed slightly extended tail bleeding compared to wild-types.  
+[3c] PAR4-P322L also delayed arterial occlusion in the ferric chloride-induced carotid artery thrombosis model.

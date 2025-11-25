@@ -1,0 +1,22 @@
+[1a] The daily rhythmicity of light and darkness serves most animals for the perception of time [1, 2] and has been reported to be the most important Zeitgeber, synchronizing internal and external events through entrainment of the animal’s circadian clock mechanism [2, 3].
+[1a] Circadian rhythms are manifested in many behavioral patterns, such as locomotion, sleep, foraging, and singing, as well as in physiological processes, including hormonal regulation and gene expression [3, 4].
+[1b] The behavioral responses to the phases of daylight and darkness depend on the animal’s visual system, its way of life (diurnal, nocturnal, or crepuscular), and the specific nature of the stimulus [5–8].
+[1b] The individuals' synchronization with external environmental rhythms (circadian, circalunar and circannual) is manifested in synchronization of the overall population.
+[1b] Artificial light at night (ALAN), the use of anthropogenic outdoor illumination during the night-time, has become prevalent [9, 10] and is increasing worldwide by about 3-6% annually [11].
+[1b] ALAN disrupts the natural light-dark cycle, impacting animals’ daily activity patterns and altering their temporal synchronization [1, 5, 12].
+[1c] It has been shown to have severe effects on human health [13], on wildlife, and on the environment [4, 14–17].
+[1c] In insects, nocturnal illumination has been reported to induce spatial disorientation [14, 18], resulting in higher predation risk [19, 20], increased mortality [19–22], reduced pollination [16, 23], and collectively impeding biodiversity [24].
+[2b] Laboratory experiments offer a useful tool for ALAN research, enabling controlling and isolating the light stimuli from all other variables.
+[2b] Such experiments, however, lack the complexity of the natural environment including related behavioral aspects such as social interactions.
+[1b] The natural environment incorporates, alongside light-dark cycles, a multitude of rhythmic processes, including thermoperiods, rhythmic soundscape due to the temporal changes in species’ activities, as well as rhythmic intra- and interspecific (e.g., predator-prey) interactions.
+[2b] Ideally, ecological ALAN research would be conducted in the untouched, naturally dark environment, while introducing long-term ALAN manipulations.
+[2b] Such field experiments, however, present significant technical challenges.
+[2b] Semi-natural conditions therefore offer an excellent alternative, enabling monitoring the experimental animals under almost natural conditions, while limiting the biotic and abiotic variables by isolating the experimental individuals in dedicated enclosures.
+[1b] Our experimental model, the field cricket, Gryllus bimaculatus, is a ground-dwelling species exhibiting distinct diel stridulation and locomotion cycles.
+[1c] Crickets demonstrate temporal shifts in both these activity patterns in response to changes in illumination regimes [12, 25–28].
+[1c] Additionally, temporal, circadian variations in gene expression patterns have been observed in the cricket [28, 29].
+[3a] We investigated the impact of ALAN on these nocturnal insects in a semi-natural experimental set-up.
+[3b] Individual crickets were subjected to various ALAN intensities in shaded outdoor conditions that incorporated natural temperature and soundscape rhythms.
+[3b] We monitored the individual insects’ stridulation behavior for 14 consecutive days and nights.
+[2b] To the best of our knowledge, this is a first attempt to monitor the behavior of individual insects over such an extended period within a semi-natural setting.
+[3c] Our findings have uncovered the effects of ecologically-relevant ALAN intensities on behavioral patterns of these insects, under such natural conditions.

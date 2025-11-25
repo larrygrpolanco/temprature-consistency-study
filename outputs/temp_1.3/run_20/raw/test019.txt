@@ -1,0 +1,30 @@
+[1a] Ion transport across the cell membrane establishes and exploits ion gradients to store energy and regulate electrical signaling.  
+[1b] Ion transport is catalyzed by two classes of membrane proteins: ion channels and active transporters.  
+[1c] The CLC “Chloride Channel” family encompasses both major ion-transport mechanisms: half of the CLC homologs are electrodiffusive chloride (Cl-) channels, and half are secondary active transporters that stoichiometrically exchange Cl- for protons (H+) (Jentsch and Pusch, 2018).  
+[1c] The occurrence of two mechanisms in one family suggests they operate by variations on a common theme (Miller, 2006), and experimental results revealed that CLC channels are “broken” transporters (Lisal and Maduke, 2008).  
+[1b] In both CLC channels and transporters, a conserved glutamate residue referred to as the “gating glutamate” (Egate) plays a central mechanistic role.  
+[1c] High resolution CLC transporter structures show that this residue can adopt four different conformations (Dutzler et al., 2002; Dutzler et al., 2003; Feng et al., 2010; Chavan et al., 2020; Schrecker et al., 2020) (Figure 1A), which contribute to the Cl-/H+ exchange mechanism (Accardi and Miller, 2004; Feng et al., 2012; Chavan et al., 2020; Leisle et al., 2020).  
+[1b] Due to the small number of CLC channel structures relative to transporters, characterization of the central role for the Egate residue in CLC channels has primarily relied on extensive functional studies of channel gating rather than observed Egate side chain conformations (Jentsch and Pusch, 2018).  
+[1c] The first CLC channel structure reported was of bovine CLC-K (Park et al., 2017), a kidney-expressed homolog that is the lone CLC homolog lacking the Egate (Kieferle et al., 1994).  
+[1c] The only other CLC channel structures reported prior to 2023 are of the human CLC-1: one of these cryoEM structures shows Egate in the “out” position (Park and MacKinnon, 2018) while the other lacked density for Egate (Wang et al., 2019).  
+[1b] The Egate “out” position was originally posited to be exclusive to the CLC channel homologs, as its positioning off to the side widens the Cl--permeation pathway and, in CLC-1, results in a continuous pathway (Park and MacKinnon, 2018).  
+[1a] Such a continuous pathway precludes exchange coupling (Jardetzky, 1966; Miller, 2021).  
+[1b] The open Cl--permeation pathway in the CLC-1 structure is consistent with the known functional properties of CLC-1 in the absence of an applied transmembrane voltage.  
+[1b] CLC-1 is a voltage-gated channel that is predominantly in the open state at zero mV (Altamura et al., 2020) (Figure 1B).  
+[1b] At negative transmembrane voltages that favor CLC-1 closing, the Egate sidechain presumably moves to either the “middle” or “down” positions, or both, to occlude the channel pore.  
+[1b] CLC-2, like CLC-1, is a voltage-gated channel, but with opposite voltage dependence, opening instead of closing in response to hyperpolarization (Thiemann et al., 1992; Wang et al., 2017).  
+[1a] CLC-2 chloride channels are expressed in every mammalian organ, where they play diverse physiological functions (Thiemann et al., 1992; Lein et al., 2007; Duan, 2013; Stolting et al., 2014; Jentsch and Pusch, 2018).  
+[1a] Perturbation of CLC-2 function is associated with human disease including leukodystrophies (Jentsch and Pusch, 2018), blindness (Xu et al., 2023), primary aldosteronism (Fernandes-Rosa et al., 2018; Scholl et al., 2018), and atrial fibrillation (Hansen et al., 2020).  
+[2b] Despite their importance in human physiology, our understanding of CLC-2 molecular and physiological mechanisms is incomplete.  
+[2c] A mystery concerning CLC-2 is why electrophysiological recordings of natively expressed channels reveal tremendous variation in voltage-dependent gating.  
+[1b] CLC-2 currents are typically inwardly rectifying and activated by hyperpolarization, but the kinetics and degree of rectification are highly variable (Bosl et al., 2001; Jentsch and Pusch, 2018).  
+[2c] In some cases, this variability is understood – for example interactions between CLC-2 and the astrocytic GlialCAM protein yields voltage-independent currents (Jeworutzki et al., 2012; Maduke and Reimer, 2012).  
+[2c] Yet many questions about CLC-2 gating remain.  
+[1b] Like CLC-1, CLC-2 gating depends critically on Egate (Niemeyer et al., 2003; Cederholm et al., 2010).  
+[1b] At zero mV, CLC-2 is predominantly in the closed state (Stolting et al., 2013; Stolting et al., 2014; Jentsch and Pusch, 2018), presumably with Egate blocking the pore.  
+[1b] Such pore localization for Egate was modeled in a recent CLC-2 cryoEM structure (Ma et al., 2023); however, experimental density for the sidechain was lacking, and therefore the precise structure of this gate remains uncertain (Figure 1B).  
+[2b] Structures with improved resolution will be crucial to understanding CLC-2 gating, which involves interactions between Egate, Cl- and H+, with differential effects of external vs internal ions (Pusch et al., 1999; Niemeyer et al., 2003; Sanchez-Rodriguez et al., 2010; Sanchez-Rodriguez et al., 2012; De Jesus-Perez et al., 2016).  
+[1b] In addition to the Egate mechanism, a “ball-and-chain” gating mechanism, in which the tethered N-terminus blocks the pore, has been proposed for CLC-2 (Grunder et al., 1992).  
+[2a] However, this idea has been controversial (Varela et al., 2002) and the mechanism by which mutations in the N-terminal domain influence gating remains unknown.  
+[2b] Because a structural foundation for understanding CLC-2 gating has been lacking, we determined cryoEM structures of CLC-2, in the presence and absence of the selective inhibitor AK-42 (Koster et al., 2020).  
+[3a] The structures and complementary electrophysiology data presented here provide atomic insight into an N-terminal hairpin gating mechanism for CLC-2 channels.

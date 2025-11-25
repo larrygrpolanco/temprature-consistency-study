@@ -1,0 +1,21 @@
+Tuberculosis (TB), caused by Mycobacterium tuberculosis (Mtb), is a major global health concern, claiming over 1.6 million lives annually.
+Mtb is highly adept at evading the immune system, and it can persist within an infected person for decades.
+This situation is worsened by the nearly 1.7 billion people globally who harbor a dormant Mtb infection (Houben and Dodd, 2016), coupled with the rising trend of drug-resistant TB cases (World Health Organization, 2022).
+To successfully establish an infection in the host, Mtb utilizes a plethora of virulence factors delivered via its several ESX-secretion systems.
+Studies have indicated that Mtb has the ability to damage the phagosomal membrane, a process that is heavily reliant on the activity of the ESX- 1 secretion system (Conrad et al., 2017; López-Jiménez et al., 2018; Schnettger et al., 2017).
+Currently, the most probable candidate driving ESX-1 dependent lytic activity is the well-known T cell antigen, the 6 kDa early secreted antigenic target (ESAT-6, or EsxA)) (Andersen et al., 1995; Sørensen et al., 1995), after which the ESX family of T7SSs was originally named (Gey van Pittius et al., 2001).
+Secretion of the various ESX-1 substrates are known to be highly complex and interdependent, and while the full scope of ESX-1 components and substrates is still being worked out, many individual ESX-1 component knockouts are known to phenocopy the ESAT-6 deletion, indicating that ESAT-6 itself is responsible for the lion’s share of the activity (Chen et al., 2012; Clemmensen et al., 2017; Cronin et al., 2022; Lienard et al., 2020; Sanchez et al., 2020).
+Over the last few decades, there have been numerous studies focused on uncovering the possible mechanism of membrane lysis by ESAT-6 (Augenstreich et al., 2020; Conrad et al., 2017; de Jonge et al., 2007; Kinhikar et al., 2010; Koo et al., 2008; Lienard et al., 2020; Osman et al., 2022), and how this might lead to escape of Mtb from the phagosome (Houben et al., 2012).
+However, the field has been plagued by setbacks such as the discovery that many studies prior to 2017 showing membrane disruption by ESAT-6 were confounded by the contamination with the detergent ASB-14, which was originally added to remove endotoxin (Conrad et al., 2017).
+Consequently, most recent studies have focused on the use of intact bacteria in assays, frequently with the closely related Mycobacterium marinum (Mm), to avoid using recombinant proteins.
+The conclusions of these experiments are complicated by the interdependent nature of ESX-1 structural components, chaperones, and substrates (Augenstreich et al., 2020; Osman et al., 2022; Santucci et al., 2022).
+Mm has been a valuable model for working out ESX-1 and ESAT-6 function, and many of the key studies in the field have used Mm exclusively.
+However, the unique characteristics of Mm compared to Mtb can sometimes leads to differing results, and conclusions drawn from one species do not always apply to the other (Bosserman et al., 2019; Carlsson et al., 2009; Lienard et al., 2020; Osman et al., 2022; Smith et al., 2008).
+This is important because the membranolytic activity of the ESX-1 seems to be highly context dependent, and more biochemical work is needed to work out the specific contributions of ESAT-6 to the membrane disruption phenotype.
+Despite extensive research, the precise mechanism of ESAT-6 action remains elusive.
+This study aims to bridge this gap by performing comprehensive biochemical and cellular investigations of ESAT-6 under neutral and acidic conditions.
+We use biolayer interferometry (BLI) to measure the tight association between ESAT-6 and CFP-10, and the pH dependent ESAT-6 self-association.
+We use fluorescence microscopy to directly observe formation of large ESAT-6 complexes, and we measure the stoichiometry of ESAT-6 under different pH conditions using multi-angle light scattering.
+We then use molecular dynamics-based modeling to evaluate the most likely modes of ESAT-6 interaction.
+We also generated a novel ESAT-6-binding alpaca-derived nanobody, E11rv, to further define the significance of ESAT-6 during Mtb infection.
+We perform biochemical characterization of E11rv, as well as functional testing, which showed inhibition of Mtb growth inside macrophages treated with E11rv or expressing cytoplasmic E11rv.

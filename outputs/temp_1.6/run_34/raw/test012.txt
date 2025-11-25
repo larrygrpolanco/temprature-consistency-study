@@ -1,0 +1,20 @@
+[1a] SARS-CoV-2 is a persistent threat to global health and continued research is essential for the development of new vaccines and antivirals counteracting viral immune evasion and mutagenesis.
+[1b] Viral assembly is a critical step in its life cycle and potential target for therapeutic development, but so far only incompletely understood.
+[1c] As observed in recent cyro-electron tomography (cryo-ET) studies, virions contain ≈38±10 ribonucleoprotein particles (vRNPs) that condense the large viral genomic RNA (gRNA) like beads on a string (1, 2).
+[1b] vRNPs have 14 -16 nm sized pillar-shaped structures, are heterogeneous, and are composed of nucleocapsid (N-)protein and RNA with unknown architecture and assembly pathway.
+[1b] N-protein is a 419 aa protein highly expressed in infected cells, and besides its key role in vRNP formation it is highly multifunctional (3–5).
+[1b] It consists in two folded domains, the NTD and CTD, which are linked and flanked by large intrinsically disordered regions (IDRs) termed N-arm, linker, and C-arm (6) (Figure 1A).
+[1b] The NTD forms a nucleic acid (NA) binding site that is thought to harbor recognition mechanism of a packaging signal (7).
+[1b] The CTD provides a high-affinity dimerization interface and also binds NA (6) (Figure 1B).
+[1c] Ultra-weak protein-protein interactions allow N-protein to undergo liquid-liquid phase separation (LLPS), enhanced in the presence of NA, to form droplets of high macromolecular density (8–11), which are thought to facilitate the assembly of vRNPs (9, 11–13).
+[1b] IDRs also play important roles in N-protein NA interactions (14–17).
+[1c] For example, the N-arm undergoes conformational changes upon NA binding to NTD, significantly increasing the affinity of the NTD for RNA (15).
+[1c] Similar to the N-arm, an SR-rich portion of the linker IDR flanking the NTD is also perturbed by NA binding (14), as is an L-rich sequence of the linker IDR (LRS) further downstream.
+[1c] Recently, we have shown that highly conserved transient helices in the LRS can assemble cooperatively into coiled-coil trimers, tetramers, and higher oligomers, in a process that is allosterically enhanced by NA binding (17, 18) (Figure 1C).
+[2c] We hypothesized that this mechanism might initiate assembly by providing additional protein-protein interfaces essential for stabilizing three-dimensional structures of the vRNPs (17, 18).
+[3a] To study the assembly mechanism in more detail we examine N-protein binding to short NA probes of sufficient length for multi-valent binding and ask how scaffolding N-protein might diminish or augment simultaneous LRS oligomerization.
+[1c] As shown by Carlson and co-workers, mixtures of stem-loop RNA and N-protein form large RNA/protein complexes (RNPs) that may serve as a model for the viral vRNPs (11, 16).
+[3a] In the current study, to further elucidate the assembly mechanism we utilize this system and compare the size distribution and composition of complexes formed by wildtype N-protein (NWT) or mutants that abrogate LRS oligomerization binding either short linear oligonucleotides or stem-loop RNA.
+[3a] In parallel, we study the impact of the same mutations on viral packaging and assembly in a VLP assay.
+[3c] Our data highlight the role of the LRS oligomerization and the interplay with nucleic acid binding of NTD and CTD in the formation of RNPs.
+[3d] Taken together, these elements suggest features of possible RNP assembly models on the level of protein domains and their interfaces.

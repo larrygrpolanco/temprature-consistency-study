@@ -1,0 +1,33 @@
+[1a] The majority of devastating plant pathogens, including viruses and bacteria, are transmitted by insect vectors [1].
+[1b] In recent decades, the interactions between vectors and pathogens have been widely studied [1–4].
+[2b] However, studies on the mechanisms underlying these interactions have mainly focused on vector-virus or vector-fungus interactions; less research has been performed on vector-bacteria interactions.
+[1a] Knowledge of the relationships between vectors and pathogens is of great significance for understanding the epidemiology of plant pathogens, and this knowledge may help develop new strategies for controlling both vectors and pathogens.
+[1b] The severe Asian form of huanglongbing (HLB) is currently the most destructive citrus disease in Asia and the Americas where it is associated with the phloem-restricted, Gram-negative, α–Proteobacteria ‘Candidatus Liberibacter asiaticus’ (CLas) and transmitted by the Asian citrus psyllid, Diaphorina citri Kuwayama (Hemiptera: Psyllidae) [5–9].
+[2b] However, since CLas has not been cultured in vitro, Koch’s postulates have not been proven.
+[1a] Control of D. citri is the most effective way to prevent HLB epidemics [6,7] but experience in Asia [10] and the United States of America [11,12], and recent press reports from Brazil, indicate that it is impossible to suppress psyllid populations with insecticides to levels that prevent spread of CLas.
+[1c] Previous studies have reported that infection with CLas significantly increases the fecundity of D. citri [13–15].
+[1b] Reproduction is a costly process in terms of energy usage in the adult life of female insects [16], and there is an inevitable trade-off between lipid storage and use, because animals mobilize their lipid reserves during reproduction.
+[2c] How D. citri maintains a balance between lipid metabolism and increased fecundity after infection with CLas is not known.
+[1c] In insects, energy mobilization is under control of adipokinetic hormone (AKH), which was the first insect neurohormone to be identified; it was shown to stimulate lipid mobilization for locomotor activity in locusts [17].
+[1c] To date, more than 80 different forms of AKH have been identified or predicted in arthropod species due to similar structural characteristics of the enzyme [18].
+[1c] The mechanisms of synthesis and biological activity of AKH have also been investigated.
+[1b] Insect store lipids in the form of triacylglycerides (TAG) and as carbohydrates in the form of glycogen in their fat bodies [19].
+[1b] Under conditions of energy demand, AKHs are synthesized in the corpora cardiaca, released into the hemolymph and bind to receptors (AKHRs) located on the plasma membrane of fat body cells.
+[1b] AKHR binding and activation triggers the release of energy-rich substrates after which various cellular signaling pathway components come into play [20].
+[1c] AKHRs are a class of G protein-coupled receptors and were first identified in Drosophila melanogaster [21] and Bombyx mori [22]; subsequently, they were identified in a large number of insect species [23–26].
+[1c] Recent studies have shown that AKH/AKHR signaling plays a regulatory role during female reproduction in insects.
+[1c] For example, depletion of AKHR in Bactrocera dorsalis resulted in TAG accumulation, decreased sexual courtship activity, and fecundity [27].
+[1c] AKHR knockdown in Nilaparvata lugens interferes with trehalose homeostasis and vitellogenin uptake by oocytes, which causes delayed oocyte development and reduced fecundity [28].
+[1c] AKH/AKHR signaling also regulates vitellogenesis and egg development in Locusta migratoria via triacylglycerol mobilization and trehalose homeostasis [29].
+[2c] As outlined above, the fecundity of D. citri is increased by CLas.
+[2c] Whether AKH/AKHR signaling participates in this increase in fecundity due to infection via alterations in lipid metabolism is not currently known.
+[2b] Although numerous studies have been conducted on the AKH/AKHR signaling pathway, miRNA-mediated regulation of the AKH signaling pathway at the post-transcriptional level has been little studied.
+[1b] MicroRNAs (miRNAs) are small, non-coding RNAs containing approximately 22 nucleotides that act mostly on the 3’ untranslated region (UTR) of target mRNAs, resulting in translation repression or mRNA degradation [30].
+[1a] miRNAs play important roles in regulating cellular events at the post-transcriptional level during biological processes [30,31,33].
+[1c] For example, in term of host-virus interactions, miR-8 and miR-429 target Broad isoform Z2, the gene involved in the hormonal regulation of single nucleopolyhedrovirus (HaSNPV)-mediated climbing behavior in Helicoverpa armigera [33].
+[1c] In relation to reproduction, in Aedes aegypti, miR-275 is essential for egg development [34], miR-309 for ovarian development [35] and miR-8 for other reproductive processes [36].
+[1c] As for lipid metabolism, knockdown of miR-277 in A. aegypti activates insulin/FOXO signaling by increasing the expression of ilp7 and ilp8, which reduces TAG levels and inhibits ovarian development [37].
+[2b] Nevertheless, the functions of the miRNAs in insect-pathogen interactions need further investigation.
+[2b] To date, there are no reports that miRNAs participate in D. citri-CLas interactions or are hijacked by CLas to affect lipid metabolism and the fecundity of D. citri.
+[3a] As a consequence, in this study, we used the D. citri-CLas system as a model to study the molecular events associated with AKH/AKHR signaling that affect lipid metabolism and increase fecundity of D. citri induced by CLas.
+[3a] Our study contributes to our understanding of the interactions between vectors and pathogens and may also provide new ways for controlling D. citri and HLB.

@@ -1,0 +1,32 @@
+[1a] Climate warming has caused well-documented shifts in the distribution of species in terrestrial and aquatic ecosystems [1] including changes in the dynamics of fish populations across the globe [2, 3, 4].   
+[1a] In several coastal zones, phenological shifts in the occurrence of adult and larval fish have also been observed [5, 6].  
+[1a] In parallel, industrial fishing has altered the abundance, structure, and reproductive characteristics of marine fish populations [7, 8, 9, 10].  
+[2a] As opposed to large-scale effects on populations that may be readily detectable, understanding the role of external environmental processes on local or regional population dynamics is more challenging [11].  
+[1b] Small pelagic fish species pose an especially complex case, as their populations can exhibit both ‘volatile’ short-term dynamics in response to local or regional conditions, and long-term ‘stable’ cyclicity due to larger scale climate events [12, 13].  
+[1b] Furthermore, many species exhibit ontogenetic shifts in habitats, spending part of their life cycle in coastal or estuarine zones, which may constrain the ability of species to cope with warming [14].  
+[1b] The importance of external environmental processes can, therefore, be life stage-specific [15, 16].  
+[1b] The local dynamics of small pelagic fish are an essential component to better understand potential changes in areas historically important to the life cycle dynamics of species, and to examine whether the phenology in the use of important habitats may have shifted over time.  
+[1a] The Atlantic herring (Clupea harengus) is a common, ecologically and commercially important small pelagic fish species in areas of the North Atlantic such as the North Sea [17, 18] where the population is composed of separate autumn- and winter-spawning stocks with life stage-specific distributions [19].  
+[1a] In the southern North Sea, Atlantic herring is also commonly observed in the Wadden Sea, which with its shallow coastal waters serves as a spawning, nursery, and feeding ground for many North Sea fish species [20].  
+[2b] However, much is unknown about the habitat utilization of the Wadden Sea by Atlantic herring.  
+[2b] This is primarily because herring and other small pelagic fishes cannot be properly sampled in the demersal trawl surveys used to annually monitor fish populations in these near-shore waters [21].  
+[2b] Furthermore, the coarse temporal resolution of these large-scale surveys does not allow inferences on seasonally important factors.  
+[2b] Limited temporal resolution also prevents the detection of potential phenological shifts that might have occurred during the past few decades.  
+[2b] This limits our understanding of the external processes governing the local dynamics of herring and other fish moving between shallow coastal nursery and feeding grounds of the Wadden Sea and offshore waters of the North Sea.  
+[2b] Local survey efforts conducted at high temporal resolution are needed to help fill such important gaps in knowledge on potential climate-driven changes in phenology and habitat utilization.  
+[1b] Survey efforts with sufficiently high temporal resolution to examine climate-driven changes in phenology are rare in the marine environment, particularly those with a historical coverage allowing comparisons over multiple decades.  
+[1b] Although long term high temporal resolution time-series exist for lower trophic levels such as plankton [22], they are particularly rare for higher trophic levels such as fish.  
+[1b] However, the Royal Netherlands Institute for Sea Research (NIOZ) has consistently used a kom-fyke to collect standardized catch data of marine fishes moving between the North Sea and Western Wadden Sea through the Marsdiep tidal race since the 1960’s [23] (Fig. 1).  
+[1b] This survey is unique in northern Europe due to its daily temporal resolution.  
+[1c] Previous analyses of these data have identified phenological shifts such as changes in the day of first occurrence, peak occurrence, and last occurrence of members of the Wadden Sea fish community over the past five decades [24].  
+[2b] Given its daily resolution, this time series allows a finer-scale exploration of changes in the phenology of species such as Atlantic herring.  
+[2a] From a methodological standpoint, the preselection of specific days (first occurrence, peak occurrence, last occurrence) as a phenological yardstick for peak migration may obscure shifts in species such as herring that, due to their schooling and flexible foraging behaviour, exhibit marked daily variation in habitat use or occupancy.  
+[2b] Furthermore, it remains unknown if and how potential shifts in phenology differ among young juvenile and adult herring.  
+[2b] More detailed phenological analysis would reveal if local dynamics in coastal habitat use by North Sea herring align with the larger regional and global population responses to climate-driven warming observed in marine fish.  
+[3a] Here, we examined potential life-stage specific changes in the population dynamics of Atlantic herring moving between the North Sea and Wadden Sea using long-term time series of weekly standardized herring catches (1981-2021) collected by the NIOZ kom-fyke.  
+[3a] We used a generalized additive modelling (GAM) approach to decompose the overall trend in weekly standardized herring catches into distinct annual, seasonal, and environmental signals.  
+[3c] These results allowed us to identify temporal trends in herring abundance, body size, and reproductive status in the Western Dutch Wadden Sea.  
+[3a] We also examined potential changes in the seasonal trends in herring abundance over the past four decades, i.e. phenological shifts.  
+[3a] Finally, we checked the sensitivity of our outcomes with respect to changes in the sampling design of the Kom-fyke by re-running our analysis with different sampling frequencies.  
+[3b] Our analyses on the longest, most high-resolution time series for marine fish in Northern Europe will advance understanding of the factors determining the movement and phenological shifts of herring and potentially other temperate small pelagic fishes from offshore to nearshore waters.  
+[3b] Our work underscores the importance of maintaining highly temporally resolved, long-term ecological time series for examining the dynamics of climate-driven phenological shifts.

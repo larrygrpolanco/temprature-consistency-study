@@ -1,0 +1,18 @@
+[1b] The ambrosia beetle Cnestus mutilatus Blandford, 1894 (Coleoptera: Curculionidae: Scolytinae: Xyleborini) is native to Asia but was detected in the southern United States in 1999 (1, 2).
+[1b] The species has since spread widely and quickly (3), utilizing a suite of adaptive traits: a wide range of host trees, haplodiploidy, inbreeding, sheltering in wood for most of their life cycle, sub-sociality, fungus gardening, and the ability to move from tropical to temperate climates (4–6).
+[2a] It is possible that C. mutilatus will not become a pest in its new geographic range.
+[1b] Most ambrosia beetles take advantage of the weakened defenses of stressed or dying trees, in which they typically sow nonpathogenic fungi (7) that contribute to decomposition and nutrient recycling.
+[1a] However, timber- and tree-associated industries need to remain wary of their destructive potential.
+[1b] The woody tissues of dying and dead trees ferment residual sugars, producing several short-chain alcohols such as ethanol (8, 9).
+[1b] A small proportion of these alcohols volatize (10) and attract the beetles, which will tunnel breeding galleries into the woody tissues.
+[1b] Stressed nursery trees and many wood products also volatize alcohols, and holes from any resulting beetle galleries reduce the structural integrity, esthetics, and market value of these products.
+[1b] Examples include damage to wine or beer casks (8), overwatered or freeze-stressed nursery stock (11), recently felled timber (12), and freshly sawn lumber (13–15).
+[1c] Cnestus mutilatus has even been documented boring holes into the plastic walls of ethanol-gasoline containers (16).
+[1b] Ambrosia beetles could also cause ecological damage by seeding the spread of microbes, including their primary ambrosia fungus, secondary fungi, nematodes (17), mites, and bacteria (18).
+[1c] Fungi transported by ambrosia beetles can dramatically alter the natural progression of wood decomposition (19, 20) and could be phytopathogenic (21, 22).
+[1c] Geosmithia morbida (Ascomycota), the fungal pathogen that causes Thousand Cankers Disease in walnut trees (Juglans spp.), is known to be carried by C. mutilatus (23, 24).
+[1a] Given this potential for both economic and ecological damage, C. mutilatus merit close monitoring (25, 26).
+[1b] Traps for ambrosia beetles are typically baited with slow-release ethanol preparations.
+[2b] However, propan-2-ol (hereafter referred to as isopropanol), while being used in traps as a killing agent and preservative, seemed to attract C. mutilatus (personal observations).
+[1a] There would be considerable advantages to having an inexpensive and easy-to-obtain chemical serve all three functions of attractant, killing agent, and preservative without the need for slow-release mechanisms.
+[3a] The purpose of this study was to gather experimental evidence that isopropanol can be used as such in traps for C. mutilatus.

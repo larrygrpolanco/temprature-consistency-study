@@ -1,0 +1,47 @@
+[1a] Hydra vulgaris has long been a model of choice in developmental biology because of its remarkable regenerative capabilities (1,2).  
+[1b] Almost any excised tissue piece as well as cellular re-aggregates are capable of reforming a fully viable adult in just a few days.  
+[1b] In the former example, an excised tissue piece folds back into a closed spherical shape with both its epithelial monolayers, endoderm and ectoderm, engulfing a water-filled lumen.  
+[1b] In the latter, the same tissues start by spontaneously sorting into their relative positions (3,4) before expelling excess cells to reform a hollow sphere.  
+[1b] At this point, both regenerative trajectories converge and these tissue spheres start undergoing osmotically-driven oscillations during which they swell because of water flowing from the environment to the lumen up to the point where the tension building up within the tissues becomes too large and leads to a local rupture (5,6).  
+[1b] After rupture, the samples deflate, close the resulting wound and start another swelling-rupture cycle.  
+[1b] These osmotic oscillations induce deformations and therefore stresses within the tissues with relative changes in the radii of the spheres up to 30%.  
+[1b] These have been referred to as phase I oscillations and are characterized by a high amplitude and a low frequency.  
+[1b] Indeed, after a few of these cycles, the oscillations clearly change and enter phase II where they have lower amplitude and higher frequency (6).  
+[1b] In parallel to these mechanical oscillations, the samples establish a chemical pattern involving some characterized morphogens to define the oral-aboral axis of the organism.  
+[1c] Most notably, a local expression of HyWnt3 has been shown to be an early signal of axial patterning with this activation defining the future position of the head organizer (7).  
+[1c] This local activation is then followed by the establishment of various chemical gradients within the spheres effectively patterning the whole axis (8,9).  
+[1b] At that point, the originally symmetrical samples start elongating in an oblong shape at which ends the adult organs of the head and foot will be regenerated, and the patterning can be considered complete.  
+[1c] The switch between phase I and phase II oscillations was thought to be a signature of the establishment of axial patterning (6,10).  
+[2c] Since small excised tissue pieces showed both phases, it was thought that they underwent spontaneous symmetry breaking and retained no memory of axial patterning just as cellular re-aggregates.  
+[2c] The question was then to determine how the spherical symmetry was broken during phase I oscillations and how the local head organizer was defined.  
+[1c] For a long time, the main hypothesis was that of a purely biochemical spontaneous symmetry breaking in the form of Turing-instabilities of an unknown reaction-diffusion system.  
+[1c] In his seminal work, partially inspired by Hydra regeneration, Turing has shown how a system of two interacting and diffusing chemical species, which he named morphogens, could become unstable in their homogenous state and spontaneously start forming structures such as dots or stripes (11).  
+[1c] These ideas were critical in developing the field of pattern formation and have been adapted to a wide variety of systems and organisms (see for example (12,13) for recent reviews in the context of developmental biology).  
+[1a] In this historical development, Hydra has retained its place as a model organism.  
+[1c] Notably, Gierer and Meinhardt have expanded on the seminal ideas of Turing and developed a modified version of his reaction-diffusion system specifically designed to explain regeneration and grafting experiments in Hydra (14).  
+[1c] As a result, the so-called Gierer-Meinhardt model has long been the gold standard in the field.  
+[1c] At its inception, it was purely speculative but, since then, some proteins have been shown to possess many of the characteristics required by the Gierer-Meinhardt model.  
+[1c] Most notably, the protein HyWnt3, involved in the canonical Wnt pathway is now generally considered to be the activator represented in the Gierer-Meinhardt model (15) since its expression is restricted to the head organizer, it has self-activating capacities and it is the first temporal signature of symmetry breaking during regeneration.  
+[2a] Still, these models ignore the mechanical aspects of the process, most notably the osmotic oscillations although it is now well established that they are necessary for proper regeneration (16,17).  
+[2a] This observation suggested a possible coupling between the mechanical state of the tissues and their biological response, as has been observed in a variety of contexts and organisms with impacts on cell division or gene expression including in the canonical Wnt pathway (18–21).  
+[1c] Recent results have demonstrated such a coupling in Hydra by which the expression of HyWnt3 is reduced when osmotic oscillations are blocked (17) providing a potential direct coupling between tissue mechanics and chemical patterning.  
+[1c] Recent modelling efforts have thus been made in order to incorporate mechano-chemical couplings (16,22,23), for instance by making the diffusion constant of the morphogens within the tissues dependent on tissue stretch (16).  
+[2a] In most cases though, these couplings were not grounded in experimental evidence.  
+[2a] In addition, recent experimental results have started to question the assumptions described so far and underlying these models.  
+[2a] First, it was shown that the shift from phase I to phase II oscillations was not a direct signature of axial patterning being established.  
+[2a] Instead, the onset of phase II is due to the early apparition of the Hydra mouth (24) allowing it to regulate its osmotic imbalance by mouth opening rather than by tissue rupture.  
+[2a] One consequence was that axial patterning had to be anterior to the shift between oscillation phases.  
+[2a] It then became unclear whether small excised tissue pieces really went through de novo patterning or if they could inherit this patterning from their original host organism.  
+[2a] Recent experimental results show that they do retain axial patterning although the exact mechanism by which they do so remains unclear, whether by the organization of their ectodermal actin structures called myonemes (25) or by pre-existing biochemical gradients (26).  
+[2a] Although small excised tissue pieces retain axial patterning, it still remains that 1-cellular re-aggregates which cannot conserve either supracellular actin structures or chemical gradients have to show de novo axial patterning during osmotic oscillations, 2-there is evidence of a direct coupling between tissue deformations and Hywnt3 expression (17), one of the most important morphogens involved in Hydra patterning and 3-osmotic oscillations are required for the proper elongation, morphogenesis and regeneration of both excised tissue pieces and cellular re-aggregates.  
+[2d] For all these reasons, the focus of the field is currently shifting to an integrated view of Hydra regeneration as a mechano-biological process (23,27).  
+[2b] One clear roadblock to the development of these ideas is our lack of understanding of the rheological properties and mechanical state of regenerating Hydra tissue spheres.  
+[2b] This often leads to assumptions as to the rheology of these samples and rough estimates of their key mechanical parameters.  
+[1c] One exception is the development by Veschgini and colleagues of a two-fingered robotic hand allowing them to apply known, constant deformations on the tissue spheres and measure the resulting forces (28) giving the first local, quantitative measurements of mechanical features in Hydra.  
+[2b] These measurements were not, however, used to deepen our understanding of the spontaneous osmotic oscillations.  
+[3a] In this work, we try to overcome these limitations and to offer a quantitative characterization of the mechanics of Hydra tissue spheres.  
+[3a] To do so, we used the well-established micro-aspiration technique (29–32) which we adapted to increase its throughput through the use of original microfluidic constructs following (33).  
+[3b] We found three different mechanical behaviors as the aspiration pressure was increased: first an elastic response, then a viscoelastic one and finally tissue rupture, as observed in phase I oscillations.  
+[3b] Combining our experimental observations and measurements with the development of a rheological model of elastic shells and numerical simulations, we obtained quantitative measurements of both the main rheological parameters of Hydra tissue spheres and the critical pressures required to switch between the three regimes.  
+[3b] Thanks to these results, we provide a description of internal tissue mechanics, strains and stresses during osmotic oscillations.  
+[3a] Hopefully, this mechanical characterization will serve as a stepping stone for the study of mechano-biochemical couplings in a quantitative manner.

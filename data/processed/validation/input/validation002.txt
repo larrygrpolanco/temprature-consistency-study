@@ -1,0 +1,16 @@
+System L is the major amino acid transport system that supplies large neutral amino acids into cells (1, 2) (Fig. 1a).
+Among four molecular species constituting system L (LAT1–4), LAT1 is unique in its wide substrate specificity (3–5), which ranges from neutral amino acids such as L-Leu and L-Phe to much bulkier derivatives such as thyroid hormones (e.g. T4 and T3) and an alkylating agent melphalan (Fig. 1b).
+Since LAT1 is upregulated in various types of cancer, its inhibitors are known as potent anti-tumor agents (6) (Fig. 1a), its radiotracers are used in the positron emission tomography (PET) and the single photon emission computed tomography (SPECT) for cancer imaging (7, 8), and the boronated substrates are employed for boron neutron capture therapy (BNCT) for cancer treatment (7, 8).
+LAT1 is also responsible for the delivery of amino acid drugs and pro-drugs across the blood-brain barrier (BBB), such as gabapentin and L-DOPA (Fig. 1b), prescribed for epilepsy (9) and Parkinson’s disease (10), respectively.
+JPH203 (Fig. 1b) is a high-affinity inhibitor of LAT1 with a sub-micromolar IC50 and no detectable inhibition on LAT2 (11).
+With such outstanding selectivity and potency, JPH203 has been proved effective against different types of cancers (12, 13) and successfully completed Phase I and II clinical trials as a first-in-class drug against biliary tract cancer (14, 15).
+Although its structural design is inspired by T3, JPH203 has a bulkier hydrophobic side chain, which may be responsible for its high selectivity and affinity (Fig. 1b).
+2-aminobicyclo-(2,2,1)-heptane-2-carboxylic acid, also known as BCH, is a “classical” system L inhibitor with broad specificity towards both LAT1 and LAT2, as well as other system L (1).
+BCH has a bicyclic norbornane moiety and is significantly smaller than other Tyr-based inhibitors (Fig. 1b).
+A recent structural study of LAT1 showed that JPH203 did not bind to their purified LAT1 (16), presumably due to the presence of detergent, which hindered the structural understanding of JPH203.
+Additionally, the same study reported a LAT1 structure with a BCH ligand modelled; however, the ligand density was very weak and indistinguishable from the apo map, and caution is required when interpreting this model (Fig. S1, difference maps).
+Therefore, the inhibition mechanism by BCH remains to be elucidated.
+More recently, JX molecules, which are bicyclic meta-Tyr derivatives, were reported as high affinity inhibitors and the associated cryo-EM structures revealed how these compounds bind to the outward-occluded conformations of LAT1 (17).
+This was the first structural demonstration of system L inhibition, but the different core structures of JX inhibitors compared to JPH203 and other amino acid-like compounds have hampered the understanding of how the well-known system L inhibitors bind to and inhibit LAT1.
+Here, we employ the lipid nanodisc system and electron cryo-microscopy (cryo-EM) to study the structure of LAT1.
+The structural analyses accompanied by the functional assays of site-directed mutants illuminate how LAT1 dynamically interacts with transportable and non-transportable compounds, including JPH203.

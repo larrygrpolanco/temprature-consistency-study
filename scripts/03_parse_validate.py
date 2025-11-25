@@ -255,10 +255,6 @@ def generate_validation_report(article_id, temperature, run_num, validation_resu
             report.append(f"    Similarity: {mismatch['similarity']:.2f}")
             report.append("")
 
-    if not validation_result["valid"]:
-        report.append("ACTION REQUIRED:")
-        report.append(f"  Re-run article {article_id} for run {run_num:02d}")
-
     return "\n".join(report)
 
 

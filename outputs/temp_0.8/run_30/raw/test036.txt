@@ -1,0 +1,32 @@
+[1a] Muscles actively change length to power everyday movement.
+[1b] But despite being the motors of movement, muscles function surprisingly better as brakes than motors (1).
+[1b] Accordingly, muscle forces are enhanced during and following active muscle stretch (i.e., eccentric contraction) compared with contractions at a constant length (i.e., isometric contraction) or during active muscle shortening (i.e., concentric contraction) when muscle activity is matched (2–5).
+[1b] Accordingly, producing a given force eccentrically requires less muscle activity compared with an isometric or a concentric contraction.
+[1b] Since active muscle volume theoretically determines energy expenditure (6), the neuromuscular efficiency of eccentric contractions is therefore increased (7, 8).
+[1a] As eccentric contractions require less energy and muscle activity for equivalent force production, eccentric exercise has received considerable attention over the last decades to rehabilitate injuries, to improve athletic performance, and to help manage neuromuscular diseases (9–13).
+[1b] Accordingly, many training studies aimed to determine the specific adaptations of the muscle-tendon unit (MTU) to eccentric exercise in comparison to concentric exercise.
+[1c] The specific adaptations to eccentric exercise primarily include an increase in fascicle length (14).
+[1b] However, the fascicle length increases following eccentric exercise are highly variable among studies.
+[1c] By examining 15 in vivo human studies on training adaptations to eccentric exercise (11, 15–28), we found that fascicle length changed from −3% (i.e., decreased) to 34% (i.e., increased, see Figure S1).
+[2c] Accordingly, it is important to question why the fascicle length changes to eccentric exercise are so variable.
+[2b] One factor that could affect the muscle lengths and forces attained during and following eccentric contractions and the subsequent MTU adaptations following eccentric exercise is the pre-activation timing and level before MTU stretch.
+[1b] Because of the typical arrangement of a distal elastic tendon in series with a muscle within a lower limb MTU, the length changes of muscle and tendon can be decoupled (29, 30).
+[1b] For example, a muscle can still shorten against the elastic tendon while the MTU is stretched when there is no pre-activation.
+[2b] Accordingly, apparent eccentric exercises (i.e., MTU lengthening exercises) do not necessarily result in isolated eccentric contractions, but can result in a combination of muscle contraction types.
+[2b] Therefore, the highly variable fascicle length changes to apparent eccentric exercise could be due to different muscle fascicle behaviors during these exercises.
+[1b] During apparent eccentric exercise, the decoupling of muscle and tendon length changes can also affect the fascicle stretch amplitudes (31, 32).
+[2b] Differences in fascicle stretch amplitude during eccentric exercises might affect peak fascicle force during stretch, the residual force enhancement (rFE) following stretch (33–35), and the active and passive contributions to eccentric force production.
+[1c] This is because rFE was found to be related to the peak force and/or torque during stretch (33, 36, 37).
+[2c] However, it is unclear whether peak force is affected more by stretch amplitude or fascicle length (38).
+[2c] It is also unclear whether the rFE following active muscle stretch is affected more by the stretch amplitude or the final muscle length.
+[1c] Animal studies showed that rFE increased with increasing muscle stretch amplitude up until a point when stretching occurred at lengths where passive muscle force naturally existed (2, 39).
+[1c] A more recent in vivo study on the human knee extensors however showed that rFE primarily depends on the final fascicle length rather than the fascicle stretch amplitude during submaximal MTU-stretch-hold contractions (40).
+[1b] These findings are potentially relevant for the specific adaptations to eccentric exercise as rFE is thought to be related to the properties of the giant muscle protein titin.
+[1c] In turn, changes in titin stiffness have been reported to drive longitudinal muscle hypertrophy (41), which could be another potential reason for the highly variable fascicle length adaptations to eccentric exercise reported in the literature.
+[3a] Therefore, the aim of this research was to study the effect of MTU series elasticity on the fascicle kinematics (i.e., behavior) and kinetics (i.e., force and work) during apparent eccentric exercise.
+[3b] Changes in human tibialis anterior (TA) MTU series elasticity were induced by implementing three different pre-activation timings and levels (PLs) that were torque controlled (0, 50%, and 95% of the joint-angle-specific peak active torque) prior to MTU stretch.
+[3a] We hypothesized that both fascicle shortening and stretch amplitudes would increase with increasing PL because of a reduction in MTU series elasticity.
+[3a] Based on these expected fascicle kinematics, we also hypothesized that both the positive and negative fascicle work produced during the contractions would increase with increasing PL.
+[3a] We further hypothesized that similar peak forces during MTU stretch would occur at similar fascicle lengths following different fascicle stretch amplitudes that would be in accordance with TA’s active force-length relation (42, 43).
+[3a] Our final hypothesis was that rFE would not be related to fascicle stretch amplitude, but to the peak fascicle force achieved during MTU stretch.
+[3a] This is because energy storage within passive elements (e.g., titin) should be better reflected by peak fascicle force than fascicle stretch amplitude.

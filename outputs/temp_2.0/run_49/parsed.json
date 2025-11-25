@@ -1,0 +1,1351 @@
+{
+  "temperature": 2.0,
+  "run_number": 49,
+  "dataset": "test",
+  "model": "gpt-4.1-mini",
+  "articles": {
+    "test002": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "The challenge of understanding how the detrimental effects of age can be mitigated is of central concern in medicine and biology and is facilitated by the comparative study of aging across species (Arking, 2006; Austad, 2009)."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Zebrafish, like humans, display gradual senescence (Kishi et al., 2009)."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "With advancing age, zebrafish have reduced regenerative capacity, accumulation of DNA damage, and cardiovascular impairment (Gilbert et al., 2014; Sun et al., 2014)."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The shared consequences of aging in humans and zebrafish, combined with the low cost of housing zebrafish for extended periods, suggests that zebrafish could serve as a valuable model organism in the study of aging."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "In humans, many behaviors vary across the lifespan, such as emotional regulation and anxiety (John and Gross, 2004; Lenze and Wetherell, 2011; Nivard et al., 2015)."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "The trajectory of these behaviors is shaped by the complex interplay of environmental factors with genetics and sex (Nivard et al., 2015; Singh et al., 2019)."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Untangling the web of interactions between age, genetics, and sex, is facilitated by use of model organisms for which many molecular genetic tools are available, like zebrafish."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Although there has been a large increase in the study of zebrafish behavior in the past twenty years (Gerlai, 2023; Kenney, 2020), only a handful of reports have explored age-associated behavioral alterations."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "These studies have found that older fish have changes in circadian rhythms, decreased associative learning, and reduced locomotion (Gilbert et al., 2014; Philpott et al., 2012; Ruhl et al., 2015; Yu et al., 2006; Zhdanova et al., 2008)."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "However, it is unknown if aging also affects commonly studied behaviors related to emotional regulation and exploration in zebrafish."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "One of the most widely used behavioral tasks to study exploratory and emotional behavior in zebrafish is the novel tank test (NTT)."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "In this test, animals are placed into a tank with which they have no prior experience."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Spending time near the bottom or periphery of the tank are typically interpreted as fearful predator avoidance behaviors related to anxiety (Champagne et al., 2010; Gerlai et al., 2000; Kalueff et al., 2013; Levin et al., 2007; Maximino et al., 2010)."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Nonassociative memory can also be assessed by measuring how behavior habituates within session (short-term memory) or between daily sessions (long-term memory)."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "To determine whether age affects behavior in the NTT, and if the effects of age are modulated by sex and genetics, we examined behavior in young (6 months old) and middle aged (12 months old) fish from two strains (TL and TU) and both sexes."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "3c",
+          "predicted_move": "3",
+          "text": "We find that this modest difference in age is sufficient to alter several behaviors such as locomotion and predator avoidance."
+        }
+      ]
+    },
+    "test003": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Nonalcoholic steatohepatitis (NASH) is a severe progression of nonalcoholic fatty liver disease (NAFLD), characterized by hepatic Triglyceride (TG) accumulation, inflammation, liver fibrosis, and hepatocellular injury, which can progress to cirrhosis and hepatocellular carcinoma (HCC) (Loomba et al., 2021)."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Numerous studies have proposed mediators that regulate NASH initiation and progression, including insulin resistance (Chitturi et al., 2002), oxidative stress (Masarone et al., 2018), mitochondrial dysfunction (Begriche et al., 2006), cell death (Kanda et al., 2018), immune cell activation (Huby and Gautier, 2022), and genetic/epigenetic factors (Jonas and Schürmann, 2021)."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Lifestyle modifications, such as reducing calorie intake, exercise, and weight loss are recommended for the treatment of NAFLD/NASH (Baumeier et al., 2015; de Castro-de-Paiva et al., 2022; Golbidi et al., 2012; van der Windt et al., 2018)."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "However, there are few effective therapies to address the increasing global prevalence of NAFLD/NASH (Oseini and Sanyal, 2017)."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Time-restricted feeding (TRF) is a dietary intervention that involves consuming food within a consistent daily time window, typically spanning 8 to 10 hours, without the need to reduce overall calorie intake (Rynders et al., 2019)."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Several studies have reported favorable outcomes associated with TRF, including reductions in body weight and adiposity, improvements in blood pressure, and enhanced insulin sensitivity in both human and rodent studies (Chaix et al., 2014; Hatori et al., 2012; Sutton et al., 2018)."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "While the precise mechanisms remain unexplored, it has been shown that TRF prevents the development of liver steatosis and NASH when fed a high-fat diet (Hatori et al., 2012) or a high-fat high-sucrose diet (Shu et al., 2022)."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Inositol polyphosphate multikinase (IPMK) is responsible for producing inositol tetrakisphosphate (IP4) and inositol pentakisphosphate (IP5) (Frederick et al., 2005)."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Additionally, IPMK exhibits PI3K activity (Maag et al., 2011) and plays a pivotal role in various cellular signaling pathways."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "IPMK functions as an adaptor protein, interacting with key proteins, including a mechanistic target of rapamycin (mTOR), AMP-activated protein kinase (AMPK), serum response factor (SRF), and Unc-51-like autophagy-activating kinase (ULK) (Bang et al., 2012; Guha et al., 2019; E. Kim et al., 2013; S. Kim et al., 2011)."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Recent research has uncovered IPMK’s significant role as a key regulator of Toll-like receptor (TLR) signaling, particularly in myeloid cells, especially macrophages (E. Kim et al., 2017; H. Lee et al., 2023)."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "In this context, IPMK modulates the production of inflammatory cytokines by regulating TRAF6 protein stability through direct interaction with TRAF6 and preventing K48-linked ubiquitination."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "IPMK has been shown to play a critical role in liver inflammation (Guha et al., 2019)."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "We have reported that IPMK enhances hepatic insulin sensitivity and suppresses gluconeogenesis (Jung et al., 2022)."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "2d",
+          "predicted_move": "2",
+          "text": "In preliminary studies, we found that TRF increased IPMK expression in liver."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "In this study, we show that time-restricted feeding (TRF) improves steatosis and inflammation in a mouse model of NASH, i.e., mice fed a methionine-choline deficient diet (MCDD)."
+        },
+        {
+          "sentence_num": 17,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "We found that IPMK protein was decreased in the liver of MCDD mice."
+        },
+        {
+          "sentence_num": 18,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "To determine whether the loss of IPMK exacerbates the NASH phenotype, we fed wild-type (WT) and liver-specific IPMK knockout (LKO) mice a MCDD, and assessed liver histology, hepatocellular injury, and inflammation."
+        },
+        {
+          "sentence_num": 19,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Hepatic IPMK deficiency worsened hepatic steatosis, elevated serum ALT and AST levels and expression of inflammatory genes in mice fed MCDD, suggesting a role as a molecular mediator of the effect of TRF in NASH."
+        }
+      ]
+    },
+    "test007": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Chromatin, the complex of DNA and proteins organizing the Eukaryotic genome, plays a pivotal role in orchestrating a multitude of genomic functions, including DNA replication (1) and the precise regulation of gene activity (2)."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Its structure exhibits a hierarchical organization, with biological function affected by structural changes across all levels of the hierarchy (3)."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The fundamental unit of chromatin is the nucleosome, an assembly comprising of about 150 base pairs (bp) of DNA wrapped around a histone octamer (4)."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Nucleosomes are not simply barriers preventing access to genomic DNA; rather, they can be better understood as flexible platforms on top of which key biological processes can be organized (5)."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "For example, nucleosomal DNA sliding and unwrapping from histones modulate transcription factor (TF) binding (6–8), with downstream effects on gene expression."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "At a higher hierarchical level, these nucleosomes interact together to form chromatin fibers exhibiting remarkable structural polymorphism (9–11)."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "In vivo, these fibers are predominantly disordered (12), but specific chromatin motifs are associated with distinct genomic regions, such as gene promoters or gene bodies (13)."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Chromatin fibers further fold into topologically associated domains (TADs), contiguous regions with enriched physical contacts separated by insulator elements (14)."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "The pattern of TADs along the genome influences the communication between cis-regulatory elements (CREs) such as enhancers and promoters (15, 16)."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Pointing to the intimate link between genome structure and function, genetic engineering has shown a correlation between the probability of enhancer-promoter contacts and gene expression levels (17), while transcription bursting dynamics was found to be linked with enhancer-promoter looping over time (18)."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Despite substantial progress in recent years, our understanding of the physical principles governing chromatin organization across different scales of genes remains limited, which hinders further exploration of the interplay between genomic structure and function."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "In this work, we integrate in vivo experimental data into polymer models to explore the 3D structure of mammalian genes from the local chromatin fiber level to long-distance interactions between CREs."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "3c",
+          "predicted_move": "3",
+          "text": "Our findings shed light on how this organization can contribute to gene regulatory functions."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Theoretical approaches rooted in polymer physics have become increasingly important for complementing experiments and uncovering genomic structure-function relationships (19)."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Some of these approaches are data-driven (20–23), with interactions between genomic sites optimized to match the experimental Hi-C contact frequencies (24)."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Others are centered around a key mechanism responsible for 3D genome organization, such as SMC-driven loop extrusion (25), protein-DNA bridging (26), or phase separation due to epigenetic modifications (27, 28)."
+        },
+        {
+          "sentence_num": 17,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Furthermore, advances in the development of bottom-up molecular models of chromatin (29, 30), parametrized based on the physics of its biomolecular components, now offer a viable route to provide a mechanistic understanding of genes based on first principles (31)."
+        },
+        {
+          "sentence_num": 18,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Such models have revealed some of the molecular determinants of chromatin organization, including the role of nucleosome plasticity in mediating liquid-liquid phase separation (32)."
+        },
+        {
+          "sentence_num": 19,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Notably, Tamar Schlick and co-workers utilized a nucleosome-resolution model to explore the structure of the HOXC gene locus in mouse embryonic stem cells (mESCs) (33), identifying the spontaneous formation of loops linking gene promoters with other regions of the locus."
+        },
+        {
+          "sentence_num": 20,
+          "predicted_step": "2a",
+          "predicted_move": "2",
+          "text": "However, such physics-based chromatin models typically do not capture the effects of all the factors constituting the complex cellular environment, such as potential effects originating from TF binding (26, 34)."
+        },
+        {
+          "sentence_num": 21,
+          "predicted_step": "2a",
+          "predicted_move": "2",
+          "text": "Due to the practical consideration in modeling the behavior of several contributing molecular factors, physics-based models may not always accurately reproduce the experimental organization of chromatin in vivo, as determined from Hi-C or Micro-C contact probabilities (24, 35)."
+        },
+        {
+          "sentence_num": 22,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "To address this limitation, Bayesian methods offer a framework to incorporate experimental observations into an existing physical model (36, 37)."
+        },
+        {
+          "sentence_num": 23,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Metainference is one such Bayesian approach originally developed to integrate NMR data into all-atom force fields for protein molecular dynamics (MD) simulations (37)."
+        },
+        {
+          "sentence_num": 24,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "We introduce and validate Hi-C metainference, an extension of the original approach to augment an existing prior model of chromatin to account for the observed in vivo contact probabilities of a target locus (from Hi-C (24), Micro-C (35), or other related approaches (13)), allowing one to characterize its 3D organization by MD simulations."
+        },
+        {
+          "sentence_num": 25,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "As priors, we employ two distinct bottom-up coarse-grained models of chromatin: the 1CPN model (30) at nucleosome resolution, previously parametrized from near-atomistic nucleosome simulations (38), and a chromatin polymer model at 1kb resolution newly parametrized from extensive 1CPN simulations."
+        },
+        {
+          "sentence_num": 26,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Therefore, our exploration of the 3D genome organization can be regarded as a 2-way process where the bottom-up prior is adjusted in a top-down fashion by integrating the experimental contact frequencies, retaining the advantages of both physics-based and data-driven approaches."
+        },
+        {
+          "sentence_num": 27,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "In this study, we integrate Micro-C data (39) into our chromatin models and investigate the organization of the Sox2, Pou5f1, and Nanog genomic loci in mESCs."
+        },
+        {
+          "sentence_num": 28,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "First, our simulations show that in vivo genes adopt relatively compact conformations, with the same size scaling of a crumpled globule (40), while at the same time displaying significant structural heterogeneity and fast dynamics."
+        },
+        {
+          "sentence_num": 29,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "Using a nucleosome-resolution prior chromatin model for a section of the Nanog locus, we find that the local organization of the chromatin fiber is highly dependent on the underlying epigenetic marks, being open at CREs and more compact elsewhere."
+        },
+        {
+          "sentence_num": 30,
+          "predicted_step": "3c",
+          "predicted_move": "3",
+          "text": "Finally, we demonstrate that transient, direct contacts between the Nanog promoter and its nearest enhancer are driven by the condensation of the chromatin fiber into a compact domain through extensive nucleosome-nucleosome interactions."
+        },
+        {
+          "sentence_num": 31,
+          "predicted_step": "3c",
+          "predicted_move": "3",
+          "text": "Our simulations suggest that chromatin plasticity over multiple length-scales provides a physical basis for essential gene regulatory functions."
+        }
+      ]
+    },
+    "test009": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Animal models have become increasingly important in stress research to examine behaviors that can inform our understanding of clinical PTSD symptoms."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Exposure to a predator odor stressor has been shown to be a valid and reliable animal model to examine symptom profiles of PTSD, as well as lasting consequences to traumatic stress (Cohen, Kozlovsky, Alona, Matar, and Joseph, 2012; Staples, 2010; Verbitsky, Dopfel, and Zhang, 2020)."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "For example, experiencing intrusive distressing memories of a traumatic event(s) is a DSM-5 diagnostic criteria for PTSD (APA, 2013)."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Animal models of predator odor stress, such as bobcat urine produces contextual avoidance to an odor-paired chamber in rats (Albrechet-Souza and Gilpin, 2019; Weera, Schreiber, Avegno, and Gilpin, 2020) and exposure to the synthetically produced predator odor 2,5-dihydro-2,4,5-trimethylthiazoline (TMT; an extract of fox feces), produces contextual stress responses, as evidenced by increased freezing behavior during re-exposure to the exposure context (Ornelas, Tyler, Irukulapati, Paladugu, and Besheer, 2021; Ornelas, Van Voorhies, and Besheer, 2021; Schwendt et al., 2018; Tyler, Bluitt, Engers, Lindsley, and Besheer, 2022; Tyler, Weinberg, Lovelock, Ornelas, and Besheer, 2020)."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Predator odor stressor exposure can also be used to investigate the complex interaction between increased alcohol consumption and stress, which may help in understanding the neurobiology associated with comorbid PTSD and alcohol use disorder (Ornelas, Tyler, et al., 2021; Weera et al., 2020)."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "For example, several studies have shown increased alcohol drinking (Alavi et al., 2022; Albrechet-Souza, Schratz, and Gilpin, 2020; Makhijani, Franklin, Van Voorhies, Fortino, and Besheer, 2021) or alcohol relapse-like behavior (Becker, Lopez, King, and Griffin, 2023; King and Becker, 2019) following exposure to varying predator odor stressors, including TMT."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "2c",
+          "predicted_move": "2",
+          "text": "Importantly, not all individuals who experience a traumatic event develop PTSD."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "There may be individual differences in behavioral responses to stress, which may contribute, in part, to susceptible and resilient populations (Center for Substance Abuse, 2014)."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "Using the TMT exposure procedure outlined in this current protocol, we are able to focus on individual differences in stress reactivity behavior (i.e., coping behaviors), by classifying rats into specific phenotype groups."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Using these behavioral phenotype groups, we can then assess how engagement in different coping strategies during stress exposure may lead to or mitigate against lasting consequences of stress (for example, contextual stress memory, anxiety-like behavior, hyperarousal, or alcohol drinking)."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "For example, we have found that rats, specifically female rats, that engage in greater digging behavior versus immobility behavior during TMT exposure show increased alcohol self-administration after stress (Ornelas, Tyler, et al., 2021)."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Therefore, by quantifying behaviors that occur during the stressor, we can then assess the relation between stress reactivity phenotypes and the stressor-induced neurobiological and behavioral changes."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "The current exposure protocol takes advantage of observing and quantifying the behaviors that the rats engage in during the TMT stressor exposure."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Therefore, one can quantify a multitude of stress-reactive behaviors including avoidance, darting, grooming, midline crossings, defensive digging and immobility behavior."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "However, we specifically focus on defensive digging and immobility because they capture two distinctly different types of coping behaviors (digging = active, immobility = passive) that we have found useful to characterize individual differences in stress responsivity."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "In this article we will provide detailed description of the specific TMT exposure protocol we utilize to examine individual differences in stress-reactivity in rats."
+        }
+      ]
+    },
+    "test014": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "A hallmark of cancer cells that distinguishes them from normal differentiated cells is their unrestricted proliferative ability."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Numerous genetic, signaling, and metabolic pathways have been implicated in cancer proliferation."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Broadly, these factors are divided into pro-proliferative and anti-proliferative ones [1]."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "The former includes those that promote DNA and protein synthesis including PI3 kinase and Ras-MAPK signaling, chromosome segregation, and telomere extension just to name a few, whereas the latter acts as a brake for proliferation including the tumor suppressors PTEN and p53 [2, 3]."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Genetic mutation of both positive and negative regulators has been causally linked to various cancer types."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Not surprisingly, hampering cancer proliferation is a primary target of cancer drugs, for example, paclitaxel (Taxol), the most prescribed drugs for treating cancers, acts by inhibiting microtubule assembly to prevent cell division [4]."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Despite extensive studies, however, how cancer cells could escape from cell division regulation is not fully understood."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Cancer cells grow in a microenvironment wherein they closely interact with the extracellular matrix (ECM)."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "As a major ECM component, collagen composition regulates various steps of cancer progression including growth, invasion, and metastasis, partly through activation of its canonical receptor integrin to regulate cytoskeleton organization and cell motility [5–7]."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Recently, discoidin domain receptor tyrosine kinase 2 (DDR2), a non-typical collagen receptor that is dysregulated in various cancer types, has emerged as a key signaling molecule in carcinogenesis [8, 9]."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Collagen binding to DDR2 activates its tyrosine kinase activity to initiate canonical pathways such as ERK/MAPK and PI3K/AKT signaling cascades [10–12]."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Despite these studies, how DDR2 regulates cancer cell behavior is incompletely understood."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Besides providing biochemical cues that elicit signaling in cancer cells, ECM components also establish the biomechanical environment that critically controls cancer progression [13, 14]."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Upregulated collagen production and altered collagen fiber organization result in stiffening of the tumor ECM environment."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Such increased tissue stiffness has been exploited as a marker for detection of solid tumors [15]."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Integrin-mediated mechanotransduction has been proposed to regulate ECM stiffness-dependent signaling pathways that play pivotal roles in cell growth, proliferation, and survival [16, 17]."
+        },
+        {
+          "sentence_num": 17,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "High ECM stiffness has been reported to facilitate cancer metastasis by triggering epithelial-mesenchal transition [17, 18], promote cancer cell proliferation, and boost resistance to chemotherapy [19]."
+        },
+        {
+          "sentence_num": 18,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "A recent study further suggested that DDR2 regulates the integrin mediated mechanotransduction functions of cancer-associated fibroblasts [20]."
+        },
+        {
+          "sentence_num": 19,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "However, whether DDR2 and ECM biomechanics could interact to regulate cancer cell behavior is yet to be determined."
+        },
+        {
+          "sentence_num": 20,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "To systematically examine the effects of DDR2 signaling and substrate stiffness on cancer cells, in the present study, we performed RNA-seq analysis of a human neuroblastoma cell line SH-SY5Y."
+        },
+        {
+          "sentence_num": 21,
+          "predicted_step": "3d",
+          "predicted_move": "3",
+          "text": "This cell line has been extensively used as a model to study cancer progression [21]."
+        },
+        {
+          "sentence_num": 22,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Moreover, because SH-SY5Y cells could be differentiated into a dopaminergic neuronal lineage, SH-SY5Y cells have also been used to investigate cell biology of dopaminergic neurons and Parkinson’s disease [22]."
+        },
+        {
+          "sentence_num": 23,
+          "predicted_step": "3c",
+          "predicted_move": "3",
+          "text": "We found that shRNA knockdown of DDR2 alters global gene expression of SH-SY5Y cells and inhibits cell proliferation."
+        },
+        {
+          "sentence_num": 24,
+          "predicted_step": "3c",
+          "predicted_move": "3",
+          "text": "Moreover, we found that increasing substrate stiffness also slows down proliferation, similar to DDR2 knockdown."
+        },
+        {
+          "sentence_num": 25,
+          "predicted_step": "3c",
+          "predicted_move": "3",
+          "text": "However, RNA-seq revealed no gene expression changes associated with increasing substrate stiffness."
+        },
+        {
+          "sentence_num": 26,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "These data suggest that DDR2 signaling and biomechanics, two downstream effectors of ECM, could regulate cancer cell proliferation through different mechanisms, with or without involvement of gene expression."
+        }
+      ]
+    },
+    "test026": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "The activity of G protein coupled receptors (GPCRs) are often affected by the structures and chemistry of the lipid molecules that surround them in the membrane."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Both the types of lipids and relative composition of lipids in the bilayer influence the conformational ensemble of the receptor."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Many studies have shown that different lipids play an important role in GPCR function."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "NMR studies of β2-adrenergic receptor (β2AR) in detergent micelles compared to reconstituted high density lipoprotein environment showed that the basal activity and exchange rates between inactive and active conformations is higher in detergents and in phospholipid bilayer containing HDL particles compared to cell membranes."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Although it is known that cellular lipids have a definitive effect on receptor activity, the mechanism(s) by which lipid chemistry affects the receptor activity remain nebulous."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The three intracellular loops and the carboxy terminus of GPCRs play a critical role in coupling to G proteins and β-arrestins."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The extracellular loops are also involved in not only regulating the ligand binding but also in G protein coupling."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "However, receptor loop regions and N- and C-termini are largely unstructured and often not resolved in the three-dimensional structures making it particularly difficult to study their role in GPCR function using structural techniques."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Recent studies using biophysical techniques have shown that the intrinsically disordered intracellular loop 3 (ICL3) and the carboxy terminus of GPCRs regulate the receptor coupling selectivity to G proteins."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "In our previous study on β2AR, we found that ICL3 spans a broad ensemble of conformational states, ranging from “closed” states that block the binding site of the G protein to “open” states that allow for the G protein to bind."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Thus, ICL3 regulates the access to the G protein coupling site in the receptor."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Through this mechanism, ICL3 acts as a secondary regulator of β2AR activation as well as plays an important role in the G protein coupling strength and selectivity."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Although it is evident from this study that ICL3 regulates the activity and signaling specificity of β2AR, the role of the membrane lipids in stabilizing the conformation of ICL3 is not known."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "In this study we have used extensive molecular dynamics simulations (22 μs) in multi-lipid bilayer model that mimics the plasma membrane to analyze the effects of different types of lipids on the conformational ensemble of ICL3 and thereby their effects on β2AR activation."
+        }
+      ]
+    },
+    "test029": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "A rise in circulating catecholamine (CA) levels is a crucial step triggered by the organism to cope with a stressful situation."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "By releasing both epinephrine (E) and norepinephrine (NE), the adrenal medullary tissue crucially contributes to this response."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Beyond the beneficial effect of CA secretion elicited by an acute stress, sustained and/or repetitive CA secretion episodes (in response to chronic stressful situations for example) can have deleterious outcomes [1], as unveiled by the elevated blood pressure observed in response to chronic infusion of E in rat [2,3] or in chronically cold stressed rats [4]."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "It has long been reported that increased blood pressure is associated with a sympathetic nervous system hyperactivity leading to a raised neural tone [5,6] and increased plasma E and NE [7]."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "The adrenal medulla being the unique source of circulating E, this assigns the secretory function of the medulla and more generally the sympatho-adrenal axis as critical determinants of arterial hypertension pathogenesis [8–10]."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Reciprocally, and despite it is indisputable that the adrenal medulla primarily contributes to enhance blood pressure, whether and how a ‘hypertensive’ environment impacts the adrenal secretory function itself remains elusive."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "We address this issue in the adult spontaneously hypertensive rat, in which the circulating E levels gradually increase as arterial hypertension develops and then stabilize in adult animals to become comparable to those in normotensive rats [11]."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "This suggests that the adrenal gland develops shielding mechanisms dedicated to normalize blood CA amounts, and to date nothing is known on the adaptive mechanisms elaborated by the neuroendocrine chromaffin cells to adjust the release of CA."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Adrenal CA secretion and more generally the adrenomedullary tissue function are controlled by the coordination of interconnected and complex pathways [12]."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The initial incoming command comes from the sympathetic nervous system that releases mainly acetylcholine (ACh) but also neuropeptides (PACAP, VIP…) at splanchnic nerve terminals synapsing onto chromaffin cells [13,14]."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The resulting ACh-evoked chromaffin cell depolarization and subsequent cytosolic Ca2+ rise are key processes for CA exocytosis."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "In addition and unraveled from studies in both acute adrenal slices and in vivo in anaesthetized rodents, the local communication mediated by gap junctions between chromaffin cells represents a functional route by which biological signals propagate between adjacent cells and subsequently contribute to CA release[15–20]."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "To elucidate the feedback mechanisms elaborated by the adrenal medullary tissue to manage a chronic sustained elevated blood pressure, we investigated chromaffin cell stimulus-secretion coupling in acute adrenal slices of adult spontaneously hypertensive rats (SHRs) and their parent age-matched normotensive Wistar Kyoto (WKY) rats."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "By driving numerous cellular/tissular processes, chromaffin cell excitability is a major player in stimulus-secretion coupling."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "It relies on intricate mechanisms, not only supported by ion channels expressed at the plasma membrane, but also by the crosstalk between cholinergic and peptidergic innervation [21] and the gap junctional electrical coupling between chromaffin cells [17,19,20]."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "3c",
+          "predicted_move": "3",
+          "text": "We identified relevant modifications in chromaffin cell excitability through changes in voltage-gated ion channel expression, cholinergic synaptic neurotransmission and gap junctional communication, that argue for a less efficient stimulus-secretion coupling in hypertensive animals, markedly observed upon robust challenges."
+        },
+        {
+          "sentence_num": 17,
+          "predicted_step": "3d",
+          "predicted_move": "3",
+          "text": "We propose that this functional plasticity reflects an adaptive shielding mechanism, avoiding the detrimental effects of sustained or repetitive huge CA secretion episodes."
+        },
+        {
+          "sentence_num": 18,
+          "predicted_step": "3d",
+          "predicted_move": "3",
+          "text": "More generally, this study describes novel adaptive mechanisms that take place in the medullary tissue and how they act in a coordinated manner to damper CA release."
+        }
+      ]
+    },
+    "test030": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "The majority of devastating plant pathogens, including viruses and bacteria, are transmitted by insect vectors [1]."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "In recent decades, the interactions between vectors and pathogens have been widely studied [1–4]."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "However, studies on the mechanisms underlying these interactions have **mainly** focused on vector-virus or vector-fungus interactions; less research has been performed on vector-bacteria interactions."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Knowledge of the relationships between vectors and pathogens is of great significance for understanding the epidemiology of plant pathogens, and this knowledge may help develop new strategies for controlling both vectors and pathogens."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "The severe Asian form of huanglongbing (HLB) is currently the most destructive citrus disease in Asia and the Americas where it is associated with the phloem-restricted, Gram-negative, α–Proteobacteria ‘Candidatus Liberibacter asiaticus’ (CLas) and transmitted by the Asian citrus psyllid, Diaphorina citri Kuwayama (Hemiptera: Psyllidae) [5–9]."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "However, since CLas has not been cultured in vitro, Koch’s postulates have not been proven."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Control of D. citri is the most effective way to prevent HLB epidemics [6,7] but experience in Asia [10] and the United States of America [11,12], and recent press reports from Brazil, indicate that it is impossible to suppress psyllid populations with insecticides to levels that prevent spread of CLas."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Previous studies have reported that infection with CLas significantly increases the fecundity of D. citri [13–15]."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Reproduction is a costly process in terms of energy usage in the adult life of female insects [16], and there is an inevitable trade-off between lipid storage and use, because animals mobilize their lipid reserves during reproduction."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "2c",
+          "predicted_move": "2",
+          "text": "How D. citri maintains a balance between lipid metabolism and increased fecundity after infection with CLas is not known."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "In insects, energy mobilization is under control of adipokinetic hormone (AKH), which was the first insect neurohormone to be identified; it was shown to stimulate lipid mobilization for locomotor activity in locusts [17]."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "To date, more than 80 different forms of AKH have been identified or predicted in arthropod species due to similar structural characteristics of the enzyme [18]."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "The mechanisms of synthesis and biological activity of AKH have also been investigated."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Insect store lipids in the form of triacylglycerides (TAG) and as carbohydrates in the form of glycogen in their fat bodies [19]."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Under conditions of energy demand, AKHs are synthesized in the corpora cardiaca, released into the hemolymph and bind to receptors (AKHRs) located on the plasma membrane of fat body cells."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "AKHR binding and activation triggers the release of energy-rich substrates after which various cellular signaling pathway components come into play [20]."
+        },
+        {
+          "sentence_num": 17,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "AKHRs are a class of G protein-coupled receptors and were first identified in Drosophila melanogaster [21] and Bombyx mori [22]; subsequently, they were identified in a large number of insect species [23–26]."
+        },
+        {
+          "sentence_num": 18,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Recent studies have shown that AKH/AKHR signaling plays a regulatory role during female reproduction in insects."
+        },
+        {
+          "sentence_num": 19,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "For example, depletion of AKHR in Bactrocera dorsalis resulted in TAG accumulation, decreased sexual courtship activity, and fecundity [27]."
+        },
+        {
+          "sentence_num": 20,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "AKHR knockdown in Nilaparvata lugens interferes with trehalose homeostasis and vitellogenin uptake by oocytes, which causes delayed oocyte development and reduced fecundity [28]."
+        },
+        {
+          "sentence_num": 21,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "AKH/AKHR signaling also regulates vitellogenesis and egg development in Locusta migratoria via triacylglycerol mobilization and trehalose homeostasis [29]."
+        },
+        {
+          "sentence_num": 22,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "As outlined above, the fecundity of D. citri is increased by CLas."
+        },
+        {
+          "sentence_num": 23,
+          "predicted_step": "2c",
+          "predicted_move": "2",
+          "text": "Whether AKH/AKHR signaling participates in this increase in fecundity due to infection via alterations in lipid metabolism is not currently known."
+        },
+        {
+          "sentence_num": 24,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Although numerous studies have been conducted on the AKH/AKHR signaling pathway, miRNA-mediated regulation of the AKH signaling pathway at the post-transcriptional level has been little studied."
+        },
+        {
+          "sentence_num": 25,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "MicroRNAs (miRNAs) are small, non-coding RNAs containing approximately 22 nucleotides that act mostly on the 3’ untranslated region (UTR) of target mRNAs, resulting in translation repression or mRNA degradation [30]."
+        },
+        {
+          "sentence_num": 26,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "miRNAs play important roles in regulating cellular events at the post-transcriptional level during biological processes [30,31,33]."
+        },
+        {
+          "sentence_num": 27,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "For example, in term of host-virus interactions, miR-8 and miR-429 target Broad isoform Z2, the gene involved in the hormonal regulation of single nucleopolyhedrovirus (HaSNPV)-mediated climbing behavior in Helicoverpa armigera [33]."
+        },
+        {
+          "sentence_num": 28,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "In relation to reproduction, in Aedes aegypti, miR-275 is essential for egg development [34], miR-309 for ovarian development [35] and miR-8 for other reproductive processes [36]."
+        },
+        {
+          "sentence_num": 29,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "As for lipid metabolism, knockdown of miR-277 in A. aegypti activates insulin/FOXO signaling by increasing the expression of ilp7 and ilp8, which reduces TAG levels and inhibits ovarian development [37]."
+        },
+        {
+          "sentence_num": 30,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Nevertheless, the functions of the miRNAs in insect-pathogen interactions need further investigation."
+        },
+        {
+          "sentence_num": 31,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "To date, there are no reports that miRNAs participate in D. citri-CLas interactions or are hijacked by CLas to affect lipid metabolism and the fecundity of D. citri."
+        },
+        {
+          "sentence_num": 32,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "As a consequence, in this study, we used the D. citri-CLas system as a model to study the molecular events associated with AKH/AKHR signaling that affect lipid metabolism and increase fecundity of D. citri induced by CLas."
+        },
+        {
+          "sentence_num": 33,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Our study contributes to our understanding of the interactions between vectors and pathogens and may also provide new ways for controlling D. citri and HLB."
+        }
+      ]
+    },
+    "test033": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "The spontaneous movement of polar lipids from one side of a membrane bilayer to the other is slow and is accelerated in cells to a physiologically relevant rate by lipid transporters [1,2]."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Flippases and floppases are transporters which move lipids unidirectionally, against their concentration gradient in an ATP-dependent manner, whereas scramblases enable bidirectional lipid movement without need of metabolic energy."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Scramblases typically possess transmembrane helices that are not fully hydrophobic."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "These helices form a membrane-spanning hydrophilic groove along which phospholipids can move in analogy to a credit card (phospholipid) being swiped through a card reader (scramblase) [1]."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Known scramblases are alpha-helical proteins[3–6], but recently, a beta-barrel scramblase, the voltage-dependent anion channel (VDAC), was identified[7]."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The VDAC barrel has membrane-facing polar residues that, when paired with the same residues in a second beta barrel at a dimer interface, create a local membrane defect along which lipids cross the membrane in credit card mode."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Therefore, the presence or ability to form a hydrophilic groove across the membrane seems to be a common feature for lipid scrambling."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Insertases assist in the integration of membrane proteins into lipid bilayers[8]."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Their activity is necessary because membrane proteins typically have hydrophilic segments that do not spontaneously insert into the membrane."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The translocating moieties of these proteins are thus amphiphilic, similar to lipids, and it is interesting to consider whether insertases and scramblases may share a common mechanism even though lipids and their polar headgroups are generally smaller than the translocating parts of membrane proteins."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "In fact, it has been suggested that scramblases, insertases, and some translocases may facilitate the insertion and translocation of phospholipids and proteins through membrane thinning[9]."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Recent work demonstrated that the mitochondrial outer membrane protein MTCH2 is an insertase[10]."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "MTCH2 has a wide transbilayer groove lined with polar and charged residues, reminiscent of the hydrophilic grooves of scramblases, leading us to hypothesize that it may function as a scramblase."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "To test this hypothesis, we performed coarse-grained and atomistic molecular dynamics (MD) simulations of MTCH2 in a model lipid bilayer."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "3c",
+          "predicted_move": "3",
+          "text": "We show that MTCH2 is indeed a scramblase, with the hydrophilic groove providing a transbilayer path for the movement of lipid headgroups while the acyl chains move through the hydrophobic interior of the membrane in credit card mode."
+        }
+      ]
+    },
+    "test040": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Neuropeptides, a diverse array of signaling molecules, orchestrate a multitude of physiological processes in organisms."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Among them, neuropeptides possessing the Arg-Phe-NH2 (RFamide) motif at their C-termini are designated as RFamide peptides and have attracted considerable attentions because of their pivotal roles in various biological functions [1–3]."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The RF-amide family encompasses five distinct peptides: Neuropeptide FF (NPFF), Prolactin-releasing peptide (PrRP), Kisspeptin (Kiss1), gonadotropin-inhibitory hormone (GnIH), and pyroglutamylated RFamide peptide (QRFP)."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Each peptide interacts with specific class A G-protein-coupled receptors (GPCRs), initiating a cascade of intracellular events to modulate physiological responses."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Similarly, the RY-amide peptides, characterized by the signature RY motif at their C-termini, present a similar mode of action, interacting with their respective receptors to regulate physiological processes [4]."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "This categorization based on the C-terminal residues highlights the specificity and diversity within these peptide families."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "The intricate interplay between these peptides and their receptors represents a complex network critical for maintaining homeostasis and responding to environmental changes."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "QRFP is a 43-amino acid RFamide peptide with a pyroglutamylated N-terminus (namely 43Rfa)."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "QRFP was originally identified by a bioinformatics approach and reverse pharmacology[5], and demonstrates specific activity for GPR103 with orexigenic activity[5–7], a Gq-coupled receptor expressed in the brain and adrenal gland."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "GPR103 is predominantly localized in the central nervous system, including regions such as the hypothalamus, which plays a crucial role in the regulation of energy metabolism and appetite control."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "QRFP and GPR103 are implicated in a variety of physiological functions ranging from the modulation of feeding behavior to the regulation of energy homeostasis [8], cardiovascular function and bone formation [9]."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "This QRFP-GPR103 pair is remarkably conserved across various vertebrate species[10], highlighting its fundamental significance in biological systems."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "GPR103 is not only pivotal in maintaining physiological balance but also presents therapeutic targets for disorders related to metabolism and appetite dysregulation."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "For example, QRFP administration reportedly increased food intake and fat mass while reducing glucose-induced insulin release, and may also cause osteopenia and facilitate nociception [11]."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Thus, the GPR103 antagonist demonstrated an anorexigenic effect in mice, and has been focused as a treatment for obesity."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Additionally, the GPR103 antagonist would be useful to trigger dormant state for survival treatment in emergency medical care."
+        },
+        {
+          "sentence_num": 17,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Recent advancements in cryo-electron microscopy (cryo-EM) have unveiled numerous GPCR-G-protein complex structures, including those associated with C-terminally amidated peptides such as cholecystokinin, orexin, and RY-amide neuropeptide Y[12–14]."
+        },
+        {
+          "sentence_num": 18,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "These analyses have shed light on the intricacies of ligand-receptor interactions and their activation mechanisms."
+        },
+        {
+          "sentence_num": 19,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Nevertheless, a notable gap remains in our understanding of RF-amide receptors, specifically GPR103."
+        },
+        {
+          "sentence_num": 20,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "The structures of these receptors have not been elucidated, leaving the mechanisms distinguishing RF- and RY-amides enigmatic."
+        },
+        {
+          "sentence_num": 21,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "This also includes an understanding of the selective activation of GPR103 by QRFP and the fundamental principles dictating ligand specificity among related receptors."
+        },
+        {
+          "sentence_num": 22,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "These gaps in structural data significantly hinder the strategic development of therapeutic agents targeting GPR103."
+        },
+        {
+          "sentence_num": 23,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "Here, we report a cryo-EM structure of the QRFP-bound GPR103•Gq complex, offering deep insights into its ligand recognition and selectivity, and dynamics."
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "total_articles_attempted": 40,
+    "successfully_parsed": 10,
+    "failed_parsing": 30,
+    "excluded_articles": [
+      "test001",
+      "test004",
+      "test005",
+      "test006",
+      "test008",
+      "test010",
+      "test011",
+      "test012",
+      "test013",
+      "test015",
+      "test016",
+      "test017",
+      "test018",
+      "test019",
+      "test020",
+      "test021",
+      "test022",
+      "test023",
+      "test024",
+      "test025",
+      "test027",
+      "test028",
+      "test031",
+      "test032",
+      "test034",
+      "test035",
+      "test036",
+      "test037",
+      "test038",
+      "test039"
+    ]
+  }
+}

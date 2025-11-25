@@ -7,14 +7,14 @@ Inputs:
     - results/metrics/*.json
 
 Outputs:
-    - results/figures/figure_1_accuracy_consistency.png
-    - results/figures/figure_2_step_level_consistency.png
-    - results/figures/figure_3_sentence_consistency.png
+    - results/figures/figure_1_step_temperature_heatmap.png
+    - results/figures/figure_2_accuracy_consistency.png
 """
 
 import json
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.colors as mcolors
 import seaborn as sns
 from pathlib import Path
 import numpy as np
@@ -47,9 +47,96 @@ def load_metrics():
     return metrics
 
 
+def create_step_temperature_heatmap(metrics, output_path):
+    """
+    Figure 1: Step-Level Consistency Heatmap (RQ2)
+    """
+    # 1. Data Preparation (Same as before)
+    temperatures = sorted([float(t) for t in metrics["alpha"].keys()])
+    all_steps = ["1a", "1b", "1c", "2a", "2b", "2c", "2d", "3a", "3b", "3c"]
+
+    step_labels = {
+        "1a": "1a\nClaim centrality\n(n=74)",
+        "1b": "1b\nTopic generalizations\n(n=166)",
+        "1c": "1c\nReview research\n(n=453)",
+        "2a": "2a\nCounter-claiming\n(n=26)",
+        "2b": "2b\nIndicate gap\n(n=58)",
+        "2c": "2c\nQuestion-raising\n(n=18)",
+        "2d": "2d\nContinue tradition\n(n=11)",
+        "3a": "3a\nOutline purposes\n(n=60)",
+        "3b": "3b\nAnnounce research\n(n=91)",
+        "3c": "3c\nAnnounce findings\n(n=65)",
+    }
+
+    alpha_matrix = []
+    row_labels = []
+
+    for step in all_steps:
+        row = []
+        for temp in temperatures:
+            temp_key = f"{temp:.1f}"
+            per_step = metrics["alpha"][temp_key].get("per_step", {})
+            if step in per_step and per_step[step]["alpha"] is not None:
+                row.append(per_step[step]["alpha"])
+            else:
+                row.append(np.nan)
+        alpha_matrix.append(row)
+        row_labels.append(step_labels[step])
+
+    alpha_matrix = np.array(alpha_matrix)
+
+    # 2. Setup Plot
+    fig, ax = plt.subplots(figsize=(14, 8))
+
+    # 3. Heatmap
+    sns.heatmap(
+        alpha_matrix,
+        annot=True,
+        fmt=".3f",
+        cmap="GnBu",  # Options: 'GnBu', 'PuBuGn', or 'crest'
+        vmin=0.4,
+        vmax=1.0,
+        cbar=False,
+        annot_kws={"fontsize": 11},
+        xticklabels=[f"{t:.1f}" for t in temperatures],
+        yticklabels=row_labels,
+        linewidths=1.5,
+        linecolor="white",
+        ax=ax,
+    )
+
+    # 4. Text Contrast Logic
+    for text in ax.texts:
+        try:
+            val = float(text.get_text())
+            # Threshold for white text
+            if val > 0.799:
+                text.set_color("white")
+                text.set_fontweight("bold")
+            else:
+                text.set_color("#333333")  # Dark gray
+                text.set_fontweight("bold")
+        except ValueError:
+            pass
+
+    # 5. Axis Formatting
+    ax.set_xlabel("Temperature", fontsize=12, fontweight="bold", labelpad=10)
+    ax.set_ylabel("Rhetorical Step", fontsize=12, fontweight="bold", labelpad=10)
+
+    # Remove "tick" lines for a cleaner look
+    ax.tick_params(left=True, bottom=True, length=3, width=0.5)
+
+    plt.yticks(rotation=0, fontsize=12)
+    plt.xticks(rotation=0, fontsize=12)
+
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=300, bbox_inches="tight")
+    plt.close()
+
+
 def create_accuracy_consistency_plot(metrics, output_path):
     """
-    Two-panel figure (Figure 1):
+    Figure 2: Accuracy and Consistency Two-Panel Plot
     Panel A: Move-level accuracy and move-level alpha
     Panel B: Step-level accuracy and step-level alpha
     Both panels have dual y-axes (left: accuracy, right: alpha)
@@ -65,19 +152,26 @@ def create_accuracy_consistency_plot(metrics, output_path):
     for temp in temperatures:
         temp_key = f"{temp:.1f}"
 
-        # Accuracy - FIXED: Updated to match script 04 structure
-        if metrics["accuracy"][temp_key]["move_level"]["accuracy"]:
-            move_accuracies.append(
-                metrics["accuracy"][temp_key]["move_level"]["accuracy"]["mean"]
-            )
-            step_accuracies.append(
-                metrics["accuracy"][temp_key]["step_level"]["accuracy"]["mean"]
-            )
+        # --- Extract Accuracy (Try F1 first, fallback to 'accuracy') ---
+        # Move Level
+        acc_data = metrics["accuracy"][temp_key]["move_level"]
+        if "f1" in acc_data and acc_data["f1"]:
+            move_accuracies.append(acc_data["f1"]["mean"])
+        elif "accuracy" in acc_data and acc_data["accuracy"]:
+            move_accuracies.append(acc_data["accuracy"]["mean"])
         else:
             move_accuracies.append(None)
+
+        # Step Level
+        step_data = metrics["accuracy"][temp_key]["step_level"]
+        if "f1" in step_data and step_data["f1"]:
+            step_accuracies.append(step_data["f1"]["mean"])
+        elif "accuracy" in step_data and step_data["accuracy"]:
+            step_accuracies.append(step_data["accuracy"]["mean"])
+        else:
             step_accuracies.append(None)
 
-        # Alpha
+        # --- Extract Alpha ---
         if metrics["alpha"][temp_key]["move_level"]["alpha"] is not None:
             move_alphas.append(metrics["alpha"][temp_key]["move_level"]["alpha"])
             step_alphas.append(metrics["alpha"][temp_key]["step_level"]["alpha"])
@@ -88,220 +182,141 @@ def create_accuracy_consistency_plot(metrics, output_path):
     # Create figure with two panels (1 row, 2 columns)
     fig, (ax1, ax3) = plt.subplots(1, 2, figsize=(14, 6))
 
-    # ===== PANEL A: MOVE-LEVEL =====
-    color_move_acc = "tab:blue"
-    color_move_alpha = "tab:red"
+    # ===============================
+    # PANEL A: MOVE-LEVEL
+    # ===============================
+    color_move_acc = "#0072B2"  # Blue
+    color_move_alpha = "#D55E00"  # Vermilion
 
+    # Left Axis: Accuracy
     ax1.set_xlabel("Temperature", fontsize=12)
-    ax1.set_ylabel("Move-Level Accuracy", color=color_move_acc, fontsize=12)
+    ax1.set_ylabel(
+        "Move-Level Weighted F1",
+        color=color_move_acc,
+        fontsize=12,
+        fontweight="bold",
+    )
     line1 = ax1.plot(
         temperatures,
         move_accuracies,
         "o-",
         color=color_move_acc,
-        linewidth=2.5,
-        markersize=8,
-        label="Accuracy",
+        linewidth=3,
+        markersize=9,
+        label="Weighted F1",
+        zorder=2,
     )
     ax1.tick_params(axis="y", labelcolor=color_move_acc)
-    ax1.set_ylim([0, 1])
+    ax1.set_ylim([0.0, 1.05])
     ax1.grid(True, alpha=0.3)
-    ax1.set_title("Panel A: Move-Level Performance", fontsize=12, fontweight="bold")
+    ax1.set_title("Panel A: Move-Level Performance", fontsize=13, fontweight="bold")
 
-    # Right axis for move-level alpha
+    # Right Axis: Consistency
     ax2 = ax1.twinx()
-    ax2.set_ylabel("Move-Level Krippendorff's α", color=color_move_alpha, fontsize=12)
+    ax2.set_ylabel(
+        "Move-Level Krippendorff's α",
+        color=color_move_alpha,
+        fontsize=12,
+        fontweight="bold",
+    )
     line2 = ax2.plot(
         temperatures,
         move_alphas,
         "^-",
         color=color_move_alpha,
-        linewidth=2.5,
-        markersize=8,
+        linewidth=3,
+        markersize=9,
         label="Krippendorff's α",
+        zorder=3,
     )
     ax2.tick_params(axis="y", labelcolor=color_move_alpha)
-    ax2.set_ylim([0, 1])
+    ax2.set_ylim([0.0, 1.05])
 
     # Combine legends for Panel A
     lines_a = line1 + line2
     labels_a = [l.get_label() for l in lines_a]
-    ax1.legend(lines_a, labels_a, loc="lower left", fontsize=10)
+    ax1.legend(
+        lines_a,
+        labels_a,
+        loc="lower left",
+        fontsize=11,
+        framealpha=0.9,
+        facecolor="white",
+    )
 
-    # ===== PANEL B: STEP-LEVEL =====
-    color_step_acc = "tab:green"
-    color_step_alpha = "tab:orange"
+    # ===============================
+    # PANEL B: STEP-LEVEL
+    # ===============================
+    color_step_acc = "#009E73"  # Bluish Green
+    color_step_alpha = "#E69F00"  # Orange
 
+    # Left Axis: Accuracy
     ax3.set_xlabel("Temperature", fontsize=12)
-    ax3.set_ylabel("Step-Level Accuracy", color=color_step_acc, fontsize=12)
+    ax3.set_ylabel(
+        "Step-Level Weighted F1",
+        color=color_step_acc,
+        fontsize=12,
+        fontweight="bold",
+    )
     line3 = ax3.plot(
         temperatures,
         step_accuracies,
         "s-",
         color=color_step_acc,
-        linewidth=2.5,
-        markersize=8,
-        label="Accuracy",
+        linewidth=3,
+        markersize=9,
+        label="Weighted F1",
+        zorder=2,
     )
     ax3.tick_params(axis="y", labelcolor=color_step_acc)
-    ax3.set_ylim([0, 1])
+    ax3.set_ylim([0.0, 1.05])
     ax3.grid(True, alpha=0.3)
-    ax3.set_title("Panel B: Step-Level Performance", fontsize=12, fontweight="bold")
+    ax3.set_title("Panel B: Step-Level Performance", fontsize=13, fontweight="bold")
 
-    # Right axis for step-level alpha
+    # Right Axis: Consistency
     ax4 = ax3.twinx()
-    ax4.set_ylabel("Step-Level Krippendorff's α", color=color_step_alpha, fontsize=12)
+    ax4.set_ylabel(
+        "Step-Level Krippendorff's α",
+        color=color_step_alpha,
+        fontsize=12,
+        fontweight="bold",
+    )
     line4 = ax4.plot(
         temperatures,
         step_alphas,
         "v-",
         color=color_step_alpha,
-        linewidth=2.5,
-        markersize=8,
+        linewidth=3,
+        markersize=9,
         label="Krippendorff's α",
+        zorder=3,
     )
     ax4.tick_params(axis="y", labelcolor=color_step_alpha)
-    ax4.set_ylim([0, 1])
+    ax4.set_ylim([0.0, 1.05])
 
     # Combine legends for Panel B
     lines_b = line3 + line4
     labels_b = [l.get_label() for l in lines_b]
-    ax3.legend(lines_b, labels_b, loc="lower left", fontsize=10)
+    ax3.legend(
+        lines_b,
+        labels_b,
+        loc="lower left",
+        fontsize=11,
+        framealpha=0.9,
+        facecolor="white",
+    )
+
+    # Align X-Ticks
+    ax1.set_xticks(temperatures)
+    ax3.set_xticks(temperatures)
 
     # Overall title
-    fig.suptitle(
-        "Accuracy and Consistency Across Temperature Settings",
-        fontsize=14,
-        fontweight="bold",
-        y=1.00,
-    )
-
-    plt.tight_layout()
-    plt.savefig(output_path, dpi=300, bbox_inches="tight")
-    plt.close()
-
-
-def create_step_level_plot(metrics, output_path):
-    """
-    Step-level consistency (Krippendorff's alpha) across temperatures.
-    Only shows steps with n≥50 (7 steps) to avoid cluttering with rare steps.
-    This figure shows how consistency varies by rhetorical step across temperature settings.
-    """
-    temperatures = sorted([float(t) for t in metrics["alpha"].keys()])
-
-    # Only include steps with n≥50 in the corpus
-    # Excluded: 2a (27), 2c (24), 2d (11), 3d (1)
-    steps_to_plot = ["1a", "1b", "1c", "2b", "3a", "3b", "3c"]
-
-    step_labels = {
-        "1a": "1a - Claim centrality",
-        "1b": "1b - Topic generalizations",
-        "1c": "1c - Review research",
-        "2b": "2b - Indicate gap",
-        "3a": "3a - Outline purposes",
-        "3b": "3b - Announce research",
-        "3c": "3c - Announce findings",
-    }
-
-    step_data = {step: [] for step in steps_to_plot}
-
-    for temp in temperatures:
-        temp_key = f"{temp:.1f}"
-        per_step = metrics["alpha"][temp_key].get("per_step", {})
-
-        for step in steps_to_plot:
-            if step in per_step and per_step[step]["alpha"] is not None:
-                step_data[step].append(per_step[step]["alpha"])
-            else:
-                step_data[step].append(None)
-
-    # Create figure
-    fig, ax = plt.subplots(figsize=(12, 7))
-
-    # Use distinct colors and markers for each step
-    colors = plt.cm.tab10(np.linspace(0, 0.7, len(steps_to_plot)))
-    markers = ["o", "s", "^", "D", "v", "p", "*"]
-
-    for i, step in enumerate(steps_to_plot):
-        if all(v is None for v in step_data[step]):
-            continue
-
-        ax.plot(
-            temperatures,
-            step_data[step],
-            marker=markers[i],
-            linestyle="-",
-            label=step_labels[step],
-            color=colors[i],
-            linewidth=2,
-            markersize=7,
-        )
-
-    ax.set_xlabel("Temperature", fontsize=12)
-    ax.set_ylabel("Krippendorff's α (Step-Level Consistency)", fontsize=12)
-    ax.set_title(
-        "Step-Level Consistency Across Temperature Settings (n≥50)",
-        fontsize=14,
-        fontweight="bold",
-    )
-    ax.legend(ncol=1, fontsize=9, loc="best", framealpha=0.9)
-    ax.grid(True, alpha=0.3)
-    ax.set_ylim([0, 1])
-
-    plt.tight_layout()
-    plt.savefig(output_path, dpi=300, bbox_inches="tight")
-    plt.close()
-
-
-def create_sentence_consistency_distribution(metrics, output_path):
-    """
-    Create a stacked bar chart showing distribution of sentence consistency
-    across temperature settings.
-
-    This visualizes Table 5 data showing what % of sentences fall into each
-    consistency category (high/moderate/low/inconsistent).
-    """
-    temperatures = sorted([float(t) for t in metrics["sentence_level"].keys()])
-
-    categories = ["high", "moderate", "low", "inconsistent"]
-    category_labels = [
-        "High (≥90%)",
-        "Moderate (70-89%)",
-        "Low (50-69%)",
-        "Inconsistent (<50%)",
-    ]
-
-    data = {cat: [] for cat in categories}
-
-    for temp in temperatures:
-        temp_key = f"{temp:.1f}"
-        dist = metrics["sentence_level"][temp_key]["distribution"]
-
-        for cat in categories:
-            data[cat].append(dist[cat] * 100)  # Convert to percentage
-
-    # Create stacked bar chart
-    fig, ax = plt.subplots(figsize=(10, 6))
-
-    x = np.arange(len(temperatures))
-    width = 0.6
-
-    bottom = np.zeros(len(temperatures))
-    colors = ["#2ecc71", "#f39c12", "#e74c3c", "#95a5a6"]
-
-    for cat, label, color in zip(categories, category_labels, colors):
-        ax.bar(x, data[cat], width, label=label, bottom=bottom, color=color)
-        bottom += data[cat]
-
-    ax.set_xlabel("Temperature", fontsize=12)
-    ax.set_ylabel("Percentage of Sentences (%)", fontsize=12)
-    ax.set_title(
-        "Distribution of Sentence-Level Consistency", fontsize=14, fontweight="bold"
-    )
-    ax.set_xticks(x)
-    ax.set_xticklabels([f"{t:.1f}" for t in temperatures])
-    ax.legend(loc="upper right", fontsize=10)
-    ax.set_ylim([0, 100])
+    # fig.suptitle(
+    #     "Accuracy and Consistency Across Temperature Settings",
+    #     fontsize=15,
+    #     fontweight="bold",
+    #     y=0.98,
+    # )
 
     plt.tight_layout()
     plt.savefig(output_path, dpi=300, bbox_inches="tight")
@@ -333,28 +348,20 @@ def main():
     # Generate figures
     print("Generating figures...")
 
-    # Figure 1: Accuracy and Consistency (ESSENTIAL - your main RQ3 figure)
-    fig1_path = figures_dir / "figure_1_accuracy_consistency.png"
-    create_accuracy_consistency_plot(metrics, fig1_path)
-    print(f"✓ figure_1_accuracy_consistency.png")
+    # Figure 1: Step-level consistency heatmap (RQ2 Heatmap)
+    fig1_path = figures_dir / "figure_1_step_temperature_heatmap.png"
+    create_step_temperature_heatmap(metrics, fig1_path)
+    print(f"✓ figure_1_step_temperature_heatmap.png")
 
-    # Figure 2: Step-level consistency analysis
-    fig2_path = figures_dir / "figure_2_step_level_consistency.png"
-    create_step_level_plot(metrics, fig2_path)
-    print(f"✓ figure_2_step_level_consistency.png")
+    # Figure 2: Accuracy and Consistency Two-Panel (Replacing Alligator Plot)
+    fig2_path = figures_dir / "figure_2_accuracy_consistency.png"
+    create_accuracy_consistency_plot(metrics, fig2_path)
+    print(f"✓ figure_2_accuracy_consistency.png")
 
-    # Figure 3: Sentence consistency distribution (USEFUL)
-    fig3_path = figures_dir / "figure_3_sentence_consistency.png"
-    create_sentence_consistency_distribution(metrics, fig3_path)
-    print(f"✓ figure_3_sentence_consistency.png")
     print()
-
     print("=" * 60)
     print("COMPLETE ✓")
     print("All outputs saved to results/figures/")
-    print()
-    print("NOTE: Tables are generated by 04_calculate_metrics.py")
-    print("      Location: results/tables/")
     print("=" * 60)
 
 

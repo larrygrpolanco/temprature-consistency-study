@@ -1,0 +1,26 @@
+[1a] Autism is one of the most common behavioral changes detected early in life [1].
+[1b] Despite extensive research, the etiology of autism remains very complex.
+[1c] The cause of autism is linked to the genetic and environmental history of parents which together could lead to the development of autism spectrum disorders (ASD) in children [2,3].
+[1c] A recent survey reveals several hundred distinct sites of nucleotide changes in the genome between patients [4].
+[1c] Several environmental and genetic factors identified in humans have already been validated with mouse models [5–6], however, have not yet been associated in all autistic patients [7–8].
+[2a] Evidence that the altered level of six miRNAs (miR-19a-3p, miR-361-5p, miR-3613-3p, miR-150-5p, miR-126-3p, miR-499a-5p) in parents and thus inheritance through the expression of altered phenotypes [9] would lead to the inclusion of a common genetic marker for autism cases.
+[1c] Altered levels of RNAs such as non-coding RNAs can be passed on to the next generation via the germline to alter offspring phenotypes [10,11].
+[2b] However, how RNA subornation is established and maintained throughout generation remains a matter of speculation.
+[1c] Recently, on the activity of sperm RNA characterized in mouse models, a growing number of experiments highlight it as an important source of parental hereditary information above DNA [12–14].
+[1c] The six miRNAs listed above are present in sperm RNA in general and are altered in the father of an autistic child.
+[1c] Five of six (miR-19a-3p, miR-150-5p, miR-126-3p, miR-361-5p, miR-499a-5p) are also present in mouse sperm, the sixth miR-3613-3p does not exist in the mouse genome.
+[1c] These six inherited miRNAs are then found downregulated in the sera of autistic patients and ‵autism-like‵ mouse models.
+[2c] One of the questions posed here is to examine sperm RNA activities of that cover a possible paternally acquired autistic phenotype.
+[3b] Microinjection of sperm RNA into fertilized mouse eggs could lead to variable phenotypes depending on the origin of the males from which the RNA is collected [10].
+[2c] In particular, although exposure of total RNA from (human) sperm to fertilized mouse eggs may have adverse effects on offspring, can symptoms of autism also become established in the next generation?
+[3a] Here, we focus on experimentally induced autistic traits, particularly the potential of human sperm RNAs to induce “autism-like” phenotypes in mice.
+[3a] Offspring born from eggs micro-injected with sperm RNAs from the father of the autistic child’s were compared to controls at the molecular level and by behavioural assessment (open field maze, recognition of a familiar and novel object, social interaction, tail suspension, Marble burying and elevated plus maze assays).
+[3a] In addition, we examined the prefrontal cortex, corpus callosum, striatum, hippocampus, amygdala and cerebellum, which have been implicated in the pathophysiology of autism in the brain [15,16].
+[3a] Our study involved, the examination of the brain anatomy in animals from all groups, utilising immuno-histochemical stains.
+[3c] Notably, differences were observed in animals induced by valproic acid (VPA) and microinjected RNA.
+[3a] While astrocytes showed abnormal astrogliosis (and microgliosis, which is normally invaded by microglia), no signs of astrocyte disorientation or microglial extensions which are often seen in the autistic human brain, were detected.
+[3a] Moreover, we did not observe hypertrophy GFAP and Iba-1 positive-cells or hyperplasia were detected in immunopositive cells.
+[1c] Microglia and astrocytes play important roles in the regulation of neuronal metabolism, providing nutritional support of neurons, participating in the synapses formation and facilitating neurotransmission [4,6,17,18].
+[3c] Furthermore, in the microinjected with RNA group, there was a significant increase in the number of oligodendrocyte products accompanied by branching, compared to the controls groups.
+[3c] These results could be attributed to the observed autistic traits in both groups.
+[3c] In appears that in both groups of mice the manifestation of autistic behavioral disorders may be linked glial cell disorders.

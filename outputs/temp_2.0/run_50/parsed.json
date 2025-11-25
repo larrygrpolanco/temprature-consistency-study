@@ -1,0 +1,2275 @@
+{
+  "temperature": 2.0,
+  "run_number": 50,
+  "dataset": "test",
+  "model": "gpt-4.1-mini",
+  "articles": {
+    "test002": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "The challenge of understanding how the detrimental effects of age can be mitigated is of central concern in medicine and biology and is facilitated by the comparative study of aging across species (Arking, 2006; Austad, 2009)."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Zebrafish, like humans, display gradual senescence (Kishi et al., 2009)."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "With advancing age, zebrafish have reduced regenerative capacity, accumulation of DNA damage, and cardiovascular impairment (Gilbert et al., 2014; Sun et al., 2014)."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "The shared consequences of aging in humans and zebrafish, combined with the low cost of housing zebrafish for extended periods, suggests that zebrafish could serve as a valuable model organism in the study of aging."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "In humans, many behaviors vary across the lifespan, such as emotional regulation and anxiety (John and Gross, 2004; Lenze and Wetherell, 2011; Nivard et al., 2015)."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "The trajectory of these behaviors is shaped by the complex interplay of environmental factors with genetics and sex (Nivard et al., 2015; Singh et al., 2019)."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Untangling the web of interactions between age, genetics, and sex, is facilitated by use of model organisms for which many molecular genetic tools are available, like zebrafish."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Although there has been a large increase in the study of zebrafish behavior in the past twenty years (Gerlai, 2023; Kenney, 2020), only a handful of reports have explored age-associated behavioral alterations."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "These studies have found that older fish have changes in circadian rhythms, decreased associative learning, and reduced locomotion (Gilbert et al., 2014; Philpott et al., 2012; Ruhl et al., 2015; Yu et al., 2006; Zhdanova et al., 2008)."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "However, it is unknown if aging also affects commonly studied behaviors related to emotional regulation and exploration in zebrafish."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "One of the most widely used behavioral tasks to study exploratory and emotional behavior in zebrafish is the novel tank test (NTT)."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "In this test, animals are placed into a tank with which they have no prior experience."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Spending time near the bottom or periphery of the tank are typically interpreted as fearful predator avoidance behaviors related to anxiety (Champagne et al., 2010; Gerlai et al., 2000; Kalueff et al., 2013; Levin et al., 2007; Maximino et al., 2010)."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Nonassociative memory can also be assessed by measuring how behavior habituates within session (short-term memory) or between daily sessions (long-term memory)."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "To determine whether age affects behavior in the NTT, and if the effects of age are modulated by sex and genetics, we examined behavior in young (6 months old) and middle aged (12 months old) fish from two strains (TL and TU) and both sexes."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "3c",
+          "predicted_move": "3",
+          "text": "We find that this modest difference in age is sufficient to alter several behaviors such as locomotion and predator avoidance."
+        }
+      ]
+    },
+    "test003": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Nonalcoholic steatohepatitis (NASH) is a severe progression of nonalcoholic fatty liver disease (NAFLD), characterized by hepatic Triglyceride (TG) accumulation, inflammation, liver fibrosis, and hepatocellular injury, which can progress to cirrhosis and hepatocellular carcinoma (HCC) (Loomba et al., 2021)."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Numerous studies have proposed mediators that regulate NASH initiation and progression, including insulin resistance (Chitturi et al., 2002), oxidative stress (Masarone et al., 2018), mitochondrial dysfunction (Begriche et al., 2006), cell death (Kanda et al., 2018), immune cell activation (Huby and Gautier, 2022), and genetic/epigenetic factors (Jonas and Schürmann, 2021)."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Lifestyle modifications, such as reducing calorie intake, exercise, and weight loss are recommended for the treatment of NAFLD/NASH (Baumeier et al., 2015; de Castro-de-Paiva et al., 2022; Golbidi et al., 2012; van der Windt et al., 2018)."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "However, there are few effective therapies to address the increasing global prevalence of NAFLD/NASH (Oseini and Sanyal, 2017)."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Time-restricted feeding (TRF) is a dietary intervention that involves consuming food within a consistent daily time window, typically spanning 8 to 10 hours, without the need to reduce overall calorie intake (Rynders et al., 2019)."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Several studies have reported favorable outcomes associated with TRF, including reductions in body weight and adiposity, improvements in blood pressure, and enhanced insulin sensitivity in both human and rodent studies (Chaix et al., 2014; Hatori et al., 2012; Sutton et al., 2018)."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "2c",
+          "predicted_move": "2",
+          "text": "While the precise mechanisms remain unexplored, it has been shown that TRF prevents the development of liver steatosis and NASH when fed a high-fat diet (Hatori et al., 2012) or a high-fat high-sucrose diet (Shu et al., 2022)."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Inositol polyphosphate multikinase (IPMK) is responsible for producing inositol tetrakisphosphate (IP4) and inositol pentakisphosphate (IP5) (Frederick et al., 2005)."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Additionally, IPMK exhibits PI3K activity (Maag et al., 2011) and plays a pivotal role in various cellular signaling pathways."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "IPMK functions as an adaptor protein, interacting with key proteins, including a mechanistic target of rapamycin (mTOR), AMP-activated protein kinase (AMPK), serum response factor (SRF), and Unc-51-like autophagy-activating kinase (ULK) (Bang et al., 2012; Guha et al., 2019; E. Kim et al., 2013; S. Kim et al., 2011)."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Recent research has uncovered IPMK’s significant role as a key regulator of Toll-like receptor (TLR) signaling, particularly in myeloid cells, especially macrophages (E. Kim et al., 2017; H. Lee et al., 2023)."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "In this context, IPMK modulates the production of inflammatory cytokines by regulating TRAF6 protein stability through direct interaction with TRAF6 and preventing K48-linked ubiquitination."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "IPMK has been shown to play a critical role in liver inflammation (Guha et al., 2019)."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "We have reported that IPMK enhances hepatic insulin sensitivity and suppresses gluconeogenesis (Jung et al., 2022)."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "2d",
+          "predicted_move": "2",
+          "text": "In preliminary studies, we found that TRF increased IPMK expression in liver."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "In this study, we show that time-restricted feeding (TRF) improves steatosis and inflammation in a mouse model of NASH, i.e., mice fed a methionine-choline deficient diet (MCDD)."
+        },
+        {
+          "sentence_num": 17,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "We found that IPMK protein was decreased in the liver of MCDD mice."
+        },
+        {
+          "sentence_num": 18,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "To determine whether the loss of IPMK exacerbates the NASH phenotype, we fed wild-type (WT) and liver-specific IPMK knockout (LKO) mice a MCDD, and assessed liver histology, hepatocellular injury, and inflammation."
+        },
+        {
+          "sentence_num": 19,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Hepatic IPMK deficiency worsened hepatic steatosis, elevated serum ALT and AST levels and expression of inflammatory genes in mice fed MCDD, suggesting a role as a molecular mediator of the effect of TRF in NASH."
+        }
+      ]
+    },
+    "test004": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Platelets play a pivotal role in primary hemostasis, thrombosis, inflammation, and vascular biology."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "These anuclear discoid cells circulate in the bloodstream to patrol the integrity of the vascular system[1]."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Upon injury, platelets quickly activate, change shape, release granule contents, and aggregate to form the hemostatic plug in the presence of fibrinogen."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Platelet activation can be triggered by many physiological agonists, including thrombin, the most potent platelet agonist and a key protease in coagulation[2,3]."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Thrombin signals through two protease activated receptors (PARs), PAR1 and PAR4, on the surface of human platelets[4]."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "PARs belong to the GPCR superfamily and have a unique activation mechanism whereby the N-terminus is enzymatically cleaved to unmask the tethered ligand[5]."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The new N-terminus interacts with the endogenous ligand binding site to induce a global structural rearrangement that activates downstream signaling[6,7]."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "PAR1 and PAR4 both signal through Gαq and Gα12/13, however with different kinetics[8]."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "PAR1 leads to rapid signaling that is quickly dissipated, whereas PAR4 leads to prolonged signaling[4,9,10]."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "This sustained signaling associated with PAR4 activation is essential for thrombosis, highlighting PAR4 as a promising target for antiplatelet therapies[11–13]."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Over the past 10 years, platelet thrombin receptors have been appealing targets for antiplatelet therapies, which led to the first-in-class FDA approved PAR1 inhibitor, vorapaxar."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "2a",
+          "predicted_move": "2",
+          "text": "However, targeting PAR1 comes with a significant risk of bleeding, which outweighs its clinical benefits in preventing cardiovascular events[14,15]."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "In recent years, PAR4 has become a rising star as a safer antiplatelet and antithrombotic target for a number of reasons."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "3d",
+          "predicted_move": "3",
+          "text": "First, targeting PAR4 signaling without inhibiting PAR1 allows platelets to continue to respond to low levels of thrombin and preserves normal hemostasis[12]."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "3d",
+          "predicted_move": "3",
+          "text": "Second, pharmacological inhibition of PAR4 prevents thrombin-mediated PAR4 activation at high concentrations that are associated with pathological thrombosis."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "3d",
+          "predicted_move": "3",
+          "text": "Third, since the prolonged signaling mediated by PAR4 activation is associated with factor V release from α-granules and microparticle generation[16], selectively inhibiting PAR4 would not only prevent thrombus formation but also reduce platelet procoagulant activity[11]."
+        },
+        {
+          "sentence_num": 17,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Collectively, this has culminated in the development of a number of PAR4 antagonists in the form of pepducins, small molecule compounds, and function-blocking antibodies[17]."
+        },
+        {
+          "sentence_num": 18,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Two small molecule PAR4 inhibitors from Bristol Myers Squibb, BMS-986120 and BMS-986141, were the subject of clinical trials and proved to be efficient in preventing cardiovascular events with a good safety profile[12,13,18]."
+        },
+        {
+          "sentence_num": 19,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "PAR4’s unique properties have made it an attractive therapeutic target to prevent thrombosis without hindering normal hemostasis."
+        },
+        {
+          "sentence_num": 20,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Therefore, it is essential that we fully understand the mechanisms underlying PAR4 signaling."
+        },
+        {
+          "sentence_num": 21,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "The tethered ligand mechanism was proposed in 1991 by Coughlin and colleagues, however the molecular mechanism of receptor activation is only recently understood."
+        },
+        {
+          "sentence_num": 22,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "Recently, we used amide hydrogen/deuterium exchange (H/D exchange) mass spectrometry (MS) with purified full-length PAR4 to examine the conformational dynamics of the tethered ligand mechanism following activation by thrombin[19]."
+        },
+        {
+          "sentence_num": 23,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "This study revealed that PAR4 activation requires a coordinated rearrangement of extracellular loop 3 (ECL3) and threonine at position 153 in the ligand binding site formed by transmembrane domain 3 (TM3) and TM7."
+        },
+        {
+          "sentence_num": 24,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Within ECL3, there is a single nucleotide polymorphism (SNP) in which the proline at 310 is replaced with a leucine (PAR4-310P/L, rs2227376)."
+        },
+        {
+          "sentence_num": 25,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "This natural sequence variant of PAR4 had significantly lower receptor reactivity, as measured by calcium mobilization in HEK293 cells."
+        },
+        {
+          "sentence_num": 26,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Natural sequence variants of PAR4 (e.g. rs773902 (PAR4-120A/T), and rs2227346 (PAR4-296F/V)) affect the receptor reactivity and subsequent platelet function [20–23]."
+        },
+        {
+          "sentence_num": 27,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Therefore, we hypothesize the hypo-reactive PAR4-P310L variant would reduce platelet responsiveness to thrombin stimulation"
+        },
+        {
+          "sentence_num": 28,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "To test the impact of the PAR4-310P/L polymorphism in vivo, we used CRISPR/Cas9 to introduce a point mutation into PAR4 to.generate the mouse homolog of this variant, PAR4-P322L."
+        },
+        {
+          "sentence_num": 29,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "PAR4-P322L significantly reduced platelet responsiveness to PAR4-activation peptide (AYPGKF) and thrombin, while ADP and GPVI signaling were not affected."
+        },
+        {
+          "sentence_num": 30,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "Further, platelet aggregation was dramatically decreased in the platelets from mice that carried one (PAR4P/L, heterozygous) or two (PAR4L/L, homozygous) alleles of PAR4-P322L."
+        },
+        {
+          "sentence_num": 31,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "Additionally, PAR4L/L mice displayed slightly extended tail bleeding compared to wild-types."
+        },
+        {
+          "sentence_num": 32,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "PAR4-P322L also delayed arterial occlusion in the ferric chloride-induced carotid artery thrombosis model."
+        }
+      ]
+    },
+    "test006": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Central components of animal cognition are their ability to adapt to new environmental conditions, store successful changes of their behavior caused by new learning, and use the relevant memories for further behavioral control."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "In honeybees, a classical model of learning and memory studies, a large body of data document how cognitive functions are essential for their foraging success and survival of their colonies [1] [2]."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Evolutionary selections for the improvements of cognitive abilities work on the individual level and are based on genetic variations that are favorable for behavioral traits related to sensory processing, learning and memory formation [3] [4]."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The search for such cognitive adaptations can be performed both on a population level and on an individual level."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "However, little efforts have been concentrated on the study of the causes and lifestyle-related effects of individual variations in cognitive abilities and styles within single species [5] except for humans [6] [7] [8]."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Studies across different vertebrate species although recognized the consistency of inter-individual variability in cognitive capacities ([9] [10] [11]), albeit tracing invertebrate cognition through the lens of individual behavioral variability is a much less explored."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Selection for behavioral traits usually involve many animals."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Studies on learning and memory in Drosophila have led to the discovery of multiple genes related to learning and memory and groups of flies belonging to the same line can be tested sequentially for the behavioral expression of learning and memory related performances [12]."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "However, the olfactory conditioning procedures engage usually many individuals at the same time e.g. in the T-maze paradigm ([13]), which makes it impossible to relate individual performances to their corresponding gene expression patterns."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Olfactory conditioning protocols in Drosophila used by others also failed to decipher the heterogeneity in the expression of learned behavior among the individuals, rather the results were interpreted as the expression of probabilistic behavior at the individual level [14] [15]."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Honeybees, on the other hand, can be selected for fast learning and then selectively bred via the thelytokous development of Apis mellifera capensis [16]; a highly effective procedure that should be applied more frequently."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Tait and colleagues [17] tested individual honeybees in associative acquisition, non-associative sensitization, and short-term memory, and constructed a general heritable factor similar to factors derived for mammals [18] [19] [20]."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The proboscis extension response (PER) training is a particularly effective experimental procedure that allows testing individual honeybees to a whole range of associative, non-associative and rule learning related paradigms in a well-controlled sequence of events [21] [22]."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "However, learning and retention scores are expressed in all these studies by data from groups of animals thus averaging across the individuals."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Motivated by the study of Gallistel and coworkers [23], Pamir and coworkers [24] analyzed a large dataset on PER conditioning in the honeybee and found that once an animal started eliciting the conditioned response (CR), it kept showing the CR in the subsequent conditioning trials with a high probability."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Importantly, the gradual acquisition in the groups of animals that results from the recruitment of individuals to the learner population, as predicted by Gallistel et al [23], was also found for the honeybees."
+        },
+        {
+          "sentence_num": 17,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Additionally, it has also been found that individual animals switched abruptly to a learned state during the acquisition phase after a different number of acquisition trials and when they switched, they continued performing as learners Pamir [24]."
+        },
+        {
+          "sentence_num": 18,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Further, another study also reported that bees switching to learners early during the acquisition phase had higher retention scores later in the tests of memory retention but they did not discriminate better between the rewarded and unrewarded conditioned stimuli during differential conditioning [25]."
+        },
+        {
+          "sentence_num": 19,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "These results have revealed some of the important aspects of learning behavior of individuals which were previously unnoticed in the analyses of group-averaged learning behavior albeit no clear picture has emerged on the different classes of bees which learn odors with different efficacy."
+        },
+        {
+          "sentence_num": 20,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "We thus attempt to quantify this population heterogeneity by a sequential conditioning procedure that allows finer classification of individuals on the behavioral level based on their performances during two subsequent phases of differential olfactory conditioning and several retention tests, evaluating the strength of olfactory learning and sensitivity."
+        },
+        {
+          "sentence_num": 21,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Multiple studies related different behavior in honeybees to their genetic backgrounds, such as the developmentally-regulated division of labor in the colony [26] [27], egg-laying and foraging behavior of the workers in queenless colonies [28], specialized tasks such as guarding and undertaking [29], foraging [30] [31], scouting and recruiting [32], as well as hygienic behavior against the Varroa mite [33]."
+        },
+        {
+          "sentence_num": 22,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "It has also been shown that the manipulations of transcript levels in the honeybee brain influence memory performances [34] [35] [36]."
+        },
+        {
+          "sentence_num": 23,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Furthermore, a comparative transcriptomic study in the wasp, Polistes metricus revealed genetic associations of behavioral tasks and substantial overlap of genes involved in the division of labor in the honeybee and foraging in the wasp [37]."
+        },
+        {
+          "sentence_num": 24,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "In the harvester ant, Pogonomyrmex californicus, large differences in gene expression, including the genes involved in neuronal functions and chemosensory perception, also have been reported for the queens showing different degrees of aggressive behavior [38]."
+        },
+        {
+          "sentence_num": 25,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "We, therefore, selected the honeybees based on our previous work on their multiple forms of learning, their memory functions and the brain parts involved in these performances [1] [39], the mushroom bodies, which both in the bee brain as well as in Drosophila are known to be involved in higher order processing, learning and memory [40] [41] [42]."
+        },
+        {
+          "sentence_num": 26,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "The aim of our study was to investigate the behavioral heterogeneity and whether it is associated with gene expression in the brain of the honeybee."
+        }
+      ]
+    },
+    "test008": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "The therapeutic use of messenger RNA (mRNA) has sparked great optimism in the development of novel vaccines and therapeutics against a myriad of infectious or yet incurable diseases (1)."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The mRNA technology enables the production of antigenic, functional, and/or therapeutic proteins by introducing mRNA into the human body and cells."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Since mRNAs act in the cytoplasm transiently, they do not bear any risk of integration into the host cell genome."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Most importantly, the mRNA technology enables rapid, cost-efficient and scalable production, which is free of cellular (cell cultures) or animal materials (3)."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Thus, mRNA technologies facilitate manufacturing and allow for a rapid response to emerging infectious diseases, as emphatically underscored by the rapid rollout of COVID-19 mRNA vaccines in many parts of the world."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Modified nucleosides, such as pseudouridine (Ψ), N1-methylpseudouridine (m1Ψ) and 5-methylcytidine (m5C), are often incorporated into the mRNA molecules."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Such modifications reduce stimulation of cytoplasmic RNA sensors, such as toll-like receptor 3 and 7, for improved safety profiles and enhanced mRNA translation (4, 5)."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "However, how modified nucleosides affect mRNA concentration measurements and potentially confound pre-clinical dosing, efficacy, and toxicology studies, which could make or break further clinical development of any therapeutic, remains undefined."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The determination of RNA concentration often relies on measurements of its UV absorbance at 260 nm wavelength (A260) and the implementation of the Beer–Lambert law (6)."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The accuracy of these measurements is scattered by the variable hypochromicity of RNA due to its sequence-dependent folding."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The molar absorption coefficient (MAC or extinction coefficient, ε) of a folded RNA at 260 nm (ε260) is reduced as compared to its unfolded state (7)."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "This difference is buffer- and concentration-dependent and arises from changes in the chemical environment of the nucleobases – the main chromophore, due to base-pairing, stacking, intermolecular interactions, and other conformational changes."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Considering these variabilities, a rough estimation for the ε260 of any single stranded RNA (40 μg/ml per absorbance unit) is extensively used and its associated ±10–20% error in the estimation of RNA concentration is widely accepted (6)."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "This error range may suffice to assess dose-response for mRNA therapeutics across several orders of magnitude in celula or in vivo experiments."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Yet it would be valuable to know concentrations at higher accuracy for the development of mRNA technologies."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "2a",
+          "predicted_move": "2",
+          "text": "Our particular concern is in measurements of self-amplifying RNAs (saRNA) and nucleoside-modified mRNAs."
+        },
+        {
+          "sentence_num": 17,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The logarithmic amplification of saRNA can convert a 20% accepted error in RNA concentration into a several fold differences in dose-response between one experiment and the subsequent replicates."
+        },
+        {
+          "sentence_num": 18,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "The chemical modifications on the nucleobases of mRNA can also induce profound changes in the mRNA MAC, hindering the accurate quantification of nucleoside-modified mRNA concentrations."
+        },
+        {
+          "sentence_num": 19,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "To attain greater accuracy in RNA quantification, RNA molecules are hydrolysed prior to UV absorbance determination using a combination of thermal and alkaline hydrolysis (6, 8)."
+        },
+        {
+          "sentence_num": 20,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The RNA hydrolysis shifts the hypochromic folded state of the RNA to the hyperchromic state of the single monophosphate nucleotides (9)."
+        },
+        {
+          "sentence_num": 21,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Since the precise MAC of the four standard nucleotides in aqueous buffered solution are known, the molar absorption of any hydrolysed mRNA can be calculated as the sum of the molar absorption of its nucleotide compositions."
+        },
+        {
+          "sentence_num": 22,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Thus, upon the determination of the 260 nm UV absorbance (A260), the RNA concentration can be quantified with an error of ∼4% using these methods (6)."
+        },
+        {
+          "sentence_num": 23,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "The incorporation of modified nucleosides can alter the RNA molar absorption and increase the error of the measurements in an RNA sequence-dependent manner."
+        },
+        {
+          "sentence_num": 24,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Other non-UV-spectroscopic methods relying on the unspecific RNA binding of fluorophores (such as RiboGreen, Thermo Fisher Scientific) for the determination of RNA concentration may help to overcome any change in the MAC of modified nucleoside mRNA."
+        },
+        {
+          "sentence_num": 25,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "However, the impact of RNA modifications on the binding affinity of these fluorophores also remains unknown."
+        },
+        {
+          "sentence_num": 26,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Herein, we report our effort to revisit and determine the molar absorption coefficients of modified nucleosides (Ψ, m1Ψ and m5C)."
+        },
+        {
+          "sentence_num": 27,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "We also examined three different methods for RNA hydrolysis and provided them along with the mRNACalc web server."
+        },
+        {
+          "sentence_num": 28,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "This web tool incorporates the most recently revised ε260 for standard, modified and mRNA capping nucleosides, allowing the accurate determination of standard and nucleoside-modified mRNAs using UV spectroscopy."
+        },
+        {
+          "sentence_num": 29,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "Once the RNA sequence, the A260 and the RNA stock volume values are provided as input, the mRNACalc web server calculates the RNA stock concentration in nM and ng/μl and the total RNA mass in μmole and μg."
+        }
+      ]
+    },
+    "test009": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Animal models have become increasingly important in stress research to examine behaviors that can inform our understanding of clinical PTSD symptoms."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Exposure to a predator odor stressor has been shown to be a valid and reliable animal model to examine symptom profiles of PTSD, as well as lasting consequences to traumatic stress (Cohen, Kozlovsky, Alona, Matar, and Joseph, 2012; Staples, 2010; Verbitsky, Dopfel, and Zhang, 2020)."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "For example, experiencing intrusive distressing memories of a traumatic event(s) is a DSM-5 diagnostic criteria for PTSD (APA, 2013)."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Animal models of predator odor stress, such as bobcat urine produces contextual avoidance to an odor-paired chamber in rats (Albrechet-Souza and Gilpin, 2019; Weera, Schreiber, Avegno, and Gilpin, 2020) and exposure to the synthetically produced predator odor 2,5-dihydro-2,4,5-trimethylthiazoline (TMT; an extract of fox feces), produces contextual stress responses, as evidenced by increased freezing behavior during re-exposure to the exposure context (Ornelas, Tyler, Irukulapati, Paladugu, and Besheer, 2021; Ornelas, Van Voorhies, and Besheer, 2021; Schwendt et al., 2018; Tyler, Bluitt, Engers, Lindsley, and Besheer, 2022; Tyler, Weinberg, Lovelock, Ornelas, and Besheer, 2020)."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Predator odor stressor exposure can also be used to investigate the complex interaction between increased alcohol consumption and stress, which may help in understanding the neurobiology associated with comorbid PTSD and alcohol use disorder (Ornelas, Tyler, et al., 2021; Weera et al., 2020)."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "For example, several studies have shown increased alcohol drinking (Alavi et al., 2022; Albrechet-Souza, Schratz, and Gilpin, 2020; Makhijani, Franklin, Van Voorhies, Fortino, and Besheer, 2021) or alcohol relapse-like behavior (Becker, Lopez, King, and Griffin, 2023; King and Becker, 2019) following exposure to varying predator odor stressors, including TMT."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Importantly, not all individuals who experience a traumatic event develop PTSD."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "There may be individual differences in behavioral responses to stress, which may contribute, in part, to susceptible and resilient populations (Center for Substance Abuse, 2014)."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Using the TMT exposure procedure outlined in this current protocol, we are able to focus on individual differences in stress reactivity behavior (i.e., coping behaviors), by classifying rats into specific phenotype groups."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Using these behavioral phenotype groups, we can then assess how engagement in different coping strategies during stress exposure may lead to or mitigate against lasting consequences of stress (for example, contextual stress memory, anxiety-like behavior, hyperarousal, or alcohol drinking)."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "For example, we have found that rats, specifically female rats, that engage in greater digging behavior versus immobility behavior during TMT exposure show increased alcohol self-administration after stress (Ornelas, Tyler, et al., 2021)."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Therefore, by quantifying behaviors that occur during the stressor, we can then assess the relation between stress reactivity phenotypes and the stressor-induced neurobiological and behavioral changes."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "The current exposure protocol takes advantage of observing and quantifying the behaviors that the rats engage in during the TMT stressor exposure."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Therefore, one can quantify a multitude of stress-reactive behaviors including avoidance, darting, grooming, midline crossings, defensive digging and immobility behavior."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "However, we specifically focus on defensive digging and immobility because they capture two distinctly different types of coping behaviors (digging = active, immobility = passive) that we have found useful to characterize individual differences in stress responsivity."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "In this article we will provide detailed description of the specific TMT exposure protocol we utilize to examine individual differences in stress-reactivity in rats."
+        }
+      ]
+    },
+    "test025": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "In recent decades, the increased industrialization of agroecosystems has gathered significant attention due to its profound negative social and ecological consequences (Raven and Wagner, 2021)."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "This trend is characterized by prioritizing short-term gains in productivity through practices such as intensified use of synthetic fertilizers and pesticides, high-density monoculture planting, a reduced presence of native trees, and the precarity of human labor (Ong and Liao, 2020; Raven and Wagner, 2021)."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Agricultural industrialization and environmental change have led to increases in pest populations (Andow, 1983), biodiversity decline (Raven and Wagner, 2021), and are also associated with a higher likelihood of zoonotic disease outbreaks (Jones et al., 2013; Perfecto et al., 2023)."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Adding to these challenges are the heightened demands on human labor and precarious social conditions experienced in large-scale industrial agricultural systems (Mapes, 2010), a social phenomenon that imparts more complexity to agroecosystem management and processes."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Coffee agroecosystems exhibit a large variety of management practices that reinforce each other and that can be defined as “syndromes of production”, a conceptual framework useful to evaluate social and ecological dynamics across distinct agricultural paradigms (Andow and Hidaka, 1989; Moguel y Toledo, 1999; Ong and Liao, 2020; Vandermeer and Perfecto, 2012)."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Coffee production syndromes can be mainly distinguished by shade management (shade or sun coffee plantations; Vandermeer and Perfecto, 2012) or by the type of land tenure and scale of production (large-scale capitalist or small-scale peasant-owned coffee plantations; Ong and Liao, 2020)."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "In this sense, coffee agroecosystems are model systems to understand how different syndromes of production affect ecological processes such as the planned and associated biodiversities (Mas and Dietsch, 2004) but also social aspects like the worker’s conditions (Jiménez-Soto, 2021)."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "In the large-scale capitalist syndrome, decisions and practices follow a maximization of profit rule (Ong and Liao, 2020); it is typically based upon large-scale and high-density planting farms with a high input of human labor and exploitation, although it may have specific ecological practices according to organic or conventional coffee markets (Perfecto et al., 2019)."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "This syndrome of coffee production results in practices that may promote the development and spread of important pests (Avelino et al., 2006; Hajian-Forooshani et al., 2016)."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "For instance, the coffee leaf rust (CLR) can travel across the coffee plantations through direct leaf contact, water splash, or local turbulent wind conditions (Becker and Kranz, 1977; Vandermeer et al., 2018), but its effectiveness of dispersal and impact can be modulated by management practices like the planting density (Mora Van Cauwelaert et al., 2023), the presence of wind-barrier trees in the plantation (Gagliardi et al., 2020), or the biotic communities of natural enemies (Jackson et al., 2012), all determined to some degree by the syndrome of production (Vandermeer and Perfecto, 2012; McCook and Vandermeer)."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "In this regard, increased agricultural simplification and industrialization of coffee agroecosystems have led to massive outbreaks of CLR around the globe (Avelino et al., 2015; McCook and Vandermeer, 2015)."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Some studies have proposed that harvesters can also bear CLR spores during harvesting (Becker and Kranz, 1977; Waller, 1981)."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The range of movement and duration of the daily harvest are also determined by the type, ownership, size and by the agricultural characteristics of the coffee plantations."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "2c",
+          "predicted_move": "2",
+          "text": "This relates to the general framework of movement ecology where one can wonder why an individual moves, how and where, as well as the role of external factors (Nathan et al., 2008)."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "In most landlord-owned large-scale coffee plantations, harvesters are paid by piecework and work several hours to maximize the daily harvest (Jiménez-Soto, 2021; López Echeverría, 2006)."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "These practices affect the social and health conditions of the workers, which are often precarious."
+        },
+        {
+          "sentence_num": 17,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "We argue that the movement of the harvesters under labor-intensive plantation conditions could also have an ecological impact, like modulating the human dispersal of some pathogens like coffee leaf rust (CLR)."
+        },
+        {
+          "sentence_num": 18,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "In fact, other studies have stressed the relation between the landscape structure, individual movement behavior, and pathogen transmission for predicting and understanding disease dynamics (Manlove et al., 2022; White et al., 2018)."
+        },
+        {
+          "sentence_num": 19,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "However, the spatial movement of the harvesters in plantations within this syndrome of production has not been described yet, nor its relationship with the scale, management, or ownership of the plantation, and even less its ecological implications for CLR or other potential pest dispersal."
+        },
+        {
+          "sentence_num": 20,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "Here we present a description and qualitative analysis of the spatial movement of farmworkers during harvesting in two large-scale landlord-owned plantations (∼300 ha) with two different types of management: an organic shaded production coffee plantation and a sun-grown production with few scattered trees."
+        },
+        {
+          "sentence_num": 21,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Specifically, we asked 1) how to statistically characterize the spatial trajectories of workers during harvesting, 2) how different features of the plantations, determined within a specific syndrome of production, affect these trajectories, and 3) what are the socio-ecological consequences of the harvesting movement in these large scale plantations."
+        },
+        {
+          "sentence_num": 22,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "We first recorded and analyzed with state-space models the spatial movements of the workers during harvesting, as well as their differences between both plantations."
+        },
+        {
+          "sentence_num": 23,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "We then constructed a driver tree for harvest dynamics, which incorporated qualitative variables related to climate, as well as coffee biology and management aspects reported by the harvesters during interviews and noted through our own observations."
+        },
+        {
+          "sentence_num": 24,
+          "predicted_step": "2d",
+          "predicted_move": "2",
+          "text": "We also highlighted the relationship between these variables and the syndrome of production."
+        },
+        {
+          "sentence_num": 25,
+          "predicted_step": "3d",
+          "predicted_move": "3",
+          "text": "Finally, we put in conversation the patterns and dynamics of the spatial movement of harvesters with the social conditions associated with the large-scale capitalist syndrome and the possible implications in pathogen dynamics such as CLR spread."
+        }
+      ]
+    },
+    "test026": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "The activity of G protein coupled receptors (GPCRs) are often affected by the structures and chemistry of the lipid molecules that surround them in the membrane[1]."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Both the types of lipids and relative composition of lipids in the bilayer influence the conformational ensemble of the receptor."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Many studies have shown that different lipids play an important role in GPCR function[2–9]."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "NMR studies of β2-adrenergic receptor (β2AR) in detergent micelles compared to reconstituted high density lipoprotein environment showed that the basal activity and exchange rates between inactive and active conformations is higher in detergents and in phospholipid bilayer containing HDL particles compared to cell membranes [2,10,11]."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "2a",
+          "predicted_move": "2",
+          "text": "Although it is known that cellular lipids have a definitive effect on receptor activity, the mechanism(s) by which lipid chemistry affects the receptor activity remain nebulous."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The three intracellular loops and the carboxy terminus of GPCRs play a critical role in coupling to G proteins and β-arrestins."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The extracellular loops are also involved in not only regulating the ligand binding but also in G protein coupling[12,13]."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "2a",
+          "predicted_move": "2",
+          "text": "However, receptor loop regions and N- and C-termini are largely unstructured and often not resolved in the three-dimensional structures making it particularly difficult to study their role in GPCR function using structural techniques."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Recent studies using biophysical techniques have shown that the intrinsically disordered intracellular loop 3 (ICL3) and the carboxy terminus of GPCRs regulate the receptor coupling selectivity to G proteins[14,15]."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "In our previous study[14] on β2AR, we found that ICL3 spans a broad ensemble of conformational states, ranging from “closed” states that block the binding site of the G protein to “open” states that allow for the G protein to bind [14]."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Thus, ICL3 regulates the access to the G protein coupling site in the receptor."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Through this mechanism, ICL3 acts as a secondary regulator of β2AR activation as well as plays an important role in the G protein coupling strength and selectivity."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Although it is evident from this study that ICL3 regulates the activity and signaling specificity of β2AR, the role of the membrane lipids in stabilizing the conformation of ICL3 is not known."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "In this study we have used extensive molecular dynamics simulations (22 μs) in multi-lipid bilayer model that mimics the plasma membrane to analyze the effects of different types of lipids on the conformational ensemble of ICL3 and thereby their effects on β2AR activation."
+        }
+      ]
+    },
+    "test027": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Autism is one of the most common behavioral changes detected early in life [1]."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Despite extensive research, the etiology of autism remains very complex."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "The cause of autism is linked to the genetic and environmental history of parents which together could lead to the development of autism spectrum disorders (ASD) in children [2,3]."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "A recent survey reveals several hundred distinct sites of nucleotide changes in the genome between patients [4]."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Several environmental and genetic factors identified in humans have already been validated with mouse models [5–6], however, have not yet been associated in all autistic patients [7–8]."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Evidence that the altered level of six miRNAs (miR-19a-3p, miR-361-5p, miR-3613-3p, miR-150-5p, miR-126-3p, miR-499a-5p) in parents and thus inheritance through the expression of altered phenotypes [9] would lead to the inclusion of a common genetic marker for autism cases."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Altered levels of RNAs such as non-coding RNAs can be passed on to the next generation via the germline to alter offspring phenotypes [10,11]."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "However, how RNA subornation is established and maintained throughout generation remains a matter of speculation."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Recently, on the activity of sperm RNA characterized in mouse models, a growing number of experiments highlight it as an important source of parental hereditary information above DNA [12–14]."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The six miRNAs listed above are present in sperm RNA in general and are altered in the father of an autistic child."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Five of six (miR-19a-3p, miR-150-5p, miR-126-3p, miR-361-5p, miR-499a-5p) are also present in mouse sperm, the sixth miR-3613-3p does not exist in the mouse genome."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "These six inherited miRNAs are then found downregulated in the sera of autistic patients and ‵autism-like‵ mouse models."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "2c",
+          "predicted_move": "2",
+          "text": "One of the questions posed here is to examine sperm RNA activities of that cover a possible paternally acquired autistic phenotype."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Microinjection of sperm RNA into fertilized mouse eggs could lead to variable phenotypes depending on the origin of the males from which the RNA is collected [10]."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "2c",
+          "predicted_move": "2",
+          "text": "In particular, although exposure of total RNA from (human) sperm to fertilized mouse eggs may have adverse effects on offspring, can symptoms of autism also become established in the next generation?"
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Here, we focus on experimentally induced autistic traits, particularly the potential of human sperm RNAs to induce “autism-like” phenotypes in mice."
+        },
+        {
+          "sentence_num": 17,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Offspring born from eggs micro-injected with sperm RNAs from the father of the autistic child’s were compared to controls at the molecular level and by behavioural assessment (open field maze, recognition of a familiar and novel object, social interaction, tail suspension, Marble burying and elevated plus maze assays)."
+        },
+        {
+          "sentence_num": 18,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "In addition, we examined the prefrontal cortex, corpus callosum, striatum, hippocampus, amygdala and cerebellum, which have been implicated in the pathophysiology of autism in the brain [15,16]."
+        },
+        {
+          "sentence_num": 19,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Our study involved, the examination of the brain anatomy in animals from all groups, utilising immuno-histochemical stains."
+        },
+        {
+          "sentence_num": 20,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Notably, differences were observed in animals induced by valproic acid (VPA) and microinjected RNA."
+        },
+        {
+          "sentence_num": 21,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "While astrocytes showed abnormal astrogliosis (and microgliosis, which is normally invaded by microglia), no signs of astrocyte disorientation or microglial extensions which are often seen in the autistic human brain, were detected."
+        },
+        {
+          "sentence_num": 22,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Moreover, we did not observe hypertrophy GFAP and Iba-1 positive-cells or hyperplasia were detected in immunopositive cells."
+        },
+        {
+          "sentence_num": 23,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Microglia and astrocytes play important roles in the regulation of neuronal metabolism, providing nutritional support of neurons, participating in the synapses formation and facilitating neurotransmission [4,6,17,18]."
+        },
+        {
+          "sentence_num": 24,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "Furthermore, in the microinjected with RNA group, there was a significant increase in the number of oligodendrocyte products accompanied by branching, compared to the controls groups."
+        },
+        {
+          "sentence_num": 25,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "These results could be attributed to the observed autistic traits in both groups."
+        },
+        {
+          "sentence_num": 26,
+          "predicted_step": "3b",
+          "predicted_move": "3",
+          "text": "In appears that in both groups of mice the manifestation of autistic behavioral disorders may be linked glial cell disorders."
+        }
+      ]
+    },
+    "test028": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Endometriosis is a chronic and incurable inflammatory disorder and affects approximately 10% of reproductive-aged women (1, 2)."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "It is associated with debilitating chronic pelvic pain and infertility, which substantially reduce the quality of life of women and their families (3, 4)."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Because endometriosis is estrogen-dependent, current treatments focus on inhibiting estrogen production and function."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "2a",
+          "predicted_move": "2",
+          "text": "However, hormonal treatments and surgical excision of lesions are often of limited efficacy with high recurrence rates, frequent side effects, additional costs, and potential morbidity (5)."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "As nearly 70% of patients suffer unsolved chronic pain and other related conditions (6), the direct costs of endometriosis were estimated at $12,118 per patient per year in the US, and indirect costs were $15,737 (7)."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "The pathogenesis of endometriosis is a complex process and remains to be fully understood."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Retrograde menstruation has been widely accepted as the origin of endometriotic tissues (8)."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "2a",
+          "predicted_move": "2",
+          "text": "However, as retrograde menstruation occurs in more than 90% of menstruating women (9), the pathogenesis of the disease is not well understood, and other factors must contribute to establishing endometriotic lesions and disease progression (1, 4, 10)."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Obesity is an epidemic health burden affecting nearly 40% of adults and 18% of children in the United States (11)."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Being overweight and obese are considered critical risk factors for chronic diseases, as fat accumulation causes low-grade chronic inflammation (12) characterized by immune cell infiltration into adipose tissues and elevated proinflammatory factors (13)."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Moreover, excessive fat consumption and accumulation in the body alter gut microbiota, resulting in dysbiosis to induce low-grade systemic inflammation (14)."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Obesity-induced inflammation is associated with metabolic and autoimmune disorders in women, causing reproductive dysfunctions such as polycystic ovary syndrome (PCOS), implantation and pregnancy failure, and pregnancy complications, including miscarriages (15–18)."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "While endometriosis is a chronic inflammatory disease, several epidemiological studies have reported an inverse correlation between endometriosis and body mass index (BMI) (19)."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "2a",
+          "predicted_move": "2",
+          "text": "However, obesity does not protect against endometriosis (19), and BMI is correlated with the severity but not the frequency of disease diagnoses (20)."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Thus, BMI does not provide a simple risk factor for a heterogeneous endometriotic disease as it does not consider different components of excess weight, such as adipose deposit location and interaction with neighboring tissues (20, 21)."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Additionally, the correlation between diet-induced obesity and endometriosis-associated pain or hypersensitivity, one of the significant endometriosis symptoms, has not been addressed."
+        },
+        {
+          "sentence_num": 17,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Rigorous prior research suggests that aberrant inflammation contributes to the onset and progression of endometriosis (22–27)."
+        },
+        {
+          "sentence_num": 18,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Macrophages (MΦ) are considered to be key players in promoting disease progression (25, 28, 29), as abundant MΦ are present in ectopic lesions (30) and elevated in the pelvic cavity (31)."
+        },
+        {
+          "sentence_num": 19,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "These MΦ populations establish an inflammatory environment in the pelvic cavity by secreting cytokines and chemokines, which encourage lesion growth and progression (24, 28, 29, 32, 33) and contribute to endometriosis-associated pelvic pain (32, 34, 35)."
+        },
+        {
+          "sentence_num": 20,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Diet-induced obesity dysregulates immune cells to induce cytokine secretion (13, 36, 37), increasing the risks of chronic pain."
+        },
+        {
+          "sentence_num": 21,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Therefore, the present study seeks to understand whether high-fat diets (HFD) affect the progression of endometriosis disease and immune dysfunctions and how HFD influences endometriosis-associated hyperalgesia."
+        },
+        {
+          "sentence_num": 22,
+          "predicted_step": "3c",
+          "predicted_move": "3",
+          "text": "The present results highlight that endometriosis-associated abdominal hyperalgesia was escalated in lesion-induced HFD mice according to the results of the behavior study and elevated pain-related mediators in the dorsal root ganglion (DRG)."
+        },
+        {
+          "sentence_num": 23,
+          "predicted_step": "3c",
+          "predicted_move": "3",
+          "text": "Increased proinflammatory MΦ (Ly6C+ MΦ) and cytokines by lesion induction were further enhanced by exposure to HFD."
+        },
+        {
+          "sentence_num": 24,
+          "predicted_step": "3c",
+          "predicted_move": "3",
+          "text": "The results also indicate that gut microbiota dysbiosis under the HFD condition contributed to an aberrant inflammatory environment and sensitized endometriosis-associated hypersensitivity."
+        }
+      ]
+    },
+    "test031": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Climate warming has caused well-documented shifts in the distribution of species in terrestrial and aquatic ecosystems [1] including changes in the dynamics of fish populations across the globe [2, 3, 4]."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "In several coastal zones, phenological shifts in the occurrence of adult and larval fish have also been observed [5, 6]."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "In parallel, industrial fishing has altered the abundance, structure, and reproductive characteristics of marine fish populations [7, 8, 9, 10]."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "As opposed to large-scale effects on populations that may be readily detectable, understanding the role of external environmental processes on local or regional population dynamics is more challenging [11]."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Small pelagic fish species pose an especially complex case, as their populations can exhibit both ‘volatile’ short-term dynamics in response to local or regional conditions, and long-term ‘stable’ cyclicity due to larger scale climate events [12, 13]."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Furthermore, many species exhibit ontogenetic shifts in habitats, spending part of their life cycle in coastal or estuarine zones, which may constrain the ability of species to cope with warming [14]."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The importance of external environmental processes can, therefore, be life stage-specific [15, 16]."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "The local dynamics of small pelagic fish are an essential component to better understand potential changes in areas historically important to the life cycle dynamics of species, and to examine whether the phenology in the use of important habitats may have shifted over time."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "The Atlantic herring (Clupea harengus) is a common, ecologically and commercially important small pelagic fish species in areas of the North Atlantic such as the North Sea [17, 18] where the population is composed of separate autumn- and winter-spawning stocks with life stage-specific distributions [19]."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "In the southern North Sea, Atlantic herring is also commonly observed in the Wadden Sea, which with its shallow coastal waters serves as a spawning, nursery, and feeding ground for many North Sea fish species [20]."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "However, much is unknown about the habitat utilization of the Wadden Sea by Atlantic herring."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "This is primarily because herring and other small pelagic fishes cannot be properly sampled in the demersal trawl surveys used to annually monitor fish populations in these near-shore waters [21]."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Furthermore, the coarse temporal resolution of these large-scale surveys does not allow inferences on seasonally important factors."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Limited temporal resolution also prevents the detection of potential phenological shifts that might have occurred during the past few decades."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "This limits our understanding of the external processes governing the local dynamics of herring and other fish moving between shallow coastal nursery and feeding grounds of the Wadden Sea and offshore waters of the North Sea."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Local survey efforts conducted at high temporal resolution are needed to help fill such important gaps in knowledge on potential climate-driven changes in phenology and habitat utilization."
+        },
+        {
+          "sentence_num": 17,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Survey efforts with sufficiently high temporal resolution to examine climate-driven changes in phenology are rare in the marine environment, particularly those with a historical coverage allowing comparisons over multiple decades."
+        },
+        {
+          "sentence_num": 18,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Although long term high temporal resolution time-series exist for lower trophic levels such as plankton [22], they are particularly rare for higher trophic levels such as fish."
+        },
+        {
+          "sentence_num": 19,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "However, the Royal Netherlands Institute for Sea Research (NIOZ) has consistently used a kom-fyke to collect standardized catch data of marine fishes moving between the North Sea and Western Wadden Sea through the Marsdiep tidal race since the 1960’s [23] (Fig. 1)."
+        },
+        {
+          "sentence_num": 20,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "This survey is unique in northern Europe due to its daily temporal resolution."
+        },
+        {
+          "sentence_num": 21,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Previous analyses of these data have identified phenological shifts such as changes in the day of first occurrence, peak occurrence, and last occurrence of members of the Wadden Sea fish community over the past five decades [24]."
+        },
+        {
+          "sentence_num": 22,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Given its daily resolution, this time series allows a finer-scale exploration of changes in the phenology of species such as Atlantic herring."
+        },
+        {
+          "sentence_num": 23,
+          "predicted_step": "2a",
+          "predicted_move": "2",
+          "text": "From a methodological standpoint, the preselection of specific days (first occurrence, peak occurrence, last occurrence) as a phenological yardstick for peak migration may obscure shifts in species such as herring that, due to their schooling and flexible foraging behaviour, exhibit marked daily variation in habitat use or occupancy."
+        },
+        {
+          "sentence_num": 24,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "Furthermore, it remains unknown if and how potential shifts in phenology differ among young juvenile and adult herring."
+        },
+        {
+          "sentence_num": 25,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "More detailed phenological analysis would reveal if local dynamics in coastal habitat use by North Sea herring align with the larger regional and global population responses to climate-driven warming observed in marine fish."
+        },
+        {
+          "sentence_num": 26,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Here, we examined potential life-stage specific changes in the population dynamics of Atlantic herring moving between the North Sea and Wadden Sea using long-term time series of weekly standardized herring catches (1981-2021) collected by the NIOZ kom-fyke."
+        },
+        {
+          "sentence_num": 27,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "We used a generalized additive modelling (GAM) approach to decompose the overall trend in weekly standardized herring catches into distinct annual, seasonal, and environmental signals."
+        },
+        {
+          "sentence_num": 28,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "These results allowed us to identify temporal trends in herring abundance, body size, and reproductive status in the Western Dutch Wadden Sea."
+        },
+        {
+          "sentence_num": 29,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "We also examined potential changes in the seasonal trends in herring abundance over the past four decades, i.e. phenological shifts."
+        },
+        {
+          "sentence_num": 30,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Finally, we checked the sensitivity of our outcomes with respect to changes in the sampling design of the Kom-fyke by re-running our analysis with different sampling frequencies."
+        },
+        {
+          "sentence_num": 31,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Our analyses on the longest, most high-resolution time series for marine fish in Northern Europe will advance understanding of the factors determining the movement and phenological shifts of herring and potentially other temperate small pelagic fishes from offshore to nearshore waters."
+        },
+        {
+          "sentence_num": 32,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Our work underscores the importance of maintaining highly temporally resolved, long-term ecological time series for examining the dynamics of climate-driven phenological shifts."
+        }
+      ]
+    },
+    "test033": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "The spontaneous movement of polar lipids from one side of a membrane bilayer to the other is slow and is accelerated in cells to a physiologically relevant rate by lipid transporters [1,2]."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Flippases and floppases are transporters which move lipids unidirectionally, against their concentration gradient in an ATP-dependent manner, whereas scramblases enable bidirectional lipid movement without need of metabolic energy."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Scramblases typically possess transmembrane helices that are not fully hydrophobic."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "These helices form a membrane-spanning hydrophilic groove along which phospholipids can move in analogy to a credit card (phospholipid) being swiped through a card reader (scramblase) [1]."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Known scramblases are alpha-helical proteins [3–6], but recently, a beta-barrel scramblase, the voltage-dependent anion channel (VDAC), was identified [7]."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The VDAC barrel has membrane-facing polar residues that, when paired with the same residues in a second beta barrel at a dimer interface, create a local membrane defect along which lipids cross the membrane in credit card mode."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Therefore, the presence or ability to form a hydrophilic groove across the membrane seems to be a common feature for lipid scrambling."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Insertases assist in the integration of membrane proteins into lipid bilayers [8]."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Their activity is necessary because membrane proteins typically have hydrophilic segments that do not spontaneously insert into the membrane."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The translocating moieties of these proteins are thus amphiphilic, similar to lipids, and it is interesting to consider whether insertases and scramblases may share a common mechanism even though lipids and their polar headgroups are generally smaller than the translocating parts of membrane proteins."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "In fact, it has been suggested that scramblases, insertases, and some translocases may facilitate the insertion and translocation of phospholipids and proteins through membrane thinning [9]."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Recent work demonstrated that the mitochondrial outer membrane protein MTCH2 is an insertase [10]."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "2c",
+          "predicted_move": "2",
+          "text": "MTCH2 has a wide transbilayer groove lined with polar and charged residues, reminiscent of the hydrophilic grooves of scramblases, leading us to hypothesize that it may function as a scramblase."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "To test this hypothesis, we performed coarse-grained and atomistic molecular dynamics (MD) simulations of MTCH2 in a model lipid bilayer."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "3c",
+          "predicted_move": "3",
+          "text": "We show that MTCH2 is indeed a scramblase, with the hydrophilic groove providing a transbilayer path for the movement of lipid headgroups while the acyl chains move through the hydrophobic interior of the membrane in credit card mode."
+        }
+      ]
+    },
+    "test034": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "The integrated management of poultry health includes maintaining overall health, welfare and performance throughout the life of animals."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "2a",
+          "predicted_move": "2",
+          "text": "This is an even greater challenge in a global context of reducing the risk of antimicrobial resistance."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "2d",
+          "predicted_move": "2",
+          "text": "One axis in the Ecoantibio2017 plan concerns the development of alternatives to avoid the use of antibiotics."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "2d",
+          "predicted_move": "2",
+          "text": "In this context, new poultry rearing systems are being developed, particularly for the perinatal period."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "In poultry, the perinatal period is a stressful period for broiler chicks, which includes the hatching phase and major physiological changes to adapt to new food resources and environments."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "In hatcheries, chicks hatch at between 19 and 21 days of incubation."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "They often stay more than 12 hours in the hatcher, under optimal temperature, without light and usually without access to feed and water until placement in farm buildings."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The fasting period of the chicks is further increased by the time needed for hatchery processing, transportation duration and unloading at the farm, which might last up to the first 72 h after hatching."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Even though chicks can use energy reserves from their yolk sac (van der Wagt et al., 2020), these conditions induce immediate and long-lasting metabolic changes (Beauclercq et al., 2019; Foury et al., 2020), behavioural impacts by increasing fear responses (Jessen et al., 2021) and consequences on chicken development, performance and welfare (de Jong et al., 2017)."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "2d",
+          "predicted_move": "2",
+          "text": "To improve the early perinatal conditions of chicks, alternative hatching systems have been developed."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "On-farm hatching provides the chicks with immediate access to feed and water according to their needs and avoids the exposure to stressors encountered in conventional hatcheries (van de Ven et al., 2009)."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Eggs incubated for 18 days are transported to the farm and placed either in trays or in the litter where they hatch."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "The effects of these on-farm hatching systems on broiler health, welfare and performance were recently studied under commercial or more controlled conditions and had shown effects that are not always beneficial."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Total mortality and footpad dermatitis in on-farm hatched (OFH) chicks were lower compared to conventionally hatched (CH) fast-growing broiler chickens (de Jong et al., 2019; 2020; Giersberg et al., 2021; Jessen et al., 2021)."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "However, day-old chick quality was worse and breast myopathy prevalence was higher for OFH than CH chickens (de Jong et al., 2019; Souza da Silva et al., 2021)."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Chicken activity and general behaviour were little affected by the hatching system, with fast-growing OFH chickens being more fearful and less active than CH chickens (Giersberg et al., 2020)."
+        },
+        {
+          "sentence_num": 17,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Slower-growing broiler chickens hatched in organic farms tended to express less general fearfulness than CH chickens (Jessen et al., 2021)."
+        },
+        {
+          "sentence_num": 18,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "A positive effect on growth performance was observed during the first week of life until 21 days in OFH and CH fed at the hatchery compared to CH chickens (de Jong et al., 2020), and longer when parent flocks were young (Souza da Silva et al., 2021)."
+        },
+        {
+          "sentence_num": 19,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Maintaining optimal health, welfare and performance of chickens is highly dependent on the gut physiology in interaction with the microbiota and mucosal immune system (Fortun-Lamothe et al., 2023)."
+        },
+        {
+          "sentence_num": 20,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Antibiotics have been largely used in poultry production to improve performance by acting on the gut barrier function (Broom, 2018)."
+        },
+        {
+          "sentence_num": 21,
+          "predicted_step": "2a",
+          "predicted_move": "2",
+          "text": "However, growing concerns about the increase of antimicrobial resistance in farm animals led to changes in EU and national legislation governing the use of antibiotics as growth promoters in poultry feed, which resulted in their suppression in 2006 (Council Directive 96/22/EC; Axis 2 and measure 19 of the EcoAntibio 2017 plan)."
+        },
+        {
+          "sentence_num": 22,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Greater attention to the environment during the chick postnatal period, especially the microbial environment, is key to optimising the gut barrier function and more broadly the health and welfare of the chickens and their performance."
+        },
+        {
+          "sentence_num": 23,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Naturally, chicks hatch in contact with an adult hen who is a donor of microbiota and a model of learning and maternal care (Edgar et al., 2016)."
+        },
+        {
+          "sentence_num": 24,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Early implantation of adult microbiota into the chick digestive system accelerates the maturation of the microbiota and immune system (Volf et al., 2016; Broom and Kogut, 2018; Meijerink et al., 2020)."
+        },
+        {
+          "sentence_num": 25,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "In addition, chicks reared in the presence of their mothers are less fearful than those raised without their mothers and develop more behavioural synchrony (Perré et al., 2002), even though hen genetics has a strong effect on chick behaviour, with commercial lines being less maternal (Hewlett et al., 2019)."
+        },
+        {
+          "sentence_num": 26,
+          "predicted_step": "2d",
+          "predicted_move": "2",
+          "text": "The combination of a new hatching system like OFH with an enriched microbiota and stimulating environment from the presence of an adult hen is a possible solution for chick conditions to be improved and could contribute to poultry health and welfare and product quality."
+        },
+        {
+          "sentence_num": 27,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "In this study, we analysed the benefits/risks of hatching systems (conventional hatcher, on-farm hatching), with the presence of an adult hen (OFH + H, CH + H) or not (OFH and CH) on hatchability and chick quality scores."
+        },
+        {
+          "sentence_num": 28,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "We also explored the effects of these hatching conditions and the presence of an adult hen with chicks on performance, health and robustness in suboptimal rearing conditions."
+        },
+        {
+          "sentence_num": 29,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "The combination of CH and post-hatching treatment with antibiotics (CH + AB) was added as an experimental control group of antibiotic growth promoter use."
+        }
+      ]
+    },
+    "test037": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "The ambrosia beetle Cnestus mutilatus Blandford, 1894 (Coleoptera: Curculionidae: Scolytinae: Xyleborini) is native to Asia but was detected in the southern United States in 1999 (1, 2)."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "The species has since spread widely and quickly (3), utilizing a suite of adaptive traits: a wide range of host trees, haplodiploidy, inbreeding, sheltering in wood for most of their life cycle, sub-sociality, fungus gardening, and the ability to move from tropical to temperate climates (4–6)."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "It is possible that C. mutilatus will not become a pest in its new geographic range."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Most ambrosia beetles take advantage of the weakened defenses of stressed or dying trees, in which they typically sow nonpathogenic fungi (7) that contribute to decomposition and nutrient recycling."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "However, timber- and tree-associated industries need to remain wary of their destructive potential."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The woody tissues of dying and dead trees ferment residual sugars, producing several short-chain alcohols such as ethanol (8, 9)."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "A small proportion of these alcohols volatize (10) and attract the beetles, which will tunnel breeding galleries into the woody tissues."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Stressed nursery trees and many wood products also volatize alcohols, and holes from any resulting beetle galleries reduce the structural integrity, esthetics, and market value of these products."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Examples include damage to wine or beer casks (8), overwatered or freeze-stressed nursery stock (11), recently felled timber (12), and freshly sawn lumber (13–15)."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Cnestus mutilatus has even been documented boring holes into the plastic walls of ethanol-gasoline containers (16)."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Ambrosia beetles could also cause ecological damage by seeding the spread of microbes, including their primary ambrosia fungus, secondary fungi, nematodes (17), mites, and bacteria (18)."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Fungi transported by ambrosia beetles can dramatically alter the natural progression of wood decomposition (19, 20) and could be phytopathogenic (21, 22)."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Geosmithia morbida (Ascomycota), the fungal pathogen that causes Thousand Cankers Disease in walnut trees (Juglans spp.), is known to be carried by C. mutilatus (23, 24)."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Given this potential for both economic and ecological damage, C. mutilatus merit close monitoring (25, 26)."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Traps for ambrosia beetles are typically baited with slow-release ethanol preparations."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "2c",
+          "predicted_move": "2",
+          "text": "However, propan-2-ol (hereafter referred to as isopropanol), while being used in traps as a killing agent and preservative, seemed to attract C. mutilatus (personal observations)."
+        },
+        {
+          "sentence_num": 17,
+          "predicted_step": "2a",
+          "predicted_move": "2",
+          "text": "There would be considerable advantages to having an inexpensive and easy-to-obtain chemical serve all three functions of attractant, killing agent, and preservative without the need for slow-release mechanisms."
+        },
+        {
+          "sentence_num": 18,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "The purpose of this study was to gather experimental evidence that isopropanol can be used as such in traps for C. mutilatus."
+        }
+      ]
+    },
+    "test038": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Cigarette smoking is the most preventable cause of cardiovascular morbidity and mortality in the United States (1–3)."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "While smoking promotes the progression of coronary artery disease and increases the risk of myocardial infarction (MI), heart failure, ischemia-induced arrhythmias and sudden cardiac death (4–6), short-term secondhand smoke (SHS) exposure alone has been associated with increased incidence of atrial fibrillation and ventricular tachycardia/fibrillation (7)."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Although the mechanisms for this increased vulnerability to arrhythmias have yet to be fully explored, we have previously shown that the susceptibility to calcium (Ca2+) and action potential duration (APD) alternans was increased with SHS exposure (8)."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "At present, however, the contributions of individual cigarette smoke components to the increased emergence of alternans and arrhythmias is unknown."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Whereas cigarette usage has declined, sales of electronic (e)-cigarettes increased by 46.6% between 2020 – 2022 (9)."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Though often considered less harmful than traditional cigarettes, e-cigarettes also contain numerous chemicals including nicotine, tobacco-specific nitrosamines, aldehydes and flavors (10–13)."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "The amount of nicotine present in e- cigarettes is widely variable but, in some cases, has been reported to be higher than an entire pack of conventional cigarettes (14, 15)."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Nicotine directly modulates autonomic control of the heart through its binding to nicotinic acetylcholine receptors (nAChR) found within the brain, adrenal medulla, and post ganglionic neurons of the parasympathetic and sympathetic cardiac nerves (16)."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "In studies using labeled norepinephrine (NE), rats given nicotine for 10 days had a higher NE but lower acetylcholine outflow in the hippocampus (16), indicating that the overall net effect from the central nervous system is sympathetically driven and that chronic nicotine exposure could lead to sympathetic hyperactivity."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Similarly, acute exposure to e- cigarettes containing nicotine has been linked to reduced heart rate variability (HRV) (17), which is typically associated with increased sympathetic activity and risk of sudden cardiac death (18, 19)."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Thus, it is possible that long-term nicotine use results in autonomic dysregulation that may play a role in promoting ventricular arrhythmias."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "In addition to its actions on the autonomic nervous system, nicotine also directly affects the myocardium, likely through its binding to non-neuronal nAChRs found on ventricular cardiac myocytes (20)."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Acute nicotine administration has been shown to directly block the membrane stabilizing current Ik1 in isolated myocytes (21, 22) which we have previously demonstrated leads to the generation of ectopic beats in the intact heart (23)."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Exposure to nicotine is also associated with increased myocardial fibrosis (24–26), which may play a role in creating a heterogeneous substrate that can foster ectopic activity and/or reentrant arrhythmias (27)."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "In line with these findings, in-vivo administration of nicotine was reported to result in atrial and ventricular arrhythmias in a canine model of MI (28, 29), with meta-analysis studies also identifying increased risk of rhythm disorders in patients on nicotine replacement therapies (30, 31)."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "As such, at the level of the heart, nicotine exposure is associated with myocardial remodeling alongside alterations in autonomic regulation that appear to be synergistically proarrhythmic."
+        },
+        {
+          "sentence_num": 17,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "However, despite the importance of these findings, the electrophysiological mechanisms underlying increased arrhythmia susceptibility due to nicotine exposure are unclear."
+        },
+        {
+          "sentence_num": 18,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Therefore, the goal of this study was to investigate the effect of chronic nicotine exposure on cardiac electrophysiology, Ca2+ handling, structure, and sympathetic responsiveness in the intact heart to elucidate potential mechanisms of increased arrhythmia risk."
+        }
+      ]
+    },
+    "test039": {
+      "predictions": [
+        {
+          "sentence_num": 1,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "Various axes of global change are increasing rapidly (Steffen and others 2015) and imposing a suite of multi-stressor impacts on ecosystems around the world, most notably coastal ecosystems such as coral reefs (Halpern and others 2019)."
+        },
+        {
+          "sentence_num": 2,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "For coral reefs, three major stressors have been identified as playing important roles in determining coral reef structure and ecosystem functioning: climate change, nutrient loading/water pollution, and overfishing, and these stressors have been studied extensively in isolation (Norström and others 2016; Harborne and others 2017; Hughes and others 2017)."
+        },
+        {
+          "sentence_num": 3,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "As coral reefs appear to be classic examples of ecosystems under heavy multi-stressor impacts (Scheffer and others 2015), it is important we deepen our understanding of the interactive effects of multi-stressors, across scales of space and time (Ban and others 2014; Pendleton and others 2016)."
+        },
+        {
+          "sentence_num": 4,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "For example, while climate change and temperature-induced coral bleaching is often, and understandably, targeted as the most important stressor threatening the future of coral reefs, local-scale stressors can significantly alter coral reefs’ resilience in the face of climate-related impacts (Wooldridge and Done 2012; Ban and others 2014; Abelson 2020; Donovan and others 2020)."
+        },
+        {
+          "sentence_num": 5,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "While addressing anthropogenic climate change at the global scale is undoubtedly critical, it is important we simultaneously consider the influence of regional-and local-scale management actions that may improve coral reefs’ resilience (Hughes and others 2017; Robinson and others 2019; Guan and others 2020; Donovan and others 2021)."
+        },
+        {
+          "sentence_num": 6,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "This is especially true if multiple stressors interact to nonlinearly increase negative impacts on coral reef function and would allow for a context-dependent approach to local management that could have dramatically more positive impacts."
+        },
+        {
+          "sentence_num": 7,
+          "predicted_step": "1a",
+          "predicted_move": "1",
+          "text": "At a local scale, the role of herbivory has been a dominant focus of coral reef research (Hughes and others 2007; Brandl and others 2019)."
+        },
+        {
+          "sentence_num": 8,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Researchers have argued for decades that losses in herbivory can drive phase shifts from healthy coral-dominated reefs to degraded algal-dominated states (Mumby and others 2007), pointing to empirical examples of declining herbivores in reefs around the world to support this mechanism (Done 1992; Hughes 1994; Hughes and others 2007; Mumby and others 2007; Steneck and others 2014; Jouffray and others 2015)."
+        },
+        {
+          "sentence_num": 9,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "This has been argued to be caused by the overfishing of herbivores (McManus and others 2000; Hughes and others 2007; Mumby and Steneck 2008) as well as sudden reductions in other grazers not directly linked to fishing, such as the widespread Diadema antillarium die-off that occurred throughout the Caribbean in the 1980’s (Lessios 1988; Hughes 1994; Mumby and others 2007)."
+        },
+        {
+          "sentence_num": 10,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Importantly, loss of hard corals and shifts to algae-dominated reefs result in highly degraded systems with the concomitant loss of important ecosystem services."
+        },
+        {
+          "sentence_num": 11,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Adding complexity to the efficacy of local management actions aimed at restoring grazer populations, researchers and managers generally agree that coastal development and watershed pollution is a major local problem along with overfishing (Wear and Thurber 2015; Wear 2016)."
+        },
+        {
+          "sentence_num": 12,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Nutrient loading has been shown to alter important biological parameters that mediate coral reef ecosystem dynamics, decrease coral calcification rates, and increase corals’ susceptibility to and severity of bleaching and disease (Bruno and others 2003; Wooldridge 2009; Wiedenmann and others 2013; Shantz and Burkepile 2014; Vega Thurber and others 2014; Zaneveld and others 2016; Wang and others 2018; Lapointe and others 2019; DeCarlo and others 2020; Donovan and others 2020; Houk and others 2022)."
+        },
+        {
+          "sentence_num": 13,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Additionally, increased availability of nutrients have a positive impact on algae growth rates, and so nutrient loading can ultimately shift the dominant competitor from coral to algae (Lapointe 1999; Smith and others 2001)."
+        },
+        {
+          "sentence_num": 14,
+          "predicted_step": "1b",
+          "predicted_move": "1",
+          "text": "Importantly, these collective biological responses to multiple stressors suggest there may be an interactive effect of nutrients, overfishing and climate variation in coral reef ecosystems and the competitive interaction between coral and algae (Burkepile and Hay 2006; Hughes and others 2017), and therefore context-dependent outcomes to management actions (Mumby and others 2006)."
+        },
+        {
+          "sentence_num": 15,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "Indeed, empirical research has found that the recovery of coral reefs after bleaching events appears to be highly dependent on multiple stressors including nutrient loading and herbivory (MacNeil and others 2019; Robinson and others 2019), and these stressors both appear to act together to change the rate and stages of algal succession following climatic disturbances (Hixon and Brostoff 1996; Mcclanahan 1997; Ceccarelli and others 2011)."
+        },
+        {
+          "sentence_num": 16,
+          "predicted_step": "2a",
+          "predicted_move": "2",
+          "text": "However, there still remains considerable debate among researchers regarding how multi-stressors interactively govern coral reef structure and functioning (Ban and others 2014; Muthukrishnan and Fong 2014; Cote and others 2016)."
+        },
+        {
+          "sentence_num": 17,
+          "predicted_step": "2d",
+          "predicted_move": "2",
+          "text": "Some researchers have begun to incorporate multiple stressors into theoretical and modelling approaches (Mumby and others 2006; Anthony and others 2011; Blackwood and others 2011, 2018; Fung and others 2011; Arias-González and others 2017), often done with either site-specific parameterizations and large amounts of detail or only incorporating one to two major stressors in more general ways."
+        },
+        {
+          "sentence_num": 18,
+          "predicted_step": "1c",
+          "predicted_move": "1",
+          "text": "These studies have shown that multi-stressors can indeed interact and together contribute to increasing rates of hard coral decline, however disparity in approaches has prevented a generalizable framework for multi-stressor impacts on coral reef functioning."
+        },
+        {
+          "sentence_num": 19,
+          "predicted_step": "2b",
+          "predicted_move": "2",
+          "text": "While the nuances of coral reef dynamics and the multitude of anthropogenic impacts altering them are understandably not easy to discern, researchers have called for a holistic multi-stressor approach to coral reef science and management appropriate for a changing world (Norström and others 2009; Ban and others 2014; Pendleton and others 2016; Mumby 2017)."
+        },
+        {
+          "sentence_num": 20,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Here, as a step towards this goal, we expand on existing theory (Mumby and others 2007) to demonstrate the context-dependency of management outcomes for coral reefs under multi-stressor impacts."
+        },
+        {
+          "sentence_num": 21,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "We do this by integrating the combined influence of overfishing (i.e., loss/reduced herbivory), decreasing water quality (nutrient loading) and climate change (temperature stress and cyclonic storm damage) on coral reef structure and function within a theoretical multi-stressor framework (Figure 1A), and highlight the importance of highly responsive r-strategy life histories in changing, heavily impacted systems (Figure 1B)."
+        },
+        {
+          "sentence_num": 22,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "Our approach integrates general ecological concepts (e.g., ecological succession, keystone predation theory) with our current understanding of individual processes in coral reef ecosystem functioning and emerging theoretical insight into the role of noise in transient dynamics and ecosystem resilience."
+        },
+        {
+          "sentence_num": 23,
+          "predicted_step": "3a",
+          "predicted_move": "3",
+          "text": "We end by evaluating empirical evidence from Barbados within our framework that corroborates the importance of considering an integrated multi-stressor perspective for coral reef management."
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "total_articles_attempted": 40,
+    "successfully_parsed": 16,
+    "failed_parsing": 24,
+    "excluded_articles": [
+      "test001",
+      "test005",
+      "test007",
+      "test010",
+      "test011",
+      "test012",
+      "test013",
+      "test014",
+      "test015",
+      "test016",
+      "test017",
+      "test018",
+      "test019",
+      "test020",
+      "test021",
+      "test022",
+      "test023",
+      "test024",
+      "test029",
+      "test030",
+      "test032",
+      "test035",
+      "test036",
+      "test040"
+    ]
+  }
+}

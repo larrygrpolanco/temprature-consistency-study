@@ -1,0 +1,23 @@
+[1b] Neuropeptides, a diverse array of signaling molecules, orchestrate a multitude of physiological processes in organisms.
+[1a] Among them, neuropeptides possessing the Arg-Phe-NH2 (RFamide) motif at their C-termini are designated as RFamide peptides and have attracted considerable attentions because of their pivotal roles in various biological functions [1–3].
+[1b] The RF-amide family encompasses five distinct peptides: Neuropeptide FF (NPFF), Prolactin-releasing peptide (PrRP), Kisspeptin (Kiss1), gonadotropin-inhibitory hormone (GnIH), and pyroglutamylated RFamide peptide (QRFP).
+[1b] Each peptide interacts with specific class A G-protein-coupled receptors (GPCRs), initiating a cascade of intracellular events to modulate physiological responses.
+[1b] Similarly, the RY-amide peptides, characterized by the signature RY motif at their C-termini, present a similar mode of action, interacting with their respective receptors to regulate physiological processes [4].
+[1b] This categorization based on the C-terminal residues highlights the specificity and diversity within these peptide families.
+[1b] The intricate interplay between these peptides and their receptors represents a complex network critical for maintaining homeostasis and responding to environmental changes.
+[1b] QRFP is a 43-amino acid RFamide peptide with a pyroglutamylated N-terminus (namely 43Rfa).
+[1c] QRFP was originally identified by a bioinformatics approach and reverse pharmacology[5], and demonstrates specific activity for GPR103 with orexigenic activity[5–7], a Gq-coupled receptor expressed in the brain and adrenal gland.
+[1b] GPR103 is predominantly localized in the central nervous system, including regions such as the hypothalamus, which plays a crucial role in the regulation of energy metabolism and appetite control.
+[1b] QRFP and GPR103 are implicated in a variety of physiological functions ranging from the modulation of feeding behavior to the regulation of energy homeostasis [8], cardiovascular function and bone formation [9].
+[1b] This QRFP-GPR103 pair is remarkably conserved across various vertebrate species[10], highlighting its fundamental significance in biological systems.
+[1a] GPR103 is not only pivotal in maintaining physiological balance but also presents therapeutic targets for disorders related to metabolism and appetite dysregulation.
+[1c] For example, QRFP administration reportedly increased food intake and fat mass while reducing glucose-induced insulin release, and may also cause osteopenia and facilitate nociception [11].
+[1c] Thus, the GPR103 antagonist demonstrated an anorexigenic effect in mice, and has been focused as a treatment for obesity.
+[1c] Additionally, the GPR103 antagonist would be useful to trigger dormant state for survival treatment in emergency medical care.
+[1c] Recent advancements in cryo-electron microscopy (cryo-EM) have unveiled numerous GPCR-G-protein complex structures, including those associated with C-terminally amidated peptides such as cholecystokinin, orexin, and RY-amide neuropeptide Y[12–14].
+[1b] These analyses have shed light on the intricacies of ligand-receptor interactions and their activation mechanisms.
+[2b] Nevertheless, a notable gap remains in our understanding of RF-amide receptors, specifically GPR103.
+[2b] The structures of these receptors have not been elucidated, leaving the mechanisms distinguishing RF- and RY-amides enigmatic.
+[2b] This also includes an understanding of the selective activation of GPR103 by QRFP and the fundamental principles dictating ligand specificity among related receptors.
+[2b] These gaps in structural data significantly hinder the strategic development of therapeutic agents targeting GPR103.
+[3a] Here, we report a cryo-EM structure of the QRFP-bound GPR103•Gq complex, offering deep insights into its ligand recognition and selectivity, and dynamics.
