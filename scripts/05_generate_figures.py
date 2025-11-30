@@ -233,7 +233,7 @@ def create_accuracy_consistency_plot(metrics, output_path):
     ax2.set_ylim([0.0, 1.05])
 
     # Combine legends for Panel A
-    lines_a = line1 + line2
+    lines_a = line2 + line1
     labels_a = [l.get_label() for l in lines_a]
     ax1.legend(
         lines_a,
@@ -295,7 +295,7 @@ def create_accuracy_consistency_plot(metrics, output_path):
     ax4.set_ylim([0.0, 1.05])
 
     # Combine legends for Panel B
-    lines_b = line3 + line4
+    lines_b = line4 + line3
     labels_b = [l.get_label() for l in lines_b]
     ax3.legend(
         lines_b,
